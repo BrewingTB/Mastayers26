@@ -5,7 +5,7 @@ async function updateData() {
     const apiKey = process.env.GOLF_API_KEY;
     
     // This is your exact URL from the SportsDataIO site
-    const url = `https://sportsdata.io{apiKey}`;
+    const url = `https://api.sportsdata.io/golf/v2/json/PlayerTournamentHoleScoresFinal/628?key=c05b515fffad4140a71e641f8ada1ac6`;
 
     try {
         console.log("Connecting to SportsDataIO...");
