@@ -1,0 +1,22 @@
+name: Update Masters Scores
+on:
+  schedule:
+    - cron: '*/10 * * * *' # This means "Every 10 minutes"
+  workflow_dispatch: # This lets you click a button to run it manually
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Update Script
+        run: node update_scores.js
+        env:
+          GOLF_API_KEY: ${{ secrets.GOLF_API_KEY }}
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add data.json
+          git commit -m "Auto-update scores"
+          git push
