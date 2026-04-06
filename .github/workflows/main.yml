@@ -1,38 +1,27 @@
-name: Pull Masters API Data
+name: Pull Masters Data
 on:
   schedule:
-    - cron: '*/10 * * * *' # Runs every 10 minutes
-  workflow_dispatch:      # Lets you click "Run workflow" to test it manually
-
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
-    # 1. This gives GitHub permission to "Write" the data.json file back to your repo
     permissions:
       contents: write
-      
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      # 2. This ensures the runner is using a version that supports "fetch"
+      - uses: actions/checkout@v4 # Use v4
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4 # Use v4
         with:
           node-version: '20'
-
-      # 3. This runs your update_scores.js file
-      - name: Run Fetch Script
+      - name: Run fetch
         run: node update_scores.js
         env:
           GOLF_API_KEY: ${{ secrets.GOLF_API_KEY }}
-
-      # 4. This saves the new data.json file into your repository
-      - name: Commit and Push Changes
+      - name: Commit
         run: |
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
           git add data.json
-          git commit -m "Automated update of Masters scores" || exit 0
+          git commit -m "update data" || exit 0
           git push
