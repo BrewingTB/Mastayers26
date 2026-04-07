@@ -22,6 +22,9 @@ jobs:
       - name: Pull player profiles
         run: node scripts/pullplayers.js
 
+      - name: Pull Masters Field
+        run: node scripts/pullmastersfield.js
+
       - name: Run Fetch Script
         run: node update_scores.js
 
