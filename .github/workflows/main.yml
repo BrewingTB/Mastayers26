@@ -20,10 +20,15 @@ jobs:
           node-version: '20'
 
       - name: Pull player profiles
-        run: node scripts/pullplayers.js
+        run: node scripts/pullPlayers.js
 
       - name: Run Fetch Script
         run: node update_scores.js
 
       - name: Commit and Push
-        run: 
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add data.json data/players.json
+          git commit -m "Update scores" || exit 0
+          git push
