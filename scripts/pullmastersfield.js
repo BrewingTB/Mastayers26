@@ -2,7 +2,7 @@ import fs from "fs";
 import https from "https";
 
 const API_KEY = process.env.GOLF_API_KEY;
-const url = `https://api.sportsdata.io/golf/v2/json/TournamentDetails/688?key=${API_KEY}`;
+const url = `https://api.sportsdata.io/golf/v2/json/PlayerTournamentHoleScoresFinal/688?key=${API_KEY}`;
 
 https.get(url, (res) => {
   let data = "";
