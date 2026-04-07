@@ -2,6 +2,8 @@ import fs from "fs";
 import https from "https";
 
 const API_KEY = process.env.GOLF_API_KEY;
+// DEBUG — see what GitHub Actions is actually passing
+console.log("API KEY LENGTH:", API_KEY?.length);
 const url = `https://api.sportsdata.io/golf/v2/json/Leaderboard/688?key=${API_KEY}`;
 
 https.get(url, (res) => {
