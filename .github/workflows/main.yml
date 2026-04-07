@@ -9,7 +9,7 @@ jobs:
       contents: write
 
     env:
-      SPORTSDATA_KEY: ${{ secrets.GOLF_API_KEY }}
+      GOLF_API_KEY: ${{ secrets.GOLF_API_KEY }}
 
     steps:
       - uses: actions/checkout@v4
@@ -25,8 +25,6 @@ jobs:
         run: node scripts/pullplayers.js
 
       - name: Pull Masters Field
-      env:
-        GOLF_API_KEY: ${{ secrets.GOLF_API_KEY }}
         run: node scripts/pullmastersfield.js
 
       - name: Run Fetch Script
