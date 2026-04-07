@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: '20'
       - name: Pull Rankings
-        run: node scripts/pullRankings.js
+        run: node scripts/rankings.js
   
       - name: Pull player profiles
         run: node scripts/pullplayers.js
