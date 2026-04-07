@@ -3,26 +3,37 @@ on:
   # schedule:
   #  - cron: '*/10 * * * *'
   workflow_dispatch:
+
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # This is the "Magic" line that lets GitHub save the file
+      contents: write
+
+    env:
+      SPORTSDATA_KEY: ${{ secrets.GOLF_API_KEY }}
+
     steps:
       - uses: actions/checkout@v4
-      - name: Pull player profiles
-        run: node scripts/pullPlayers.js
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+
+      - name: Pull player profiles
+        run: node scripts/pullPlayers.js
+
       - name: Run Fetch Script
         run: node update_scores.js
-        env:
-          GOLF_API_KEY: ${{ secrets.GOLF_API_KEY }}
+
       - name: Commit and Push
         run: |
           git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add data.json
+          git commit -m "Update scores" || exit 0
+          git push
           git config --global user.email 'github-actions@github.com'
           git add data.json
           git commit -m "Update scores" || exit 0
