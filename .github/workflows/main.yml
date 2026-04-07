@@ -20,7 +20,7 @@ jobs:
           node-version: '20'
 
       - name: Pull player profiles
-        run: node scripts/pullPlayers.js
+        run: node scripts/pullplayers.js
 
       - name: Run Fetch Script
         run: node update_scores.js
