@@ -10,8 +10,8 @@ jobs:
       contents: write # This is the "Magic" line that lets GitHub save the file
     steps:
       - uses: actions/checkout@v4
-      - name: Pull player profiles
-        run: node scripts/pullPlayers.js
+     # - name: Pull player profiles
+     #   run: node scripts/pullPlayers.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
