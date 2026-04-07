@@ -25,6 +25,8 @@ jobs:
         run: node scripts/pullplayers.js
 
       - name: Pull Masters Field
+      env:
+        GOLF_API_KEY: ${{ secrets.GOLF_API_KEY }}
         run: node scripts/pullmastersfield.js
 
       - name: Run Fetch Script
