@@ -15,7 +15,7 @@ https.get(url, (res) => {
     try {
       const players = JSON.parse(data);
 
-      fs.writeFileSync("./scripts/data/players.json", JSON.stringify(players, null, 2));
+      fs.writeFileSync("./data/players.json", JSON.stringify(players, null, 2));
       console.log("✔ Player profiles updated: data/players.json");
     } catch (err) {
       console.error("Error parsing player data:", err);
