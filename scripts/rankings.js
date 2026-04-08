@@ -1,7 +1,7 @@
 import fs from "fs";
 import https from "https";
 
-const API_KEY = process.env.GOLF_API_KEY;
+const API_KEY = process.env.SPORTSDATA_KEY;
 const url = `https://api.sportsdata.io/golf/v2/json/Rankings/2026?key=${API_KEY}`;
 
 https.get(url, (res) => {
