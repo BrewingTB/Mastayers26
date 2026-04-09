@@ -1,7 +1,7 @@
 import fs from "fs";
 import https from "https";
 
-const API_KEY = process.env.SPORTSDATA_KEY; // stored in GitHub Secrets
+const API_KEY = process.env.GOLF_API_KEY;
 const url = `https://api.sportsdata.io/golf/v2/json/Players?key=${API_KEY}`;
 
 https.get(url, (res) => {
