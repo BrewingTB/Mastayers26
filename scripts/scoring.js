@@ -82,4 +82,4 @@ fs.writeFileSync(
     JSON.stringify(leaderboard, null, 2)
 );
 
-console.log('✔ fantasy.json updated'
+console.log('✔ fantasy.json updated');
