@@ -3,7 +3,7 @@ const fs = require('fs');
 async function updateData() {
     const apiKey = process.env.GOLF_API_KEY;
 
-    const url = `https://api.sportsdata.io/golf/v2/json/PlayerTournamentHoleScoresFinal/628?key=${apiKey}`;
+    const url = `https://api.sportsdata.io/golf/v2/json/PlayerTournamentHoleScores/688?key=${apiKey}`;
 
     try {
         console.log("Connecting to SportsDataIO...");
