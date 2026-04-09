@@ -25,26 +25,30 @@
 </table>
 
 <script>
-
 async function loadLeaderboard() {
   const res = await fetch('data/fantasy.json');
   const obj = await res.json();
 
   // Convert object → array
-  const data = Object.entries(obj).map(([team, info]) => ({
-    team,
+  let teams = Object.entries(obj).map(([teamName, info]) => ({
+    team: teamName,
     total: info.total
   }));
+
+  // Sort by total DESC
+  teams.sort((a, b) => b.total - a.total);
 
   const tbody = document.querySelector('#leaderboard tbody');
   tbody.innerHTML = '';
 
-  data.forEach(row => {
+  teams.forEach(row => {
     const tr = document.createElement('tr');
+
     tr.innerHTML = `
-      <td>${row.team}</td>
+      <td><a href="team.html?team=${encodeURIComponent(row.team)}">${row.team}</a></td>
       <td>${row.total}</td>
     `;
+
     tbody.appendChild(tr);
   });
 }
