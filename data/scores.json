@@ -1,278 +1,4853 @@
 {
   "40000001": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 2,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 2,
+        "par": 5
+      },
+      "16": {
+        "strokes": 1,
+        "par": 3
+      },
+      "17": {
+        "strokes": 2,
+        "par": 4
+      },
+      "18": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40000002": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 1,
+        "par": 4
+      },
+      "2": {
+        "strokes": 1,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 1,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 3,
+        "par": 5
+      },
+      "16": {
+        "strokes": 1,
+        "par": 3
+      }
+    }
   },
   "40000004": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40000007": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 1,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40000010": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      }
+    }
   },
   "40000012": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40000013": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 1,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40000015": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 2,
+        "par": 5
+      },
+      "16": {
+        "strokes": 1,
+        "par": 3
+      },
+      "17": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40000017": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 1,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40000115": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40000152": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 1,
+        "par": 4
+      },
+      "15": {
+        "strokes": 2,
+        "par": 5
+      },
+      "16": {
+        "strokes": 1,
+        "par": 3
+      },
+      "17": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40000194": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 1,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 2,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 2,
+        "par": 5
+      },
+      "16": {
+        "strokes": 1,
+        "par": 3
+      },
+      "17": {
+        "strokes": 2,
+        "par": 4
+      },
+      "18": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40000200": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 2,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 2,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 3,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 2,
+        "par": 5
+      },
+      "16": {
+        "strokes": 1,
+        "par": 3
+      },
+      "17": {
+        "strokes": 2,
+        "par": 4
+      },
+      "18": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40000205": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 1,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 1,
+        "par": 4
+      },
+      "4": {
+        "strokes": 2,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 2,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40000216": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      }
+    }
   },
   "40000270": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 3,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      }
+    }
   },
   "40000285": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 1,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      }
+    }
   },
   "40000314": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 2,
+        "par": 5
+      },
+      "16": {
+        "strokes": 1,
+        "par": 3
+      },
+      "17": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40000322": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 3,
+        "par": 5
+      },
+      "3": {
+        "strokes": 1,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 3,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 2,
+        "par": 5
+      }
+    }
   },
   "40000387": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      }
+    }
   },
   "40000430": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 2,
+        "par": 5
+      }
+    }
   },
   "40000432": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 1,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 1,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 2,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 1,
+        "par": 4
+      },
+      "15": {
+        "strokes": 2,
+        "par": 5
+      },
+      "16": {
+        "strokes": 2,
+        "par": 3
+      }
+    }
   },
   "40000448": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 3,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 2,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 2,
+        "par": 5
+      },
+      "16": {
+        "strokes": 1,
+        "par": 3
+      },
+      "17": {
+        "strokes": 1,
+        "par": 4
+      },
+      "18": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40000479": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40000585": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 1,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 2,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 2,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      }
+    }
   },
   "40000596": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      }
+    }
   },
   "40000615": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 2,
+        "par": 3
+      },
+      "5": {
+        "strokes": 1,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 2,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40000638": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 1,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 2,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 2,
+        "par": 5
+      },
+      "16": {
+        "strokes": 1,
+        "par": 3
+      },
+      "17": {
+        "strokes": 2,
+        "par": 4
+      },
+      "18": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40000763": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40000764": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 3,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      }
+    }
   },
   "40000775": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 2,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 2,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 2,
+        "par": 5
+      },
+      "16": {
+        "strokes": 1,
+        "par": 3
+      },
+      "17": {
+        "strokes": 2,
+        "par": 4
+      },
+      "18": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40000859": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 1,
+        "par": 5
+      },
+      "16": {
+        "strokes": 1,
+        "par": 3
+      },
+      "17": {
+        "strokes": 2,
+        "par": 4
+      },
+      "18": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40000890": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 1,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 2,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 2,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 1,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 1,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 2,
+        "par": 5
+      },
+      "16": {
+        "strokes": 1,
+        "par": 3
+      },
+      "17": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40000965": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 1,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 1,
+        "par": 4
+      }
+    }
   },
   "40000977": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 2,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      }
+    }
   },
   "40000991": {
+    "round": 1,
     "holes": {}
   },
   "40001064": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 3,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 2,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      }
+    }
   },
   "40001087": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 1,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 3,
+        "par": 5
+      },
+      "16": {
+        "strokes": 2,
+        "par": 3
+      },
+      "17": {
+        "strokes": 2,
+        "par": 4
+      },
+      "18": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40001097": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 3,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 2,
+        "par": 3
+      },
+      "5": {
+        "strokes": 3,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 2,
+        "par": 5
+      },
+      "16": {
+        "strokes": 1,
+        "par": 3
+      },
+      "17": {
+        "strokes": 2,
+        "par": 4
+      },
+      "18": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40001199": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40001224": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 2,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 2,
+        "par": 3
+      },
+      "7": {
+        "strokes": 3,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40001274": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 1,
+        "par": 5
+      },
+      "3": {
+        "strokes": 1,
+        "par": 4
+      }
+    }
   },
   "40001290": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 2,
+        "par": 5
+      },
+      "16": {
+        "strokes": 1,
+        "par": 3
+      },
+      "17": {
+        "strokes": 2,
+        "par": 4
+      },
+      "18": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40001317": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 2,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 2,
+        "par": 5
+      },
+      "16": {
+        "strokes": 2,
+        "par": 3
+      },
+      "17": {
+        "strokes": 2,
+        "par": 4
+      },
+      "18": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40001333": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 3,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 2,
+        "par": 5
+      },
+      "16": {
+        "strokes": 1,
+        "par": 3
+      },
+      "17": {
+        "strokes": 2,
+        "par": 4
+      },
+      "18": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40001353": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      }
+    }
   },
   "40001424": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 1,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 2,
+        "par": 5
+      },
+      "16": {
+        "strokes": 1,
+        "par": 3
+      },
+      "17": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40001434": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      }
+    }
   },
   "40001536": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 3,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 2,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 3,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40001565": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 1,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 3,
+        "par": 5
+      },
+      "9": {
+        "strokes": 1,
+        "par": 4
+      }
+    }
   },
   "40001594": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 1,
+        "par": 4
+      }
+    }
   },
   "40001638": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 2,
+        "par": 3
+      },
+      "5": {
+        "strokes": 1,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 1,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 2,
+        "par": 5
+      }
+    }
   },
   "40002249": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 1,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 1,
+        "par": 4
+      },
+      "10": {
+        "strokes": 1,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 2,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 2,
+        "par": 5
+      },
+      "16": {
+        "strokes": 1,
+        "par": 3
+      },
+      "17": {
+        "strokes": 1,
+        "par": 4
+      },
+      "18": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40002343": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      }
+    }
   },
   "40002471": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 1,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40002578": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 1,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40002605": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 2,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 3,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      }
+    }
   },
   "40002648": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 1,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 3,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 2,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 3,
+        "par": 5
+      },
+      "16": {
+        "strokes": 2,
+        "par": 3
+      },
+      "17": {
+        "strokes": 2,
+        "par": 4
+      },
+      "18": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40002651": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40002785": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      }
+    }
   },
   "40002911": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 1,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 3,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40002925": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 2,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      }
+    }
   },
   "40002950": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 1,
+        "par": 4
+      }
+    }
   },
   "40003142": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 2,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 1,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 3,
+        "par": 5
+      },
+      "16": {
+        "strokes": 2,
+        "par": 3
+      },
+      "17": {
+        "strokes": 2,
+        "par": 4
+      },
+      "18": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40003147": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 2,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 1,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40003193": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 2,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 3,
+        "par": 5
+      },
+      "9": {
+        "strokes": 1,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40003218": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 3,
+        "par": 4
+      },
+      "4": {
+        "strokes": 2,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 2,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      }
+    }
   },
   "40003220": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 3,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 1,
+        "par": 4
+      },
+      "10": {
+        "strokes": 1,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 2,
+        "par": 3
+      },
+      "13": {
+        "strokes": 3,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 3,
+        "par": 5
+      },
+      "16": {
+        "strokes": 1,
+        "par": 3
+      },
+      "17": {
+        "strokes": 2,
+        "par": 4
+      },
+      "18": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40003252": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      }
+    }
   },
   "40003315": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 2,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 1,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 3,
+        "par": 4
+      },
+      "11": {
+        "strokes": 3,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 2,
+        "par": 5
+      },
+      "16": {
+        "strokes": 2,
+        "par": 3
+      },
+      "17": {
+        "strokes": 2,
+        "par": 4
+      },
+      "18": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40003478": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 3,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 3,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 3,
+        "par": 5
+      },
+      "16": {
+        "strokes": 2,
+        "par": 3
+      },
+      "17": {
+        "strokes": 3,
+        "par": 4
+      },
+      "18": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40003519": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 2,
+        "par": 3
+      },
+      "13": {
+        "strokes": 3,
+        "par": 5
+      },
+      "14": {
+        "strokes": 1,
+        "par": 4
+      },
+      "15": {
+        "strokes": 3,
+        "par": 5
+      },
+      "16": {
+        "strokes": 1,
+        "par": 3
+      }
+    }
   },
   "40003609": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 2,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40003697": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 3,
+        "par": 5
+      }
+    }
   },
   "40003725": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 2,
+        "par": 3
+      }
+    }
   },
   "40003812": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 1,
+        "par": 4
+      },
+      "4": {
+        "strokes": 2,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 1,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 3,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 2,
+        "par": 5
+      },
+      "16": {
+        "strokes": 1,
+        "par": 3
+      },
+      "17": {
+        "strokes": 2,
+        "par": 4
+      },
+      "18": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40004702": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 3,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 1,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 2,
+        "par": 3
+      },
+      "13": {
+        "strokes": 3,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 3,
+        "par": 5
+      },
+      "16": {
+        "strokes": 2,
+        "par": 3
+      },
+      "17": {
+        "strokes": 2,
+        "par": 4
+      },
+      "18": {
+        "strokes": 3,
+        "par": 4
+      }
+    }
   },
   "40004729": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 1,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 3,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      }
+    }
   },
   "40004738": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 3,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 3,
+        "par": 5
+      },
+      "16": {
+        "strokes": 1,
+        "par": 3
+      },
+      "17": {
+        "strokes": 2,
+        "par": 4
+      },
+      "18": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40005036": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 2,
+        "par": 5
+      },
+      "16": {
+        "strokes": 1,
+        "par": 3
+      },
+      "17": {
+        "strokes": 2,
+        "par": 4
+      },
+      "18": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40005053": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 2,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      }
+    }
   },
   "40005060": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 1,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      }
+    }
   },
   "40005133": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40005232": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 1,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 2,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 3,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 1,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 2,
+        "par": 5
+      },
+      "16": {
+        "strokes": 1,
+        "par": 3
+      },
+      "17": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40005299": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 3,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 2,
+        "par": 3
+      },
+      "7": {
+        "strokes": 3,
+        "par": 4
+      },
+      "8": {
+        "strokes": 3,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 2,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 2,
+        "par": 5
+      },
+      "16": {
+        "strokes": 1,
+        "par": 3
+      },
+      "17": {
+        "strokes": 2,
+        "par": 4
+      },
+      "18": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40006004": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 3,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 2,
+        "par": 5
+      },
+      "16": {
+        "strokes": 1,
+        "par": 3
+      },
+      "17": {
+        "strokes": 2,
+        "par": 4
+      },
+      "18": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40006268": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 2,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 2,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 2,
+        "par": 3
+      },
+      "13": {
+        "strokes": 3,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40006294": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 1,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 1,
+        "par": 4
+      }
+    }
   },
   "40006412": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 2,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 1,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 2,
+        "par": 5
+      },
+      "16": {
+        "strokes": 1,
+        "par": 3
+      },
+      "17": {
+        "strokes": 2,
+        "par": 4
+      },
+      "18": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40006413": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 3,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 3,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      },
+      "12": {
+        "strokes": 2,
+        "par": 3
+      },
+      "13": {
+        "strokes": 2,
+        "par": 5
+      },
+      "14": {
+        "strokes": 2,
+        "par": 4
+      },
+      "15": {
+        "strokes": 3,
+        "par": 5
+      },
+      "16": {
+        "strokes": 1,
+        "par": 3
+      },
+      "17": {
+        "strokes": 2,
+        "par": 4
+      },
+      "18": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   },
   "40006414": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 2,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 2,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 2,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      }
+    }
   },
   "40006415": {
-    "holes": {}
+    "round": 1,
+    "holes": {
+      "1": {
+        "strokes": 1,
+        "par": 4
+      },
+      "2": {
+        "strokes": 2,
+        "par": 5
+      },
+      "3": {
+        "strokes": 2,
+        "par": 4
+      },
+      "4": {
+        "strokes": 1,
+        "par": 3
+      },
+      "5": {
+        "strokes": 2,
+        "par": 4
+      },
+      "6": {
+        "strokes": 1,
+        "par": 3
+      },
+      "7": {
+        "strokes": 2,
+        "par": 4
+      },
+      "8": {
+        "strokes": 2,
+        "par": 5
+      },
+      "9": {
+        "strokes": 2,
+        "par": 4
+      },
+      "10": {
+        "strokes": 2,
+        "par": 4
+      },
+      "11": {
+        "strokes": 2,
+        "par": 4
+      }
+    }
   }
 }
