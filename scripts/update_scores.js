@@ -36,9 +36,9 @@ async function updateData() {
             }
         
             for (const hole of player.Holes) {
-                scores[playerId].holes[hole.HoleNumber] = {
-                    strokes: hole.Strokes,
-                    par: hole.Par
+                scores[playerId].holes[hole.Number] = {
+                strokes: hole.Score,
+                par: hole.Par
                 };
             }
         }
