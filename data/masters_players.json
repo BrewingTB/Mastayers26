@@ -1,0 +1,370 @@
+[
+  {
+    "PlayerID": 40001087,
+    "FullName": "Jose Maria Olazabal"
+  },
+  {
+    "PlayerID": 40000200,
+    "FullName": "Angel Cabrera"
+  },
+  {
+    "PlayerID": 40002648,
+    "FullName": "Max Greyserman"
+  },
+  {
+    "PlayerID": 40006412,
+    "FullName": "Jackson Herrington"
+  },
+  {
+    "PlayerID": 40003220,
+    "FullName": "Rasmus Hojgaard"
+  },
+  {
+    "PlayerID": 40000638,
+    "FullName": "Max Homa"
+  },
+  {
+    "PlayerID": 40003812,
+    "FullName": "Casey Jarvis"
+  },
+  {
+    "PlayerID": 40002249,
+    "FullName": "Kurt Kitayama"
+  },
+  {
+    "PlayerID": 40005036,
+    "FullName": "Matt McCarty"
+  },
+  {
+    "PlayerID": 40003142,
+    "FullName": "Kristoffer Reitan"
+  },
+  {
+    "PlayerID": 40001317,
+    "FullName": "Vijay Singh"
+  },
+  {
+    "PlayerID": 40003478,
+    "FullName": "Sami Valimaki"
+  },
+  {
+    "PlayerID": 40000859,
+    "FullName": "Hao-Tong Li"
+  },
+  {
+    "PlayerID": 40004738,
+    "FullName": "Rasmus Neergaard-Petersen"
+  },
+  {
+    "PlayerID": 40001290,
+    "FullName": "Charl Schwartzel"
+  },
+  {
+    "PlayerID": 40000448,
+    "FullName": "Ryan Fox"
+  },
+  {
+    "PlayerID": 40004702,
+    "FullName": "Naoyuki Kataoka"
+  },
+  {
+    "PlayerID": 40006004,
+    "FullName": "Johnny Keefer"
+  },
+  {
+    "PlayerID": 40005299,
+    "FullName": "Aldrich Potgieter"
+  },
+  {
+    "PlayerID": 40001097,
+    "FullName": "Carlos Ortiz"
+  },
+  {
+    "PlayerID": 40003252,
+    "FullName": "Ludvig Aberg"
+  },
+  {
+    "PlayerID": 40000115,
+    "FullName": "Daniel Berger"
+  },
+  {
+    "PlayerID": 40003519,
+    "FullName": "Akshay Bhatia"
+  },
+  {
+    "PlayerID": 40000152,
+    "FullName": "Keegan Bradley"
+  },
+  {
+    "PlayerID": 40005053,
+    "FullName": "Michael Brennan"
+  },
+  {
+    "PlayerID": 40005133,
+    "FullName": "Jacob Bridgeman"
+  },
+  {
+    "PlayerID": 40000194,
+    "FullName": "Sam Burns"
+  },
+  {
+    "PlayerID": 40000205,
+    "FullName": "Brian Campbell"
+  },
+  {
+    "PlayerID": 40000216,
+    "FullName": "Patrick Cantlay"
+  },
+  {
+    "PlayerID": 40002651,
+    "FullName": "Wyndham Clark"
+  },
+  {
+    "PlayerID": 40000270,
+    "FullName": "Corey Conners"
+  },
+  {
+    "PlayerID": 40000285,
+    "FullName": "Fred Couples"
+  },
+  {
+    "PlayerID": 40000314,
+    "FullName": "Jason Day"
+  },
+  {
+    "PlayerID": 40000322,
+    "FullName": "Bryson DeChambeau"
+  },
+  {
+    "PlayerID": 40003315,
+    "FullName": "Nicolas Echavarria"
+  },
+  {
+    "PlayerID": 40000387,
+    "FullName": "Harris English"
+  },
+  {
+    "PlayerID": 40006294,
+    "FullName": "Ethan Fang"
+  },
+  {
+    "PlayerID": 40000430,
+    "FullName": "Matt Fitzpatrick"
+  },
+  {
+    "PlayerID": 40000432,
+    "FullName": "Tommy Fleetwood"
+  },
+  {
+    "PlayerID": 40000479,
+    "FullName": "Sergio Garcia"
+  },
+  {
+    "PlayerID": 40005232,
+    "FullName": "Ryan Gerard"
+  },
+  {
+    "PlayerID": 40005060,
+    "FullName": "Chris Gotterup"
+  },
+  {
+    "PlayerID": 40002343,
+    "FullName": "Ben Griffin"
+  },
+  {
+    "PlayerID": 40003725,
+    "FullName": "Harry Hall"
+  },
+  {
+    "PlayerID": 40000585,
+    "FullName": "Brian Harman"
+  },
+  {
+    "PlayerID": 40000596,
+    "FullName": "Tyrrell Hatton"
+  },
+  {
+    "PlayerID": 40000615,
+    "FullName": "Russell Henley"
+  },
+  {
+    "PlayerID": 40003193,
+    "FullName": "Nicolai Hojgaard"
+  },
+  {
+    "PlayerID": 40006413,
+    "FullName": "Brandon Holtz"
+  },
+  {
+    "PlayerID": 40003218,
+    "FullName": "Viktor Hovland"
+  },
+  {
+    "PlayerID": 40006268,
+    "FullName": "Mason Howell"
+  },
+  {
+    "PlayerID": 40002605,
+    "FullName": "Sung-Jae Im"
+  },
+  {
+    "PlayerID": 40000015,
+    "FullName": "Dustin Johnson"
+  },
+  {
+    "PlayerID": 40000012,
+    "FullName": "Zach Johnson"
+  },
+  {
+    "PlayerID": 40000763,
+    "FullName": "Michael Kim"
+  },
+  {
+    "PlayerID": 40000764,
+    "FullName": "Si Woo Kim"
+  },
+  {
+    "PlayerID": 40000775,
+    "FullName": "Jake Knapp"
+  },
+  {
+    "PlayerID": 40000007,
+    "FullName": "Brooks Koepka"
+  },
+  {
+    "PlayerID": 40006414,
+    "FullName": "Pongsapak Laopakdee"
+  },
+  {
+    "PlayerID": 40002925,
+    "FullName": "Min Woo Lee"
+  },
+  {
+    "PlayerID": 40000890,
+    "FullName": "Shane Lowry"
+  },
+  {
+    "PlayerID": 40002950,
+    "FullName": "Robert MacIntyre"
+  },
+  {
+    "PlayerID": 40000017,
+    "FullName": "Hideki Matsuyama"
+  },
+  {
+    "PlayerID": 40000965,
+    "FullName": "Rory McIlroy"
+  },
+  {
+    "PlayerID": 40003147,
+    "FullName": "Tom McKibbin"
+  },
+  {
+    "PlayerID": 40000977,
+    "FullName": "Maverick McNealy"
+  },
+  {
+    "PlayerID": 40000991,
+    "FullName": "Phil Mickelson"
+  },
+  {
+    "PlayerID": 40002471,
+    "FullName": "Collin Morikawa"
+  },
+  {
+    "PlayerID": 40001064,
+    "FullName": "Alexander Noren"
+  },
+  {
+    "PlayerID": 40002911,
+    "FullName": "Andrew Novak"
+  },
+  {
+    "PlayerID": 40003697,
+    "FullName": "Marco Penge"
+  },
+  {
+    "PlayerID": 40006415,
+    "FullName": "Mateo Pulcini"
+  },
+  {
+    "PlayerID": 40001199,
+    "FullName": "Jon Rahm"
+  },
+  {
+    "PlayerID": 40002578,
+    "FullName": "Aaron Rai"
+  },
+  {
+    "PlayerID": 40000002,
+    "FullName": "Patrick Reed"
+  },
+  {
+    "PlayerID": 40001224,
+    "FullName": "Davis Riley"
+  },
+  {
+    "PlayerID": 40000013,
+    "FullName": "Justin Rose"
+  },
+  {
+    "PlayerID": 40001638,
+    "FullName": "Xander Schauffele"
+  },
+  {
+    "PlayerID": 40001274,
+    "FullName": "Scottie Scheffler"
+  },
+  {
+    "PlayerID": 40000010,
+    "FullName": "Adam Scott"
+  },
+  {
+    "PlayerID": 40001333,
+    "FullName": "Cameron Smith"
+  },
+  {
+    "PlayerID": 40001353,
+    "FullName": "J.J. Spaun"
+  },
+  {
+    "PlayerID": 40000004,
+    "FullName": "Jordan Spieth"
+  },
+  {
+    "PlayerID": 40004729,
+    "FullName": "Sam Stevens"
+  },
+  {
+    "PlayerID": 40002785,
+    "FullName": "Sepp Straka"
+  },
+  {
+    "PlayerID": 40001424,
+    "FullName": "Nick Taylor"
+  },
+  {
+    "PlayerID": 40001434,
+    "FullName": "Justin Thomas"
+  },
+  {
+    "PlayerID": 40000001,
+    "FullName": "Bubba Watson"
+  },
+  {
+    "PlayerID": 40001536,
+    "FullName": "Mike Weir"
+  },
+  {
+    "PlayerID": 40001565,
+    "FullName": "Danny Willett"
+  },
+  {
+    "PlayerID": 40001594,
+    "FullName": "Gary Woodland"
+  },
+  {
+    "PlayerID": 40003609,
+    "FullName": "Cameron Young"
+  }
+]
