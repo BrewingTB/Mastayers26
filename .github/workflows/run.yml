@@ -29,14 +29,13 @@ jobs:
       - name: Run scoring engine
         run: node scripts/scoring.js
         
-        name: Build dataset
+      - name: Build dataset
         run: node scripts/report.js
      
       - name: Commit updated leaderboard
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
-          git add data/scores.json data/fantasy.json
-          git add data/dataset.json data/fantasy.json
+          git add data/scores.json data/fantasy.json data/dataset.json
           git commit -m "Auto-update scores and leaderboard" || echo "No changes"
           git push
