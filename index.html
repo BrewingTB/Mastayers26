@@ -27,20 +27,25 @@
 <script>
 async function loadLeaderboard() {
   const res = await fetch('data/fantasy.json');
-  const data = await res.json();
+  const obj = await res.json();
+
+  // Convert object → array
+  const data = Object.entries(obj).map(([team, info]) => ({
+    team,
+    total: info.total
+  }));
 
   const tbody = document.querySelector('#leaderboard tbody');
   tbody.innerHTML = '';
 
-  for (const row of data) {
+  data.forEach(row => {
     const tr = document.createElement('tr');
     tr.innerHTML = `
       <td>${row.team}</td>
-      <td>${row.playerName}</td>
       <td>${row.total}</td>
     `;
     tbody.appendChild(tr);
-  }
+  });
 }
 
 loadLeaderboard();
