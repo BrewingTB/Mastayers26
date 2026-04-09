@@ -1,2 +1,0 @@
-- name: Pull player profiles
-  run: node scripts/pullPlayers.js
