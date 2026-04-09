@@ -48,7 +48,7 @@ for (const teamName of Object.keys(teamPlayers)) {
             dataset.push({
                 team: teamName,
                 playerId,
-                playerName: playerScore.name || playerId, // optional if you add names
+                playerName: playerScore.name,
                 hole,
                 round,
                 strokes,
