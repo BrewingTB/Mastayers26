@@ -1,0 +1,38 @@
+name: Update Scores and Leaderboard
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"   # every 10 minutes
+  workflow_dispatch:         # manual run button
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Pull latest scores from SportsDataIO
+        env:
+          GOLF_API_KEY: ${{ secrets.GOLF_API_KEY }}
+        run: node scripts/update_scores.js
+
+      - name: Run scoring engine
+        run: node scripts/scoring.js
+
+      - name: Commit updated leaderboard
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add data/scores.json data/fantasy.json
+          git commit -m "Auto-update scores and leaderboard" || echo "No changes"
+          git push
