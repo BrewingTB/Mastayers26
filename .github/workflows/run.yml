@@ -3,7 +3,7 @@ name: Update Scores and Leaderboard
 on:
   schedule:
     - cron: "*/10 * * * *"   # every 10 minutes
-  workflow_dispatch:         # manual run button
+  workflow_dispatch:
 
 jobs:
   build:
@@ -17,9 +17,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 20
-
-      - name: Install dependencies
-        run: npm install
 
       - name: Pull latest scores from SportsDataIO
         env:
