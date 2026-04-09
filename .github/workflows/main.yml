@@ -35,5 +35,7 @@ jobs:
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
           git add data.json data/players.json
+          git add data.json data/masters_players.json
+          git add data.json data/rankings.json
           git commit -m "Update scores" || exit 0
           git push
