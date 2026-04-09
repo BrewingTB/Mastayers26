@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Team Details</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { padding: 8px; border-bottom: 1px solid #ddd; }
+  </style>
+</head>
+<body>
+
+<h1 id="teamName"></h1>
+
+<table id="players">
+  <thead>
+    <tr>
+      <th>Player</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<script>
+async function loadTeam() {
+  const params = new URLSearchParams(window.location.search);
+  const team = params.get('team');
+
+  document.getElementById('teamName').textContent = team;
+
+  const fantasyRes = await fetch('data/fantasy.json');
+  const fantasy = await fantasyRes.json();
+
+  const datasetRes = await fetch('data/dataset.json');
+  const dataset = await datasetRes.json();
+
+  // Filter dataset for this team
+  const rows = dataset.filter(r => r.team === team);
+
+  // Sum points per player
+  const players = {};
+  rows.forEach(r => {
+    if (!players[r.playerName]) players[r.playerName] = 0;
+    players[r.playerName] += r.stableford;
+  });
+
+  // Convert to array + sort
+  const playerRows = Object.entries(players).map(([name, total]) => ({
+    name,
+    total
+  })).sort((a, b) => b.total - a.total);
+
+  const tbody = document.querySelector('#players tbody');
+  tbody.innerHTML = '';
+
+  playerRows.forEach(p => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>${p.name}</td>
+      <td>${p.total}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+loadTeam();
+</script>
+
+</body>
+</html>
