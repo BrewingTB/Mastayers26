@@ -15,10 +15,6 @@ async function updateData() {
         }
 
         const data = await response.json();
-
-        console.log("DEBUG: Players returned:", data.length);
-        console.log("DEBUG: Sample player:", data[0]);
-
         let scores = {};
 
         for (const player of data) {
