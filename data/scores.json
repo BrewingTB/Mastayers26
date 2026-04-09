@@ -1,5 +1,6 @@
 {
   "40000001": {
+    "name": "Bubba Watson",
     "round": 1,
     "holes": {
       "1": {
@@ -77,6 +78,7 @@
     }
   },
   "40000002": {
+    "name": "Patrick Reed",
     "round": 1,
     "holes": {
       "1": {
@@ -154,6 +156,7 @@
     }
   },
   "40000004": {
+    "name": "Jordan Spieth",
     "round": 1,
     "holes": {
       "1": {
@@ -199,10 +202,15 @@
       "11": {
         "strokes": 4,
         "par": 4
+      },
+      "12": {
+        "strokes": 3,
+        "par": 3
       }
     }
   },
   "40000007": {
+    "name": "Brooks Koepka",
     "round": 1,
     "holes": {
       "1": {
@@ -248,10 +256,15 @@
       "11": {
         "strokes": 4,
         "par": 4
+      },
+      "12": {
+        "strokes": 3,
+        "par": 3
       }
     }
   },
   "40000010": {
+    "name": "Adam Scott",
     "round": 1,
     "holes": {
       "1": {
@@ -313,10 +326,15 @@
       "15": {
         "strokes": 6,
         "par": 5
+      },
+      "16": {
+        "strokes": 2,
+        "par": 3
       }
     }
   },
   "40000012": {
+    "name": "Zach Johnson",
     "round": 1,
     "holes": {
       "1": {
@@ -390,6 +408,7 @@
     }
   },
   "40000013": {
+    "name": "Justin Rose",
     "round": 1,
     "holes": {
       "1": {
@@ -435,10 +454,15 @@
       "11": {
         "strokes": 4,
         "par": 4
+      },
+      "12": {
+        "strokes": 3,
+        "par": 3
       }
     }
   },
   "40000015": {
+    "name": "Dustin Johnson",
     "round": 1,
     "holes": {
       "1": {
@@ -516,6 +540,7 @@
     }
   },
   "40000017": {
+    "name": "Hideki Matsuyama",
     "round": 1,
     "holes": {
       "1": {
@@ -593,6 +618,7 @@
     }
   },
   "40000115": {
+    "name": "Daniel Berger",
     "round": 1,
     "holes": {
       "1": {
@@ -654,10 +680,15 @@
       "15": {
         "strokes": 5,
         "par": 5
+      },
+      "16": {
+        "strokes": 3,
+        "par": 3
       }
     }
   },
   "40000152": {
+    "name": "Keegan Bradley",
     "round": 1,
     "holes": {
       "1": {
@@ -735,6 +766,7 @@
     }
   },
   "40000194": {
+    "name": "Sam Burns",
     "round": 1,
     "holes": {
       "1": {
@@ -812,6 +844,7 @@
     }
   },
   "40000200": {
+    "name": "Angel Cabrera",
     "round": 1,
     "holes": {
       "1": {
@@ -889,6 +922,7 @@
     }
   },
   "40000205": {
+    "name": "Brian Campbell",
     "round": 1,
     "holes": {
       "1": {
@@ -966,6 +1000,7 @@
     }
   },
   "40000216": {
+    "name": "Patrick Cantlay",
     "round": 1,
     "holes": {
       "1": {
@@ -1043,6 +1078,7 @@
     }
   },
   "40000270": {
+    "name": "Corey Conners",
     "round": 1,
     "holes": {
       "1": {
@@ -1100,6 +1136,7 @@
     }
   },
   "40000285": {
+    "name": "Fred Couples",
     "round": 1,
     "holes": {
       "1": {
@@ -1161,6 +1198,7 @@
     }
   },
   "40000314": {
+    "name": "Jason Day",
     "round": 1,
     "holes": {
       "1": {
@@ -1238,6 +1276,7 @@
     }
   },
   "40000322": {
+    "name": "Bryson DeChambeau",
     "round": 1,
     "holes": {
       "1": {
@@ -1315,6 +1354,7 @@
     }
   },
   "40000387": {
+    "name": "Harris English",
     "round": 1,
     "holes": {
       "1": {
@@ -1352,10 +1392,15 @@
       "9": {
         "strokes": 4,
         "par": 4
+      },
+      "10": {
+        "strokes": 3,
+        "par": 4
       }
     }
   },
   "40000430": {
+    "name": "Matt Fitzpatrick",
     "round": 1,
     "holes": {
       "1": {
@@ -1433,6 +1478,7 @@
     }
   },
   "40000432": {
+    "name": "Tommy Fleetwood",
     "round": 1,
     "holes": {
       "1": {
@@ -1510,6 +1556,7 @@
     }
   },
   "40000448": {
+    "name": "Ryan Fox",
     "round": 1,
     "holes": {
       "1": {
@@ -1587,6 +1634,7 @@
     }
   },
   "40000479": {
+    "name": "Sergio Garcia",
     "round": 1,
     "holes": {
       "1": {
@@ -1648,6 +1696,7 @@
     }
   },
   "40000585": {
+    "name": "Brian Harman",
     "round": 1,
     "holes": {
       "1": {
@@ -1709,10 +1758,15 @@
       "15": {
         "strokes": 5,
         "par": 5
+      },
+      "16": {
+        "strokes": 4,
+        "par": 3
       }
     }
   },
   "40000596": {
+    "name": "Tyrrell Hatton",
     "round": 1,
     "holes": {
       "1": {
@@ -1762,10 +1816,15 @@
       "12": {
         "strokes": 3,
         "par": 3
+      },
+      "13": {
+        "strokes": 5,
+        "par": 5
       }
     }
   },
   "40000615": {
+    "name": "Russell Henley",
     "round": 1,
     "holes": {
       "1": {
@@ -1843,6 +1902,7 @@
     }
   },
   "40000638": {
+    "name": "Max Homa",
     "round": 1,
     "holes": {
       "1": {
@@ -1920,6 +1980,7 @@
     }
   },
   "40000763": {
+    "name": "Michael Kim",
     "round": 1,
     "holes": {
       "1": {
@@ -1993,6 +2054,7 @@
     }
   },
   "40000764": {
+    "name": "Si Woo Kim",
     "round": 1,
     "holes": {
       "1": {
@@ -2030,10 +2092,15 @@
       "9": {
         "strokes": 4,
         "par": 4
+      },
+      "10": {
+        "strokes": 4,
+        "par": 4
       }
     }
   },
   "40000775": {
+    "name": "Jake Knapp",
     "round": 1,
     "holes": {
       "1": {
@@ -2111,6 +2178,7 @@
     }
   },
   "40000859": {
+    "name": "Hao-Tong Li",
     "round": 1,
     "holes": {
       "1": {
@@ -2188,6 +2256,7 @@
     }
   },
   "40000890": {
+    "name": "Shane Lowry",
     "round": 1,
     "holes": {
       "1": {
@@ -2265,6 +2334,7 @@
     }
   },
   "40000965": {
+    "name": "Rory McIlroy",
     "round": 1,
     "holes": {
       "1": {
@@ -2342,6 +2412,7 @@
     }
   },
   "40000977": {
+    "name": "Maverick McNealy",
     "round": 1,
     "holes": {
       "1": {
@@ -2395,10 +2466,12 @@
     }
   },
   "40000991": {
+    "name": "Phil Mickelson",
     "round": 1,
     "holes": {}
   },
   "40001064": {
+    "name": "Alexander Noren",
     "round": 1,
     "holes": {
       "1": {
@@ -2476,6 +2549,7 @@
     }
   },
   "40001087": {
+    "name": "Jose Maria Olazabal",
     "round": 1,
     "holes": {
       "1": {
@@ -2553,6 +2627,7 @@
     }
   },
   "40001097": {
+    "name": "Carlos Ortiz",
     "round": 1,
     "holes": {
       "1": {
@@ -2630,6 +2705,7 @@
     }
   },
   "40001199": {
+    "name": "Jon Rahm",
     "round": 1,
     "holes": {
       "1": {
@@ -2683,6 +2759,7 @@
     }
   },
   "40001224": {
+    "name": "Davis Riley",
     "round": 1,
     "holes": {
       "1": {
@@ -2756,6 +2833,7 @@
     }
   },
   "40001274": {
+    "name": "Scottie Scheffler",
     "round": 1,
     "holes": {
       "1": {
@@ -2801,6 +2879,7 @@
     }
   },
   "40001290": {
+    "name": "Charl Schwartzel",
     "round": 1,
     "holes": {
       "1": {
@@ -2878,6 +2957,7 @@
     }
   },
   "40001317": {
+    "name": "Vijay Singh",
     "round": 1,
     "holes": {
       "1": {
@@ -2955,6 +3035,7 @@
     }
   },
   "40001333": {
+    "name": "Cameron Smith",
     "round": 1,
     "holes": {
       "1": {
@@ -3032,6 +3113,7 @@
     }
   },
   "40001353": {
+    "name": "J.J. Spaun",
     "round": 1,
     "holes": {
       "1": {
@@ -3085,6 +3167,7 @@
     }
   },
   "40001424": {
+    "name": "Nick Taylor",
     "round": 1,
     "holes": {
       "1": {
@@ -3162,6 +3245,7 @@
     }
   },
   "40001434": {
+    "name": "Justin Thomas",
     "round": 1,
     "holes": {
       "1": {
@@ -3203,10 +3287,15 @@
       "10": {
         "strokes": 4,
         "par": 4
+      },
+      "11": {
+        "strokes": 5,
+        "par": 4
       }
     }
   },
   "40001536": {
+    "name": "Mike Weir",
     "round": 1,
     "holes": {
       "1": {
@@ -3284,6 +3373,7 @@
     }
   },
   "40001565": {
+    "name": "Danny Willett",
     "round": 1,
     "holes": {
       "1": {
@@ -3349,10 +3439,15 @@
       "16": {
         "strokes": 3,
         "par": 3
+      },
+      "17": {
+        "strokes": 5,
+        "par": 4
       }
     }
   },
   "40001594": {
+    "name": "Gary Woodland",
     "round": 1,
     "holes": {
       "1": {
@@ -3398,6 +3493,7 @@
     }
   },
   "40001638": {
+    "name": "Xander Schauffele",
     "round": 1,
     "holes": {
       "1": {
@@ -3475,6 +3571,7 @@
     }
   },
   "40002249": {
+    "name": "Kurt Kitayama",
     "round": 1,
     "holes": {
       "1": {
@@ -3552,6 +3649,7 @@
     }
   },
   "40002343": {
+    "name": "Ben Griffin",
     "round": 1,
     "holes": {
       "1": {
@@ -3593,10 +3691,15 @@
       "10": {
         "strokes": 4,
         "par": 4
+      },
+      "11": {
+        "strokes": 4,
+        "par": 4
       }
     }
   },
   "40002471": {
+    "name": "Collin Morikawa",
     "round": 1,
     "holes": {
       "1": {
@@ -3674,6 +3777,7 @@
     }
   },
   "40002578": {
+    "name": "Aaron Rai",
     "round": 1,
     "holes": {
       "1": {
@@ -3735,6 +3839,7 @@
     }
   },
   "40002605": {
+    "name": "Sung-Jae Im",
     "round": 1,
     "holes": {
       "1": {
@@ -3812,6 +3917,7 @@
     }
   },
   "40002648": {
+    "name": "Max Greyserman",
     "round": 1,
     "holes": {
       "1": {
@@ -3889,6 +3995,7 @@
     }
   },
   "40002651": {
+    "name": "Wyndham Clark",
     "round": 1,
     "holes": {
       "1": {
@@ -3966,6 +4073,7 @@
     }
   },
   "40002785": {
+    "name": "Sepp Straka",
     "round": 1,
     "holes": {
       "1": {
@@ -4007,10 +4115,15 @@
       "10": {
         "strokes": 5,
         "par": 4
+      },
+      "11": {
+        "strokes": 4,
+        "par": 4
       }
     }
   },
   "40002911": {
+    "name": "Andrew Novak",
     "round": 1,
     "holes": {
       "1": {
@@ -4088,6 +4201,7 @@
     }
   },
   "40002925": {
+    "name": "Min Woo Lee",
     "round": 1,
     "holes": {
       "1": {
@@ -4149,6 +4263,7 @@
     }
   },
   "40002950": {
+    "name": "Robert MacIntyre",
     "round": 1,
     "holes": {
       "1": {
@@ -4194,6 +4309,7 @@
     }
   },
   "40003142": {
+    "name": "Kristoffer Reitan",
     "round": 1,
     "holes": {
       "1": {
@@ -4271,6 +4387,7 @@
     }
   },
   "40003147": {
+    "name": "Tom McKibbin",
     "round": 1,
     "holes": {
       "1": {
@@ -4348,6 +4465,7 @@
     }
   },
   "40003193": {
+    "name": "Nicolai Hojgaard",
     "round": 1,
     "holes": {
       "1": {
@@ -4421,6 +4539,7 @@
     }
   },
   "40003218": {
+    "name": "Viktor Hovland",
     "round": 1,
     "holes": {
       "1": {
@@ -4498,6 +4617,7 @@
     }
   },
   "40003220": {
+    "name": "Rasmus Hojgaard",
     "round": 1,
     "holes": {
       "1": {
@@ -4575,6 +4695,7 @@
     }
   },
   "40003252": {
+    "name": "Ludvig Aberg",
     "round": 1,
     "holes": {
       "1": {
@@ -4628,6 +4749,7 @@
     }
   },
   "40003315": {
+    "name": "Nicolas Echavarria",
     "round": 1,
     "holes": {
       "1": {
@@ -4705,6 +4827,7 @@
     }
   },
   "40003478": {
+    "name": "Sami Valimaki",
     "round": 1,
     "holes": {
       "1": {
@@ -4782,6 +4905,7 @@
     }
   },
   "40003519": {
+    "name": "Akshay Bhatia",
     "round": 1,
     "holes": {
       "1": {
@@ -4859,6 +4983,7 @@
     }
   },
   "40003609": {
+    "name": "Cameron Young",
     "round": 1,
     "holes": {
       "1": {
@@ -4936,6 +5061,7 @@
     }
   },
   "40003697": {
+    "name": "Marco Penge",
     "round": 1,
     "holes": {
       "1": {
@@ -4973,10 +5099,15 @@
       "9": {
         "strokes": 4,
         "par": 4
+      },
+      "10": {
+        "strokes": 3,
+        "par": 4
       }
     }
   },
   "40003725": {
+    "name": "Harry Hall",
     "round": 1,
     "holes": {
       "1": {
@@ -5034,6 +5165,7 @@
     }
   },
   "40003812": {
+    "name": "Casey Jarvis",
     "round": 1,
     "holes": {
       "1": {
@@ -5111,6 +5243,7 @@
     }
   },
   "40004702": {
+    "name": "Naoyuki Kataoka",
     "round": 1,
     "holes": {
       "1": {
@@ -5188,6 +5321,7 @@
     }
   },
   "40004729": {
+    "name": "Sam Stevens",
     "round": 1,
     "holes": {
       "1": {
@@ -5265,6 +5399,7 @@
     }
   },
   "40004738": {
+    "name": "Rasmus Neergaard-Petersen",
     "round": 1,
     "holes": {
       "1": {
@@ -5342,6 +5477,7 @@
     }
   },
   "40005036": {
+    "name": "Matt McCarty",
     "round": 1,
     "holes": {
       "1": {
@@ -5419,6 +5555,7 @@
     }
   },
   "40005053": {
+    "name": "Michael Brennan",
     "round": 1,
     "holes": {
       "1": {
@@ -5476,6 +5613,7 @@
     }
   },
   "40005060": {
+    "name": "Chris Gotterup",
     "round": 1,
     "holes": {
       "1": {
@@ -5529,6 +5667,7 @@
     }
   },
   "40005133": {
+    "name": "Jacob Bridgeman",
     "round": 1,
     "holes": {
       "1": {
@@ -5590,6 +5729,7 @@
     }
   },
   "40005232": {
+    "name": "Ryan Gerard",
     "round": 1,
     "holes": {
       "1": {
@@ -5667,6 +5807,7 @@
     }
   },
   "40005299": {
+    "name": "Aldrich Potgieter",
     "round": 1,
     "holes": {
       "1": {
@@ -5744,6 +5885,7 @@
     }
   },
   "40006004": {
+    "name": "Johnny Keefer",
     "round": 1,
     "holes": {
       "1": {
@@ -5821,6 +5963,7 @@
     }
   },
   "40006268": {
+    "name": "Mason Howell",
     "round": 1,
     "holes": {
       "1": {
@@ -5898,6 +6041,7 @@
     }
   },
   "40006294": {
+    "name": "Ethan Fang",
     "round": 1,
     "holes": {
       "1": {
@@ -5963,10 +6107,15 @@
       "16": {
         "strokes": 4,
         "par": 3
+      },
+      "17": {
+        "strokes": 4,
+        "par": 4
       }
     }
   },
   "40006412": {
+    "name": "Jackson Herrington",
     "round": 1,
     "holes": {
       "1": {
@@ -6044,6 +6193,7 @@
     }
   },
   "40006413": {
+    "name": "Brandon Holtz",
     "round": 1,
     "holes": {
       "1": {
@@ -6121,6 +6271,7 @@
     }
   },
   "40006414": {
+    "name": "Pongsapak Laopakdee",
     "round": 1,
     "holes": {
       "1": {
@@ -6182,6 +6333,7 @@
     }
   },
   "40006415": {
+    "name": "Mateo Pulcini",
     "round": 1,
     "holes": {
       "1": {
