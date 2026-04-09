@@ -12,8 +12,12 @@ async function updateData() {
         if (!response.ok) {
             throw new Error(`API rejected the request with status ${response.status}`);
         }
-
         const data = await response.json();
+        
+        console.log("DEBUG: Players returned:", data.length);
+        console.log("DEBUG: Sample player:", data[0]);
+
+
 
         // Transform API response into scores.json format
         let scores = {};
