@@ -3,7 +3,7 @@ const path = require('path');
 
 // Load team + player mappings
 const teams = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/teams.json')));
-const teamPlayers = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/team_players.json')));
+const teamPlayers = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/team_players_fixed.json')));
 
 // Load SportsDataIO hole-by-hole scoring
 // This file should contain all players with their hole-by-hole scores
