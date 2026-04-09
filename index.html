@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mastayers Leaderboard</title>
+  <title>Mastayers Fantasy Leaderboard</title>
   <style>
     body { font-family: Arial; padding: 20px; }
     table { border-collapse: collapse; width: 100%; }
-    th, td { padding: 8px; border-bottom: 1px solid #ddd; }
+    th, td { padding: 10px; border-bottom: 1px solid #ddd; }
+    tr.player-row { background: #f9f9f9; }
+    tr.player-row td { padding-left: 40px; }
+    tr.team-row { cursor: pointer; }
   </style>
 </head>
 <body>
@@ -17,7 +20,6 @@
   <thead>
     <tr>
       <th>Team</th>
-      <th>Player</th>
       <th>Score</th>
     </tr>
   </thead>
@@ -26,12 +28,15 @@
 
 <script>
 async function loadLeaderboard() {
-  const res = await fetch('data/fantasy.json');
-  const obj = await res.json();
+  const fantasyRes = await fetch('data/fantasy.json');
+  const fantasy = await fantasyRes.json();
 
-  // Convert object → array
-  let teams = Object.entries(obj).map(([teamName, info]) => ({
-    team: teamName,
+  const datasetRes = await fetch('data/dataset.json');
+  const dataset = await datasetRes.json();
+
+  // Convert fantasy object → array
+  let teams = Object.entries(fantasy).map(([team, info]) => ({
+    team,
     total: info.total
   }));
 
@@ -41,15 +46,67 @@ async function loadLeaderboard() {
   const tbody = document.querySelector('#leaderboard tbody');
   tbody.innerHTML = '';
 
-  teams.forEach(row => {
+  teams.forEach(t => {
+    // Create team row
     const tr = document.createElement('tr');
+    tr.classList.add('team-row');
+    tr.dataset.team = t.team;
 
     tr.innerHTML = `
-      <td><a href="team.html?team=${encodeURIComponent(row.team)}">${row.team}</a></td>
-      <td>${row.total}</td>
+      <td>${t.team}</td>
+      <td>${t.total}</td>
     `;
 
     tbody.appendChild(tr);
+
+    // Add click handler to expand/collapse
+    tr.addEventListener('click', () => toggleTeam(t.team, tr, dataset));
+  });
+}
+
+function toggleTeam(team, row, dataset) {
+  const tbody = row.parentNode;
+
+  // If already expanded → collapse
+  if (row.classList.contains('expanded')) {
+    // Remove all player rows below this team
+    let next = row.nextSibling;
+    while (next && next.classList.contains('player-row')) {
+      next.remove();
+      next = row.nextSibling;
+    }
+    row.classList.remove('expanded');
+    return;
+  }
+
+  // Otherwise → expand
+  row.classList.add('expanded');
+
+  // Filter dataset for this team
+  const rows = dataset.filter(r => r.team === team);
+
+  // Sum points per player
+  const players = {};
+  rows.forEach(r => {
+    if (!players[r.playerName]) players[r.playerName] = 0;
+    players[r.playerName] += r.stableford;
+  });
+
+  // Convert to array + sort
+  const playerRows = Object.entries(players)
+    .map(([name, total]) => ({ name, total }))
+    .sort((a, b) => b.total - a.total);
+
+  // Insert player rows directly under the team row
+  playerRows.forEach(p => {
+    const pr = document.createElement('tr');
+    pr.classList.add('player-row');
+    pr.innerHTML = `
+      <td>${p.name}</td>
+      <td>${p.total}</td>
+    `;
+    row.insertAdjacentElement('afterend', pr);
+    row = pr; // so next player inserts below the previous one
   });
 }
 
