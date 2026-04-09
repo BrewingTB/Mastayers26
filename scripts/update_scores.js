@@ -44,6 +44,7 @@ async function updateData() {
             }
 
             scores[playerId] = {
+                name: player.Name,
                 round,
                 holes: {}
             };
