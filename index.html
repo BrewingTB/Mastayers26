@@ -16,30 +16,7 @@
 <h1>Mastayers Fantasy Leaderboard</h1>
 <p>Auto-updates every 10 minutes</p>
 <p id="lastUpdated" style="font-style: italic; color: #555;"></p>
-<script>
-async function loadLastUpdated() {
-  const res = await fetch('https://api.github.com/repos/brewingtb/Mastayers26/commits?path=data/fantasy.json');
-  const commits = await res.json();
 
-  if (commits.length > 0) {
-    const timestamp = commits[0].commit.committer.date;
-    const date = new Date(timestamp);
-
-    document.getElementById('lastUpdated').textContent =
-      "Last updated: " + date.toLocaleString("en-US", {
-        weekday: "short",
-        hour: "numeric",
-        minute: "2-digit",
-        hour12: true,
-        month: "short",
-        day: "numeric"
-      });
-  }
-}
-
-loadLastUpdated();
-setInterval(loadLastUpdated, 60000); // refresh every minute
-</script>
                                                                
 <table id="leaderboard">
   <thead>
@@ -136,6 +113,31 @@ function toggleTeam(team, row, dataset) {
 }
 
 loadLeaderboard();
+</script>
+
+<script>
+async function loadLastUpdated() {
+  const res = await fetch('https://api.github.com/repos/brewingtb/Mastayers26/commits?path=data/fantasy.json');
+  const commits = await res.json();
+
+  if (commits.length > 0) {
+    const timestamp = commits[0].commit.committer.date;
+    const date = new Date(timestamp);
+
+    document.getElementById('lastUpdated').textContent =
+      "Last updated: " + date.toLocaleString("en-US", {
+        weekday: "short",
+        hour: "numeric",
+        minute: "2-digit",
+        hour12: true,
+        month: "short",
+        day: "numeric"
+      });
+  }
+}
+
+loadLastUpdated();
+setInterval(loadLastUpdated, 60000); // refresh every minute
 </script>
 
 </body>
