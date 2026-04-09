@@ -77,11 +77,20 @@ for (const teamName of Object.keys(teamPlayers)) {
         let holeTotal = 0;
 
         if (holeScores.length > 0) {
-            if (player.round <= 2) {
-                // Sum all scores
+            // Determine round from first player with data
+            let round = 1;
+            for (const pid of players) {
+                if (scores[pid]?.round) {
+                    round = scores[pid].round;
+                    break;
+                }
+            }
+            
+            // Rounds 1–2: sum all 4 players
+            // Rounds 3–4: best 2 scores
+            if (round <= 2) {
                 holeTotal = holeScores.reduce((a, b) => a + b, 0);
             } else {
-                // Best 2 scores
                 holeScores.sort((a, b) => b - a);
                 holeTotal = holeScores.slice(0, 2).reduce((a, b) => a + b, 0);
             }
