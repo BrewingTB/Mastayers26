@@ -18,7 +18,7 @@ async function updateData() {
         const data = await response.json();
         
         // This saves the data into a file named data.json in your repo
-        fs.writeFileSync('data.json', JSON.stringify(data, null, 2));
+        fs.writeFileSync('./data/players.json', JSON.stringify(data, null, 2));
         console.log("✅ Success! data.json has been updated.");
 
     } catch (error) {
