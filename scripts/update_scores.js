@@ -12,38 +12,37 @@ async function updateData() {
         if (!response.ok) {
             throw new Error(`API rejected the request with status ${response.status}`);
         }
+
         const data = await response.json();
-        
+
         console.log("DEBUG: Players returned:", data.length);
         console.log("DEBUG: Sample player:", data[0]);
 
-
-
-        // Transform API response into scores.json format
         let scores = {};
 
         for (const player of data) {
             const playerId = player.PlayerID;
-        
+
             scores[playerId] = {
-                round: player.RoundID,
+                round: player.Rounds?.[0]?.Number ?? 1,
                 holes: {}
             };
-        
-            // Skip players with no hole data
-            if (!player.Holes || !Array.isArray(player.Holes)) {
-                continue;
-            }
-        
-            for (const hole of player.Holes) {
-                scores[playerId].holes[hole.Number] = {
-                strokes: hole.Score,
-                par: hole.Par
-                };
+
+            // Loop through rounds
+            if (!player.Rounds || !Array.isArray(player.Rounds)) continue;
+
+            for (const round of player.Rounds) {
+                if (!round.Holes || !Array.isArray(round.Holes)) continue;
+
+                for (const hole of round.Holes) {
+                    scores[playerId].holes[hole.Number] = {
+                        strokes: hole.Score,
+                        par: hole.Par
+                    };
+                }
             }
         }
 
-        // Save transformed file
         fs.writeFileSync('./data/scores.json', JSON.stringify(scores, null, 2));
         console.log("✅ Success! scores.json has been updated.");
 
