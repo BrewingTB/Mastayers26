@@ -34,7 +34,23 @@ for (const teamName of Object.keys(teamPlayers)) {
         holes: {} // hole → score
     };
 
-    const players = teamPlayers[teamName];
+    let players = teamPlayers[teamName];
+
+        // If players is an object → convert to array
+        if (players && typeof players === 'object' && !Array.isArray(players)) {
+            players = Object.values(players);
+        }
+        
+        // If players is a string → split it
+        if (typeof players === 'string') {
+            players = players.split(',').map(x => x.trim());
+        }
+        
+        // If still not an array → skip this team
+        if (!Array.isArray(players)) {
+            console.log(`Skipping team ${teamName} — invalid player list`);
+            continue;
+    }
 
     // Loop through all 18 holes
     for (let hole = 1; hole <= 18; hole++) {
