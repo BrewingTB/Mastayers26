@@ -22,6 +22,8 @@ jobs:
         env:
           GOLF_API_KEY: ${{ secrets.GOLF_API_KEY }}
         run: node scripts/update_scores.js
+      - name: Pull player profiles
+        run: node scripts/pullPlayers.js
       
       - name: Build team_players.json
         run: node scripts/build_team_players.js
