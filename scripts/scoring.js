@@ -5,24 +5,24 @@ const path = require('path');
 const teams = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/teams.json')));
 const teamPlayers = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/team_players_fixed.json')));
 
-// Load SportsDataIO hole-by-hole scoring
-// This file should contain all players with their hole-by-hole scores
-// Example: data/scores.json
+// Load hole-by-hole scoring (already cleaned by update_scores.js)
 const scores = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/scores.json')));
 
 // Stableford scoring rules
-function stableford(pointsRelativeToPar) {
-    if (pointsRelativeToPar <= -2) return 5;   // Eagle or better
-    if (pointsRelativeToPar === -1) return 2;  // Birdie
-    if (pointsRelativeToPar === 0) return 0;   // Par
-    if (pointsRelativeToPar === 1) return -1;   // Bogey
-    return 2;                                  // Double bogey or worse
+function stableford(delta) {
+    if (delta <= -3) return 8;   // Double eagle or better
+    if (delta === -2) return 5;  // Eagle
+    if (delta === -1) return 2;  // Birdie
+    if (delta === 0) return 0;   // Par
+    if (delta === 1) return -1;  // Bogey
+    return -3;                   // Double bogey or worse
 }
 
 // Calculate Stableford for a single hole
 function scoreHole(strokes, par) {
     if (!strokes || strokes === 0) return null; // No score yet
-    return stableford(strokes - par);
+    const delta = strokes - par;
+    return stableford(delta);
 }
 
 // Build leaderboard
@@ -31,32 +31,28 @@ let leaderboard = {};
 for (const teamName of Object.keys(teamPlayers)) {
     leaderboard[teamName] = {
         total: 0,
-        holes: {} // hole → score
+        holes: {}
     };
 
     let players = teamPlayers[teamName];
 
-        // If players is an object → convert to array
-        if (players && typeof players === 'object' && !Array.isArray(players)) {
-            players = Object.values(players);
-        }
-        
-        // If players is a string → split it
-        if (typeof players === 'string') {
-            players = players.split(',').map(x => x.trim());
-        }
-        
-        // If still not an array → skip this team
-        if (!Array.isArray(players)) {
-            console.log(`Skipping team ${teamName} — invalid player list`);
-            continue;
+    // Normalize players list
+    if (players && typeof players === 'object' && !Array.isArray(players)) {
+        players = Object.values(players);
+    }
+    if (typeof players === 'string') {
+        players = players.split(',').map(x => x.trim());
+    }
+    if (!Array.isArray(players)) {
+        console.log(`Skipping team ${teamName} — invalid player list`);
+        continue;
     }
 
     // Loop through all 18 holes
     for (let hole = 1; hole <= 18; hole++) {
         let holeScores = [];
 
-        // Loop through all 4 players on the team
+        // Loop through all players on the team
         for (const playerId of players) {
             const player = scores[playerId];
             if (!player) continue;
@@ -72,8 +68,6 @@ for (const teamName of Object.keys(teamPlayers)) {
             }
         }
 
-        // Rounds 1–2: sum all 4 players
-        // Rounds 3–4: best 2 scores
         let holeTotal = 0;
 
         if (holeScores.length > 0) {
@@ -85,7 +79,7 @@ for (const teamName of Object.keys(teamPlayers)) {
                     break;
                 }
             }
-            
+
             // Rounds 1–2: sum all 4 players
             // Rounds 3–4: best 2 scores
             if (round <= 2) {
