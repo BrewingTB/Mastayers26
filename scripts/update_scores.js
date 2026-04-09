@@ -3,7 +3,7 @@ const fs = require('fs');
 async function updateData() {
     const apiKey = process.env.GOLF_API_KEY;
 
-    // Hole-by-hole endpoint for the Masters
+    // Masters hole-by-hole endpoint
     const url = `https://api.sportsdata.io/golf/v2/json/PlayerTournamentHoleScores/688?key=${apiKey}`;
 
     try {
@@ -25,12 +25,23 @@ async function updateData() {
             const playerId = player.PlayerID;
 
             // Determine the current round:
-            // Find the first round that has at least one non-null score
+            // Find the first round that has at least one non-null result flag
             let round = 1;
             if (player.Rounds && Array.isArray(player.Rounds)) {
                 for (const r of player.Rounds) {
-                    if (r.Holes && r.Holes.some(h => h.Score !== null)) {
-                        round = r.Number;   // THIS is the round number
+                    if (
+                        r.Holes &&
+                        r.Holes.some(h =>
+                            h.IsPar ||
+                            h.Birdie ||
+                            h.Eagle ||
+                            h.DoubleEagle ||
+                            h.Bogey ||
+                            h.DoubleBogey ||
+                            h.WorseThanDoubleBogey
+                        )
+                    ) {
+                        round = r.Number;
                         break;
                     }
                 }
@@ -41,16 +52,39 @@ async function updateData() {
                 holes: {}
             };
 
-            // Extract hole-by-hole scoring
+            // Extract hole-by-hole scoring using ONLY reliable flags
             if (player.Rounds && Array.isArray(player.Rounds)) {
                 for (const r of player.Rounds) {
                     if (!r.Holes || !Array.isArray(r.Holes)) continue;
 
                     for (const hole of r.Holes) {
-                        if (hole.Score === null) continue; // skip holes not yet played
+                        // Skip holes with no result flags (not played yet)
+                        const hasResult =
+                            hole.IsPar ||
+                            hole.Birdie ||
+                            hole.Eagle ||
+                            hole.DoubleEagle ||
+                            hole.Bogey ||
+                            hole.DoubleBogey ||
+                            hole.WorseThanDoubleBogey;
+
+                        if (!hasResult) continue;
+
+                        // Determine delta from flags
+                        let delta = 0;
+
+                        if (hole.DoubleEagle) delta = -3;
+                        else if (hole.Eagle) delta = -2;
+                        else if (hole.Birdie) delta = -1;
+                        else if (hole.IsPar) delta = 0;
+                        else if (hole.Bogey) delta = 1;
+                        else if (hole.DoubleBogey) delta = 2;
+                        else if (hole.WorseThanDoubleBogey) delta = 3;
+
+                        const strokes = hole.Par + delta;
 
                         scores[playerId].holes[hole.Number] = {
-                            strokes: hole.Score,
+                            strokes,
                             par: hole.Par
                         };
                     }
