@@ -31,7 +31,10 @@ jobs:
         
       - name: Build dataset
         run: node scripts/report.js
-     
+        
+       - name: Build CSV
+        run: node scripts/dataset_to_csv.js
+      
       - name: Commit updated leaderboard
         run: |
           git config --global user.name "github-actions"
