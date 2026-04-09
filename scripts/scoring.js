@@ -15,7 +15,7 @@ function stableford(pointsRelativeToPar) {
     if (pointsRelativeToPar <= -2) return 5;   // Eagle or better
     if (pointsRelativeToPar === -1) return 2;  // Birdie
     if (pointsRelativeToPar === 0) return 0;   // Par
-    if (pointsRelativeToPar === 1) return 1;   // Bogey
+    if (pointsRelativeToPar === 1) return -1;   // Bogey
     return 2;                                  // Double bogey or worse
 }
 
