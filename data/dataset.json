@@ -521,6 +521,16 @@
   },
   {
     "team": "Fee",
+    "playerId": 40003193,
+    "playerName": 40003193,
+    "hole": 17,
+    "round": 1,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
+  },
+  {
+    "team": "Fee",
     "playerId": 40001353,
     "playerName": 40001353,
     "hole": 1,
@@ -628,6 +638,16 @@
     "strokes": 5,
     "par": 4,
     "stableford": -1
+  },
+  {
+    "team": "Fee",
+    "playerId": 40001353,
+    "playerName": 40001353,
+    "hole": 12,
+    "round": 1,
+    "strokes": 3,
+    "par": 3,
+    "stableford": 0
   },
   {
     "team": "Mottola",
@@ -928,6 +948,16 @@
     "strokes": 2,
     "par": 3,
     "stableford": 2
+  },
+  {
+    "team": "Mottola",
+    "playerId": 40005053,
+    "playerName": 40005053,
+    "hole": 13,
+    "round": 1,
+    "strokes": 5,
+    "par": 5,
+    "stableford": 0
   },
   {
     "team": "Mottola",
@@ -1751,6 +1781,16 @@
   },
   {
     "team": "Bagnowski",
+    "playerId": 40000007,
+    "playerName": 40000007,
+    "hole": 11,
+    "round": 1,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
+  },
+  {
+    "team": "Bagnowski",
     "playerId": 40000004,
     "playerName": 40000004,
     "hole": 1,
@@ -1844,6 +1884,16 @@
     "playerId": 40000004,
     "playerName": 40000004,
     "hole": 10,
+    "round": 1,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
+  },
+  {
+    "team": "Bagnowski",
+    "playerId": 40000004,
+    "playerName": 40000004,
+    "hole": 11,
     "round": 1,
     "strokes": 4,
     "par": 4,
@@ -2338,6 +2388,16 @@
     "strokes": 4,
     "par": 5,
     "stableford": 2
+  },
+  {
+    "team": "Gilson",
+    "playerId": 40002578,
+    "playerName": 40002578,
+    "hole": 14,
+    "round": 1,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
   },
   {
     "team": "Gilson",
@@ -2424,6 +2484,16 @@
     "playerId": 40001274,
     "playerName": 40001274,
     "hole": 9,
+    "round": 1,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
+  },
+  {
+    "team": "Gilson",
+    "playerId": 40001274,
+    "playerName": 40001274,
+    "hole": 10,
     "round": 1,
     "strokes": 4,
     "par": 4,
@@ -2711,6 +2781,26 @@
   },
   {
     "team": "Gibb",
+    "playerId": 40005060,
+    "playerName": 40005060,
+    "hole": 11,
+    "round": 1,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
+  },
+  {
+    "team": "Gibb",
+    "playerId": 40005060,
+    "playerName": 40005060,
+    "hole": 12,
+    "round": 1,
+    "strokes": 4,
+    "par": 3,
+    "stableford": -1
+  },
+  {
+    "team": "Gibb",
     "playerId": 40000012,
     "playerName": 40000012,
     "hole": 1,
@@ -2871,6 +2961,16 @@
   },
   {
     "team": "Gibb",
+    "playerId": 40000012,
+    "playerName": 40000012,
+    "hole": 17,
+    "round": 1,
+    "strokes": 5,
+    "par": 4,
+    "stableford": -1
+  },
+  {
+    "team": "Gibb",
     "playerId": 40000977,
     "playerName": 40000977,
     "hole": 1,
@@ -2977,6 +3077,16 @@
     "round": 1,
     "strokes": 4,
     "par": 4,
+    "stableford": 0
+  },
+  {
+    "team": "Gibb",
+    "playerId": 40000977,
+    "playerName": 40000977,
+    "hole": 12,
+    "round": 1,
+    "strokes": 3,
+    "par": 3,
     "stableford": 0
   },
   {
@@ -3650,6 +3760,16 @@
     "stableford": 2
   },
   {
+    "team": "Penton",
+    "playerId": 40005133,
+    "playerName": 40005133,
+    "hole": 14,
+    "round": 1,
+    "strokes": 5,
+    "par": 4,
+    "stableford": -1
+  },
+  {
     "team": "Huszczo",
     "playerId": 40002249,
     "playerName": 40002249,
@@ -4178,6 +4298,16 @@
     "strokes": 4,
     "par": 4,
     "stableford": 0
+  },
+  {
+    "team": "Huszczo",
+    "playerId": 40002911,
+    "playerName": 40002911,
+    "hole": 18,
+    "round": 1,
+    "strokes": 5,
+    "par": 4,
+    "stableford": -1
   },
   {
     "team": "Huszczo",
@@ -5050,6 +5180,16 @@
     "stableford": -3
   },
   {
+    "team": "M. Ayers",
+    "playerId": 40001565,
+    "playerName": 40001565,
+    "hole": 16,
+    "round": 1,
+    "strokes": 3,
+    "par": 3,
+    "stableford": 0
+  },
+  {
     "team": "Hivnor",
     "playerId": 40003478,
     "playerName": 40003478,
@@ -5361,6 +5501,16 @@
   },
   {
     "team": "Hivnor",
+    "playerId": 40000479,
+    "playerName": 40000479,
+    "hole": 14,
+    "round": 1,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
+  },
+  {
+    "team": "Hivnor",
     "playerId": 40005232,
     "playerName": 40005232,
     "hole": 1,
@@ -5634,6 +5784,16 @@
     "playerId": 40000013,
     "playerName": 40000013,
     "hole": 10,
+    "round": 1,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
+  },
+  {
+    "team": "Hivnor",
+    "playerId": 40000013,
+    "playerName": 40000013,
+    "hole": 11,
     "round": 1,
     "strokes": 4,
     "par": 4,
@@ -6268,6 +6428,16 @@
     "strokes": 5,
     "par": 4,
     "stableford": -1
+  },
+  {
+    "team": "Plato",
+    "playerId": 40003147,
+    "playerName": 40003147,
+    "hole": 18,
+    "round": 1,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
   },
   {
     "team": "Mignogna",
@@ -6551,6 +6721,26 @@
   },
   {
     "team": "Mignogna",
+    "playerId": 40003252,
+    "playerName": 40003252,
+    "hole": 11,
+    "round": 1,
+    "strokes": 5,
+    "par": 4,
+    "stableford": -1
+  },
+  {
+    "team": "Mignogna",
+    "playerId": 40003252,
+    "playerName": 40003252,
+    "hole": 12,
+    "round": 1,
+    "strokes": 3,
+    "par": 3,
+    "stableford": 0
+  },
+  {
+    "team": "Mignogna",
     "playerId": 40000775,
     "playerName": 40000775,
     "hole": 1,
@@ -6818,6 +7008,16 @@
     "strokes": 4,
     "par": 4,
     "stableford": 0
+  },
+  {
+    "team": "Mignogna",
+    "playerId": 40001594,
+    "playerName": 40001594,
+    "hole": 10,
+    "round": 1,
+    "strokes": 5,
+    "par": 4,
+    "stableford": -1
   },
   {
     "team": "Ferritto",
@@ -7261,6 +7461,16 @@
   },
   {
     "team": "Ferritto",
+    "playerId": 40000764,
+    "playerName": 40000764,
+    "hole": 9,
+    "round": 1,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
+  },
+  {
+    "team": "Ferritto",
     "playerId": 40001199,
     "playerName": 40001199,
     "hole": 1,
@@ -7357,6 +7567,26 @@
     "round": 1,
     "strokes": 4,
     "par": 4,
+    "stableford": 0
+  },
+  {
+    "team": "Ferritto",
+    "playerId": 40001199,
+    "playerName": 40001199,
+    "hole": 11,
+    "round": 1,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
+  },
+  {
+    "team": "Ferritto",
+    "playerId": 40001199,
+    "playerName": 40001199,
+    "hole": 12,
+    "round": 1,
+    "strokes": 3,
+    "par": 3,
     "stableford": 0
   },
   {
@@ -7681,6 +7911,16 @@
   },
   {
     "team": "Kaprosy",
+    "playerId": 40000585,
+    "playerName": 40000585,
+    "hole": 15,
+    "round": 1,
+    "strokes": 5,
+    "par": 5,
+    "stableford": 0
+  },
+  {
+    "team": "Kaprosy",
     "playerId": 40000596,
     "playerName": 40000596,
     "hole": 1,
@@ -7791,6 +8031,16 @@
   },
   {
     "team": "Kaprosy",
+    "playerId": 40000596,
+    "playerName": 40000596,
+    "hole": 12,
+    "round": 1,
+    "strokes": 3,
+    "par": 3,
+    "stableford": 0
+  },
+  {
+    "team": "Kaprosy",
     "playerId": 40002950,
     "playerName": 40002950,
     "hole": 1,
@@ -7878,6 +8128,16 @@
     "strokes": 6,
     "par": 4,
     "stableford": -3
+  },
+  {
+    "team": "Kaprosy",
+    "playerId": 40002950,
+    "playerName": 40002950,
+    "hole": 10,
+    "round": 1,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
   },
   {
     "team": "Kaminsky",
@@ -8191,6 +8451,16 @@
   },
   {
     "team": "Kaminsky",
+    "playerId": 40002925,
+    "playerName": 40002925,
+    "hole": 14,
+    "round": 1,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
+  },
+  {
+    "team": "Kaminsky",
     "playerId": 40001224,
     "playerName": 40001224,
     "hole": 1,
@@ -8341,6 +8611,26 @@
   },
   {
     "team": "Kaminsky",
+    "playerId": 40001224,
+    "playerName": 40001224,
+    "hole": 16,
+    "round": 1,
+    "strokes": 3,
+    "par": 3,
+    "stableford": 0
+  },
+  {
+    "team": "Kaminsky",
+    "playerId": 40001224,
+    "playerName": 40001224,
+    "hole": 17,
+    "round": 1,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
+  },
+  {
+    "team": "Kaminsky",
     "playerId": 40002785,
     "playerName": 40002785,
     "hole": 1,
@@ -8428,6 +8718,16 @@
     "strokes": 4,
     "par": 4,
     "stableford": 0
+  },
+  {
+    "team": "Kaminsky",
+    "playerId": 40002785,
+    "playerName": 40002785,
+    "hole": 10,
+    "round": 1,
+    "strokes": 5,
+    "par": 4,
+    "stableford": -1
   },
   {
     "team": "Randazzo",
@@ -8688,6 +8988,16 @@
     "strokes": 4,
     "par": 5,
     "stableford": 2
+  },
+  {
+    "team": "Randazzo",
+    "playerId": 40000387,
+    "playerName": 40000387,
+    "hole": 9,
+    "round": 1,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
   },
   {
     "team": "Randazzo",
@@ -9531,6 +9841,16 @@
   },
   {
     "team": "Hoban",
+    "playerId": 40003725,
+    "playerName": 40003725,
+    "hole": 13,
+    "round": 1,
+    "strokes": 5,
+    "par": 5,
+    "stableford": 0
+  },
+  {
+    "team": "Hoban",
     "playerId": 40000615,
     "playerName": 40000615,
     "hole": 1,
@@ -9851,6 +10171,16 @@
   },
   {
     "team": "Mucci",
+    "playerId": 40000115,
+    "playerName": 40000115,
+    "hole": 15,
+    "round": 1,
+    "strokes": 5,
+    "par": 5,
+    "stableford": 0
+  },
+  {
+    "team": "Mucci",
     "playerId": 40000763,
     "playerName": 40000763,
     "hole": 1,
@@ -10007,6 +10337,16 @@
     "round": 1,
     "strokes": 3,
     "par": 3,
+    "stableford": 0
+  },
+  {
+    "team": "Mucci",
+    "playerId": 40000763,
+    "playerName": 40000763,
+    "hole": 17,
+    "round": 1,
+    "strokes": 4,
+    "par": 4,
     "stableford": 0
   },
   {
@@ -10174,6 +10514,16 @@
     "playerId": 40006415,
     "playerName": 40006415,
     "hole": 17,
+    "round": 1,
+    "strokes": 5,
+    "par": 4,
+    "stableford": -1
+  },
+  {
+    "team": "Mucci",
+    "playerId": 40006415,
+    "playerName": 40006415,
+    "hole": 18,
     "round": 1,
     "strokes": 5,
     "par": 4,
@@ -10524,6 +10874,16 @@
     "playerId": 40000205,
     "playerName": 40000205,
     "hole": 17,
+    "round": 1,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
+  },
+  {
+    "team": "Baucher",
+    "playerId": 40000205,
+    "playerName": 40000205,
+    "hole": 18,
     "round": 1,
     "strokes": 4,
     "par": 4,
@@ -10980,6 +11340,16 @@
     "stableford": 0
   },
   {
+    "team": "Baucher",
+    "playerId": 40001434,
+    "playerName": 40001434,
+    "hole": 10,
+    "round": 1,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
+  },
+  {
     "team": "J. Ayers",
     "playerId": 40002651,
     "playerName": 40002651,
@@ -11148,6 +11518,16 @@
     "strokes": 4,
     "par": 4,
     "stableford": 0
+  },
+  {
+    "team": "J. Ayers",
+    "playerId": 40002651,
+    "playerName": 40002651,
+    "hole": 18,
+    "round": 1,
+    "strokes": 5,
+    "par": 4,
+    "stableford": -1
   },
   {
     "team": "J. Ayers",
@@ -11811,6 +12191,16 @@
   },
   {
     "team": "Brunetti",
+    "playerId": 40000270,
+    "playerName": 40000270,
+    "hole": 13,
+    "round": 1,
+    "strokes": 5,
+    "par": 5,
+    "stableford": 0
+  },
+  {
+    "team": "Brunetti",
     "playerId": 40006294,
     "playerName": 40006294,
     "hole": 1,
@@ -11958,6 +12348,16 @@
     "strokes": 5,
     "par": 5,
     "stableford": 0
+  },
+  {
+    "team": "Brunetti",
+    "playerId": 40006294,
+    "playerName": 40006294,
+    "hole": 16,
+    "round": 1,
+    "strokes": 4,
+    "par": 3,
+    "stableford": -1
   },
   {
     "team": "Brunetti",
@@ -12280,6 +12680,16 @@
     "stableford": 0
   },
   {
+    "team": "Brunetti",
+    "playerId": 40000010,
+    "playerName": 40000010,
+    "hole": 15,
+    "round": 1,
+    "strokes": 6,
+    "par": 5,
+    "stableford": -1
+  },
+  {
     "team": "#N/A",
     "playerId": 40000285,
     "playerName": 40000285,
@@ -12408,6 +12818,16 @@
     "strokes": 4,
     "par": 5,
     "stableford": 2
+  },
+  {
+    "team": "#N/A",
+    "playerId": 40000285,
+    "playerName": 40000285,
+    "hole": 14,
+    "round": 1,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
   },
   {
     "team": "#N/A",
@@ -12758,6 +13178,16 @@
     "strokes": 6,
     "par": 4,
     "stableford": -3
+  },
+  {
+    "team": "#N/A",
+    "playerId": 40001536,
+    "playerName": 40001536,
+    "hole": 18,
+    "round": 1,
+    "strokes": 5,
+    "par": 4,
+    "stableford": -1
   },
   {
     "team": "Campbell",
@@ -13787,6 +14217,16 @@
     "round": 1,
     "strokes": 4,
     "par": 5,
+    "stableford": 2
+  },
+  {
+    "team": "Stull",
+    "playerId": 40006414,
+    "playerName": 40006414,
+    "hole": 14,
+    "round": 1,
+    "strokes": 3,
+    "par": 4,
     "stableford": 2
   },
   {
@@ -13868,6 +14308,16 @@
     "strokes": 6,
     "par": 5,
     "stableford": -1
+  },
+  {
+    "team": "Stull",
+    "playerId": 40003697,
+    "playerName": 40003697,
+    "hole": 9,
+    "round": 1,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
   },
   {
     "team": "Stull",
