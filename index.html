@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Masters Leaderboard</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { padding: 8px; border-bottom: 1px solid #ddd; }
+  </style>
+</head>
+<body>
+
+<h1>Masters Fantasy Leaderboard</h1>
+<p>Auto-updates every 10 minutes</p>
+
+<table id="leaderboard">
+  <thead>
+    <tr>
+      <th>Team</th>
+      <th>Player</th>
+      <th>Score</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<script>
+async function loadLeaderboard() {
+  const res = await fetch('data/fantasy.json');
+  const data = await res.json();
+
+  const tbody = document.querySelector('#leaderboard tbody');
+  tbody.innerHTML = '';
+
+  for (const row of data) {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>${row.team}</td>
+      <td>${row.playerName}</td>
+      <td>${row.total}</td>
+    `;
+    tbody.appendChild(tr);
+  }
+}
+
+loadLeaderboard();
+</script>
+
+</body>
+</html>
