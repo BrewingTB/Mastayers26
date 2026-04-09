@@ -20,12 +20,17 @@ async function updateData() {
 
         for (const player of data) {
             const playerId = player.PlayerID;
-
+        
             scores[playerId] = {
                 round: player.RoundID,
                 holes: {}
             };
-
+        
+            // Skip players with no hole data
+            if (!player.Holes || !Array.isArray(player.Holes)) {
+                continue;
+            }
+        
             for (const hole of player.Holes) {
                 scores[playerId].holes[hole.HoleNumber] = {
                     strokes: hole.Strokes,
