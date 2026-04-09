@@ -1,0 +1,554 @@
+[
+  {
+    "PlayerID": "40001087",
+    "PlayerName": "Jose Maria Olazabal",
+    "TeamID": "6",
+    "TeamName": "Fee"
+  },
+  {
+    "PlayerID": "40000200",
+    "PlayerName": "Angel Cabrera",
+    "TeamID": "7",
+    "TeamName": "Mottola"
+  },
+  {
+    "PlayerID": "40002648",
+    "PlayerName": "Max Greyserman",
+    "TeamID": "16",
+    "TeamName": "Bagnowski"
+  },
+  {
+    "PlayerID": "40006412",
+    "PlayerName": "Jackson Herrington",
+    "TeamID": "1",
+    "TeamName": "Gilson"
+  },
+  {
+    "PlayerID": "40003220",
+    "PlayerName": "Rasmus Hojgaard",
+    "TeamID": "14",
+    "TeamName": "Gibb"
+  },
+  {
+    "PlayerID": "40000638",
+    "PlayerName": "Max Homa",
+    "TeamID": "16",
+    "TeamName": "Bagnowski"
+  },
+  {
+    "PlayerID": "40003812",
+    "PlayerName": "Casey Jarvis",
+    "TeamID": "21",
+    "TeamName": "Penton"
+  },
+  {
+    "PlayerID": "40002249",
+    "PlayerName": "Kurt Kitayama",
+    "TeamID": "8",
+    "TeamName": "Huszczo"
+  },
+  {
+    "PlayerID": "40005036",
+    "PlayerName": "Matt McCarty",
+    "TeamID": "9",
+    "TeamName": "M. Ayers"
+  },
+  {
+    "PlayerID": "40003142",
+    "PlayerName": "Kristoffer Reitan",
+    "TeamID": "6",
+    "TeamName": "Fee"
+  },
+  {
+    "PlayerID": "40001317",
+    "PlayerName": "Vijay Singh",
+    "TeamID": "8",
+    "TeamName": "Huszczo"
+  },
+  {
+    "PlayerID": "40003478",
+    "PlayerName": "Sami Valimaki",
+    "TeamID": "13",
+    "TeamName": "Hivnor"
+  },
+  {
+    "PlayerID": "40000859",
+    "PlayerName": "Hao-Tong Li",
+    "TeamID": "21",
+    "TeamName": "Penton"
+  },
+  {
+    "PlayerID": "40004738",
+    "PlayerName": "Rasmus Neergaard-Petersen",
+    "TeamID": "20",
+    "TeamName": "Plato"
+  },
+  {
+    "PlayerID": "40001290",
+    "PlayerName": "Charl Schwartzel",
+    "TeamID": "11",
+    "TeamName": "Mignogna"
+  },
+  {
+    "PlayerID": "40000448",
+    "PlayerName": "Ryan Fox",
+    "TeamID": "15",
+    "TeamName": "Ferritto"
+  },
+  {
+    "PlayerID": "40004702",
+    "PlayerName": "Naoyuki Kataoka",
+    "TeamID": "10",
+    "TeamName": "Kaprosy"
+  },
+  {
+    "PlayerID": "40006004",
+    "PlayerName": "Johnny Keefer",
+    "TeamID": "18",
+    "TeamName": "Kaminsky"
+  },
+  {
+    "PlayerID": "40005299",
+    "PlayerName": "Aldrich Potgieter",
+    "TeamID": "22",
+    "TeamName": "Randazzo"
+  },
+  {
+    "PlayerID": "40001097",
+    "PlayerName": "Carlos Ortiz",
+    "TeamID": "17",
+    "TeamName": "Hoban"
+  },
+  {
+    "PlayerID": "40003252",
+    "PlayerName": "Ludvig Aberg",
+    "TeamID": "11",
+    "TeamName": "Mignogna"
+  },
+  {
+    "PlayerID": "40000115",
+    "PlayerName": "Daniel Berger",
+    "TeamID": "3",
+    "TeamName": "Mucci"
+  },
+  {
+    "PlayerID": "40003519",
+    "PlayerName": "Akshay Bhatia",
+    "TeamID": "21",
+    "TeamName": "Penton"
+  },
+  {
+    "PlayerID": "40000152",
+    "PlayerName": "Keegan Bradley",
+    "TeamID": "17",
+    "TeamName": "Hoban"
+  },
+  {
+    "PlayerID": "40005053",
+    "PlayerName": "Michael Brennan",
+    "TeamID": "7",
+    "TeamName": "Mottola"
+  },
+  {
+    "PlayerID": "40005133",
+    "PlayerName": "Jacob Bridgeman",
+    "TeamID": "21",
+    "TeamName": "Penton"
+  },
+  {
+    "PlayerID": "40000194",
+    "PlayerName": "Sam Burns",
+    "TeamID": "9",
+    "TeamName": "M. Ayers"
+  },
+  {
+    "PlayerID": "40000205",
+    "PlayerName": "Brian Campbell",
+    "TeamID": "19",
+    "TeamName": "Baucher"
+  },
+  {
+    "PlayerID": "40000216",
+    "PlayerName": "Patrick Cantlay",
+    "TeamID": "7",
+    "TeamName": "Mottola"
+  },
+  {
+    "PlayerID": "40002651",
+    "PlayerName": "Wyndham Clark",
+    "TeamID": "12",
+    "TeamName": "J. Ayers"
+  },
+  {
+    "PlayerID": "40000270",
+    "PlayerName": "Corey Conners",
+    "TeamID": "2",
+    "TeamName": "Brunetti"
+  },
+  {
+    "PlayerID": "40000285",
+    "PlayerName": "Fred Couples",
+    "TeamID": "",
+    "TeamName": "#N/A"
+  },
+  {
+    "PlayerID": "40000314",
+    "PlayerName": "Jason Day",
+    "TeamID": "5",
+    "TeamName": "Campbell"
+  },
+  {
+    "PlayerID": "40000322",
+    "PlayerName": "Bryson DeChambeau",
+    "TeamID": "5",
+    "TeamName": "Campbell"
+  },
+  {
+    "PlayerID": "40003315",
+    "PlayerName": "Nicolas Echavarria",
+    "TeamID": "1",
+    "TeamName": "Gilson"
+  },
+  {
+    "PlayerID": "40000387",
+    "PlayerName": "Harris English",
+    "TeamID": "22",
+    "TeamName": "Randazzo"
+  },
+  {
+    "PlayerID": "40006294",
+    "PlayerName": "Ethan Fang",
+    "TeamID": "2",
+    "TeamName": "Brunetti"
+  },
+  {
+    "PlayerID": "40000430",
+    "PlayerName": "Matt Fitzpatrick",
+    "TeamID": "7",
+    "TeamName": "Mottola"
+  },
+  {
+    "PlayerID": "40000432",
+    "PlayerName": "Tommy Fleetwood",
+    "TeamID": "4",
+    "TeamName": "Stull"
+  },
+  {
+    "PlayerID": "40000479",
+    "PlayerName": "Sergio Garcia",
+    "TeamID": "13",
+    "TeamName": "Hivnor"
+  },
+  {
+    "PlayerID": "40005232",
+    "PlayerName": "Ryan Gerard",
+    "TeamID": "13",
+    "TeamName": "Hivnor"
+  },
+  {
+    "PlayerID": "40005060",
+    "PlayerName": "Chris Gotterup",
+    "TeamID": "14",
+    "TeamName": "Gibb"
+  },
+  {
+    "PlayerID": "40002343",
+    "PlayerName": "Ben Griffin",
+    "TeamID": "20",
+    "TeamName": "Plato"
+  },
+  {
+    "PlayerID": "40003725",
+    "PlayerName": "Harry Hall",
+    "TeamID": "17",
+    "TeamName": "Hoban"
+  },
+  {
+    "PlayerID": "40000585",
+    "PlayerName": "Brian Harman",
+    "TeamID": "10",
+    "TeamName": "Kaprosy"
+  },
+  {
+    "PlayerID": "40000596",
+    "PlayerName": "Tyrrell Hatton",
+    "TeamID": "10",
+    "TeamName": "Kaprosy"
+  },
+  {
+    "PlayerID": "40000615",
+    "PlayerName": "Russell Henley",
+    "TeamID": "17",
+    "TeamName": "Hoban"
+  },
+  {
+    "PlayerID": "40003193",
+    "PlayerName": "Nicolai Hojgaard",
+    "TeamID": "6",
+    "TeamName": "Fee"
+  },
+  {
+    "PlayerID": "40006413",
+    "PlayerName": "Brandon Holtz",
+    "TeamID": "",
+    "TeamName": "#N/A"
+  },
+  {
+    "PlayerID": "40003218",
+    "PlayerName": "Viktor Hovland",
+    "TeamID": "20",
+    "TeamName": "Plato"
+  },
+  {
+    "PlayerID": "40006268",
+    "PlayerName": "Mason Howell",
+    "TeamID": "5",
+    "TeamName": "Campbell"
+  },
+  {
+    "PlayerID": "40002605",
+    "PlayerName": "Sung-Jae Im",
+    "TeamID": "22",
+    "TeamName": "Randazzo"
+  },
+  {
+    "PlayerID": "40000015",
+    "PlayerName": "Dustin Johnson",
+    "TeamID": "15",
+    "TeamName": "Ferritto"
+  },
+  {
+    "PlayerID": "40000012",
+    "PlayerName": "Zach Johnson",
+    "TeamID": "14",
+    "TeamName": "Gibb"
+  },
+  {
+    "PlayerID": "40000763",
+    "PlayerName": "Michael Kim",
+    "TeamID": "3",
+    "TeamName": "Mucci"
+  },
+  {
+    "PlayerID": "40000764",
+    "PlayerName": "Si Woo Kim",
+    "TeamID": "15",
+    "TeamName": "Ferritto"
+  },
+  {
+    "PlayerID": "40000775",
+    "PlayerName": "Jake Knapp",
+    "TeamID": "11",
+    "TeamName": "Mignogna"
+  },
+  {
+    "PlayerID": "40000007",
+    "PlayerName": "Brooks Koepka",
+    "TeamID": "16",
+    "TeamName": "Bagnowski"
+  },
+  {
+    "PlayerID": "40006414",
+    "PlayerName": "Pongsapak Laopakdee",
+    "TeamID": "4",
+    "TeamName": "Stull"
+  },
+  {
+    "PlayerID": "40002925",
+    "PlayerName": "Min Woo Lee",
+    "TeamID": "18",
+    "TeamName": "Kaminsky"
+  },
+  {
+    "PlayerID": "40000890",
+    "PlayerName": "Shane Lowry",
+    "TeamID": "12",
+    "TeamName": "J. Ayers"
+  },
+  {
+    "PlayerID": "40002950",
+    "PlayerName": "Robert MacIntyre",
+    "TeamID": "10",
+    "TeamName": "Kaprosy"
+  },
+  {
+    "PlayerID": "40000017",
+    "PlayerName": "Hideki Matsuyama",
+    "TeamID": "12",
+    "TeamName": "J. Ayers"
+  },
+  {
+    "PlayerID": "40000965",
+    "PlayerName": "Rory McIlroy",
+    "TeamID": "2",
+    "TeamName": "Brunetti"
+  },
+  {
+    "PlayerID": "40003147",
+    "PlayerName": "Tom McKibbin",
+    "TeamID": "20",
+    "TeamName": "Plato"
+  },
+  {
+    "PlayerID": "40000977",
+    "PlayerName": "Maverick McNealy",
+    "TeamID": "14",
+    "TeamName": "Gibb"
+  },
+  {
+    "PlayerID": "40000991",
+    "PlayerName": "Phil Mickelson",
+    "TeamID": "",
+    "TeamName": "#N/A"
+  },
+  {
+    "PlayerID": "40002471",
+    "PlayerName": "Collin Morikawa",
+    "TeamID": "9",
+    "TeamName": "M. Ayers"
+  },
+  {
+    "PlayerID": "40001064",
+    "PlayerName": "Alexander Noren",
+    "TeamID": "22",
+    "TeamName": "Randazzo"
+  },
+  {
+    "PlayerID": "40002911",
+    "PlayerName": "Andrew Novak",
+    "TeamID": "8",
+    "TeamName": "Huszczo"
+  },
+  {
+    "PlayerID": "40003697",
+    "PlayerName": "Marco Penge",
+    "TeamID": "4",
+    "TeamName": "Stull"
+  },
+  {
+    "PlayerID": "40006415",
+    "PlayerName": "Mateo Pulcini",
+    "TeamID": "3",
+    "TeamName": "Mucci"
+  },
+  {
+    "PlayerID": "40001199",
+    "PlayerName": "Jon Rahm",
+    "TeamID": "15",
+    "TeamName": "Ferritto"
+  },
+  {
+    "PlayerID": "40002578",
+    "PlayerName": "Aaron Rai",
+    "TeamID": "1",
+    "TeamName": "Gilson"
+  },
+  {
+    "PlayerID": "40000002",
+    "PlayerName": "Patrick Reed",
+    "TeamID": "19",
+    "TeamName": "Baucher"
+  },
+  {
+    "PlayerID": "40001224",
+    "PlayerName": "Davis Riley",
+    "TeamID": "18",
+    "TeamName": "Kaminsky"
+  },
+  {
+    "PlayerID": "40000013",
+    "PlayerName": "Justin Rose",
+    "TeamID": "13",
+    "TeamName": "Hivnor"
+  },
+  {
+    "PlayerID": "40001638",
+    "PlayerName": "Xander Schauffele",
+    "TeamID": "8",
+    "TeamName": "Huszczo"
+  },
+  {
+    "PlayerID": "40001274",
+    "PlayerName": "Scottie Scheffler",
+    "TeamID": "1",
+    "TeamName": "Gilson"
+  },
+  {
+    "PlayerID": "40000010",
+    "PlayerName": "Adam Scott",
+    "TeamID": "2",
+    "TeamName": "Brunetti"
+  },
+  {
+    "PlayerID": "40001333",
+    "PlayerName": "Cameron Smith",
+    "TeamID": "5",
+    "TeamName": "Campbell"
+  },
+  {
+    "PlayerID": "40001353",
+    "PlayerName": "J.J. Spaun",
+    "TeamID": "6",
+    "TeamName": "Fee"
+  },
+  {
+    "PlayerID": "40000004",
+    "PlayerName": "Jordan Spieth",
+    "TeamID": "16",
+    "TeamName": "Bagnowski"
+  },
+  {
+    "PlayerID": "40004729",
+    "PlayerName": "Sam Stevens",
+    "TeamID": "4",
+    "TeamName": "Stull"
+  },
+  {
+    "PlayerID": "40002785",
+    "PlayerName": "Sepp Straka",
+    "TeamID": "18",
+    "TeamName": "Kaminsky"
+  },
+  {
+    "PlayerID": "40001424",
+    "PlayerName": "Nick Taylor",
+    "TeamID": "19",
+    "TeamName": "Baucher"
+  },
+  {
+    "PlayerID": "40001434",
+    "PlayerName": "Justin Thomas",
+    "TeamID": "19",
+    "TeamName": "Baucher"
+  },
+  {
+    "PlayerID": "40000001",
+    "PlayerName": "Bubba Watson",
+    "TeamID": "12",
+    "TeamName": "J. Ayers"
+  },
+  {
+    "PlayerID": "40001536",
+    "PlayerName": "Mike Weir",
+    "TeamID": "",
+    "TeamName": "#N/A"
+  },
+  {
+    "PlayerID": "40001565",
+    "PlayerName": "Danny Willett",
+    "TeamID": "9",
+    "TeamName": "M. Ayers"
+  },
+  {
+    "PlayerID": "40001594",
+    "PlayerName": "Gary Woodland",
+    "TeamID": "11",
+    "TeamName": "Mignogna"
+  },
+  {
+    "PlayerID": "40003609",
+    "PlayerName": "Cameron Young",
+    "TeamID": "3",
+    "TeamName": "Mucci"
+  }
+]
