@@ -14,6 +14,8 @@ async function updateData() {
         }
 
         const data = await response.json();
+        console.log("Players returned:", data.length);
+        console.log("Sample player:", data[0]);
 
         // Transform API response into scores.json format
         let scores = {};
