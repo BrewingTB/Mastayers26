@@ -29,8 +29,9 @@
     }
 
     .team-name {
-        font-size: 20px;
-        font-weight: bold;
+        font-size: 22px;
+        font-weight: 700;
+        cursor: pointer;
     }
 
     .team-total {
@@ -52,10 +53,28 @@
         border-radius: 6px;
         cursor: pointer;
         border: 1px solid #ccc;
+        font-size: 18px;
+        font-weight: 600;
+        transition: color 0.2s ease, transform 0.15s ease;
     }
 
-    .player:hover {
-        background: #f7f7f7;
+    .player:hover,
+    .team-name:hover {
+        color: #0b6623;
+        transform: translateX(4px);
+        text-decoration: underline;
+    }
+
+    /* ⭐ NEW: Player row layout */
+    .player-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .player-total {
+        font-weight: 700;
+        color: #0b6623;
     }
 
     .rounds {
@@ -78,6 +97,17 @@
 
     th {
         background: #eee;
+    }
+
+    .arrow {
+        display: inline-block;
+        transition: transform 0.2s ease;
+        margin-right: 6px;
+        font-size: 14px;
+    }
+
+    .expanded {
+        transform: rotate(90deg);
     }
 </style>
 </head>
@@ -117,7 +147,9 @@ function renderLeaderboard(fantasy, scores, teamPlayers) {
         const teamDiv = document.createElement("div");
         teamDiv.className = "team";
         teamDiv.innerHTML = `
-            <span class="team-name">${team.teamName}</span>
+            <span class="team-name">
+                <span class="arrow">▶</span> ${team.teamName}
+            </span>
             <span class="team-total">${team.total}</span>
         `;
 
@@ -130,14 +162,33 @@ function renderLeaderboard(fantasy, scores, teamPlayers) {
             const player = scores[String(pid)];
             if (!player) return;
 
+            // ⭐ Calculate player's total Stableford score
+            let playerTotal = 0;
+            for (let r = 1; r <= 4; r++) {
+                for (let h = 1; h <= 18; h++) {
+                    const key = `${r}-${h}`;
+                    const hole = player.holes[key];
+                    if (hole) {
+                        const delta = hole.strokes - hole.par;
+                        playerTotal += stableford(delta);
+                    }
+                }
+            }
+
             const playerDiv = document.createElement("div");
             playerDiv.className = "player";
-            playerDiv.textContent = player.name;
+            playerDiv.innerHTML = `
+                <div class="player-row">
+                    <span class="arrow">▶</span>
+                    <span class="player-name-text">${player.name}</span>
+                    <span class="player-total">${playerTotal} pts</span>
+                </div>
+            `;
 
             const roundsDiv = document.createElement("div");
             roundsDiv.className = "rounds";
 
-            // ⭐ Build ONE unified scorecard table
+            // ⭐ One unified scorecard table per player
             const table = document.createElement("table");
 
             // Holes header row
@@ -150,6 +201,9 @@ function renderLeaderboard(fantasy, scores, teamPlayers) {
             let tableHTML = headerRow;
 
             // 4 round rows
+            let columnTotals = Array(18).fill(0);
+            let grandTotal = 0;
+
             for (let r = 1; r <= 4; r++) {
                 let row = `<tr><td>Round ${r}</td>`;
                 let roundTotal = 0;
@@ -162,23 +216,40 @@ function renderLeaderboard(fantasy, scores, teamPlayers) {
                         const delta = hole.strokes - hole.par;
                         const sf = stableford(delta);
                         roundTotal += sf;
+                        columnTotals[h - 1] += sf;
                         row += `<td>${sf}</td>`;
                     } else {
                         row += "<td>-</td>";
                     }
                 }
 
+                grandTotal += roundTotal;
                 row += `<td><strong>${roundTotal}</strong></td></tr>`;
                 tableHTML += row;
             }
+
+            // ⭐ Totals row
+            let totalsRow = "<tr><td><strong>Totals</strong></td>";
+            for (let i = 0; i < 18; i++) {
+                totalsRow += `<td><strong>${columnTotals[i]}</strong></td>`;
+            }
+            totalsRow += `<td><strong>${grandTotal}</strong></td></tr>`;
+
+            tableHTML += totalsRow;
 
             table.innerHTML = tableHTML;
             roundsDiv.appendChild(table);
 
             playerDiv.addEventListener("click", (e) => {
                 e.stopPropagation();
-                roundsDiv.style.display =
-                    roundsDiv.style.display === "none" ? "block" : "none";
+                const isOpen = roundsDiv.style.display === "block";
+                roundsDiv.style.display = isOpen ? "none" : "block";
+
+                const arrow = playerDiv.querySelector(".arrow");
+                if (arrow) {
+                    if (isOpen) arrow.classList.remove("expanded");
+                    else arrow.classList.add("expanded");
+                }
             });
 
             playersDiv.appendChild(playerDiv);
@@ -188,8 +259,14 @@ function renderLeaderboard(fantasy, scores, teamPlayers) {
         teamDiv.appendChild(playersDiv);
 
         teamDiv.addEventListener("click", () => {
-            playersDiv.style.display =
-                playersDiv.style.display === "none" ? "block" : "none";
+            const isOpen = playersDiv.style.display === "block";
+            playersDiv.style.display = isOpen ? "none" : "block";
+
+            const arrow = teamDiv.querySelector(".team-name .arrow");
+            if (arrow) {
+                if (isOpen) arrow.classList.remove("expanded");
+                else arrow.classList.add("expanded");
+            }
         });
 
         container.appendChild(teamDiv);
@@ -210,7 +287,3 @@ loadData();
 
 </body>
 </html>
-
-
-
-
