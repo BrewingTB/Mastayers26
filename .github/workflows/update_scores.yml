@@ -1,3 +1,4 @@
+# force cron refresh
 name: Update Scores and Leaderboard
 
 on:
