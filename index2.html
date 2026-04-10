@@ -137,19 +137,21 @@ function renderLeaderboard(fantasy, scores, teamPlayers) {
             const roundsDiv = document.createElement("div");
             roundsDiv.className = "rounds";
 
-            // Build clean scorecard-style tables
+            // ⭐ Build ONE unified scorecard table
+            const table = document.createElement("table");
+
+            // Holes header row
+            let headerRow = "<tr><th>Hole</th>";
+            for (let h = 1; h <= 18; h++) {
+                headerRow += `<th>${h}</th>`;
+            }
+            headerRow += "<th>Total</th></tr>";
+
+            let tableHTML = headerRow;
+
+            // 4 round rows
             for (let r = 1; r <= 4; r++) {
-                const roundTable = document.createElement("table");
-
-                // Header row: Round X + holes 1–18 + Total
-                let headerRow = "<tr><th>Round</th>";
-                for (let h = 1; h <= 18; h++) {
-                    headerRow += `<th>${h}</th>`;
-                }
-                headerRow += "<th>Total</th></tr>";
-
-                // Score row — FIXED: first column now says "Round X"
-                let scoreRow = `<tr><td>Round ${r}</td>`;
+                let row = `<tr><td>Round ${r}</td>`;
                 let roundTotal = 0;
 
                 for (let h = 1; h <= 18; h++) {
@@ -160,17 +162,18 @@ function renderLeaderboard(fantasy, scores, teamPlayers) {
                         const delta = hole.strokes - hole.par;
                         const sf = stableford(delta);
                         roundTotal += sf;
-                        scoreRow += `<td>${sf}</td>`;
+                        row += `<td>${sf}</td>`;
                     } else {
-                        scoreRow += "<td>-</td>";
+                        row += "<td>-</td>";
                     }
                 }
 
-                scoreRow += `<td><strong>${roundTotal}</strong></td></tr>`;
-
-                roundTable.innerHTML = headerRow + scoreRow;
-                roundsDiv.appendChild(roundTable);
+                row += `<td><strong>${roundTotal}</strong></td></tr>`;
+                tableHTML += row;
             }
+
+            table.innerHTML = tableHTML;
+            roundsDiv.appendChild(table);
 
             playerDiv.addEventListener("click", (e) => {
                 e.stopPropagation();
@@ -207,6 +210,7 @@ loadData();
 
 </body>
 </html>
+
 
 
 
