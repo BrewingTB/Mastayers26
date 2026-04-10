@@ -12,6 +12,13 @@
 
     h1 {
         text-align: center;
+        margin-bottom: 5px;
+    }
+
+    #lastUpdated {
+        text-align: center;
+        font-style: italic;
+        color: #555;
         margin-bottom: 20px;
     }
 
@@ -65,7 +72,6 @@
         text-decoration: underline;
     }
 
-    /* ⭐ NEW: Player row layout */
     .player-row {
         display: flex;
         justify-content: space-between;
@@ -114,9 +120,34 @@
 <body>
 
 <h1>Masters Fantasy Leaderboard</h1>
+<p id="lastUpdated"></p>
+
 <div id="leaderboard"></div>
 
 <script>
+async function loadLastUpdated() {
+    const res = await fetch(
+        "https://api.github.com/repos/brewingtb/Mastayers26/commits?path=data/fantasy.json"
+    );
+    const commits = await res.json();
+
+    if (commits.length > 0) {
+        const timestamp = commits[0].commit.committer.date;
+        const date = new Date(timestamp);
+
+        document.getElementById("lastUpdated").textContent =
+            "Last updated: " +
+            date.toLocaleString("en-US", {
+                weekday: "short",
+                month: "short",
+                day: "numeric",
+                hour: "numeric",
+                minute: "2-digit",
+                hour12: true
+            });
+    }
+}
+
 async function loadData() {
     const fantasyRes = await fetch("https://brewingtb.github.io/Mastayers26/data/fantasy.json");
     const fantasy = await fantasyRes.json();
@@ -162,7 +193,7 @@ function renderLeaderboard(fantasy, scores, teamPlayers) {
             const player = scores[String(pid)];
             if (!player) return;
 
-            // ⭐ Calculate player's total Stableford score
+            // Calculate player's total Stableford score
             let playerTotal = 0;
             for (let r = 1; r <= 4; r++) {
                 for (let h = 1; h <= 18; h++) {
@@ -188,7 +219,7 @@ function renderLeaderboard(fantasy, scores, teamPlayers) {
             const roundsDiv = document.createElement("div");
             roundsDiv.className = "rounds";
 
-            // ⭐ One unified scorecard table per player
+            // One unified scorecard table per player
             const table = document.createElement("table");
 
             // Holes header row
@@ -228,7 +259,7 @@ function renderLeaderboard(fantasy, scores, teamPlayers) {
                 tableHTML += row;
             }
 
-            // ⭐ Totals row
+            // Totals row
             let totalsRow = "<tr><td><strong>Totals</strong></td>";
             for (let i = 0; i < 18; i++) {
                 totalsRow += `<td><strong>${columnTotals[i]}</strong></td>`;
@@ -282,8 +313,12 @@ function stableford(delta) {
     return -3;
 }
 
+loadLastUpdated();
+setInterval(loadLastUpdated, 60000);
+
 loadData();
 </script>
 
 </body>
 </html>
+
