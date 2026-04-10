@@ -34,14 +34,18 @@ for (const teamName of Object.keys(teamPlayers)) {
         const playerScore = scores[playerId];
         if (!playerScore) continue;
 
-        const round = playerScore.round;
         const holes = playerScore.holes;
 
-        for (let hole = 1; hole <= 18; hole++) {
-            const holeData = holes[hole];
+        // NEW FORMAT: keys like "1-7"
+        for (const key of Object.keys(holes)) {
+            const holeData = holes[key];
             if (!holeData) continue;
 
-            const { strokes, par } = holeData;
+            const round = holeData.round;
+            const hole = holeData.hole;
+            const strokes = holeData.strokes;
+            const par = holeData.par;
+
             const delta = strokes - par;
             const sf = stableford(delta);
 
@@ -49,8 +53,8 @@ for (const teamName of Object.keys(teamPlayers)) {
                 team: teamName,
                 playerId,
                 playerName: playerScore.name,
-                hole,
                 round,
+                hole,
                 strokes,
                 par,
                 stableford: sf
@@ -66,3 +70,4 @@ fs.writeFileSync(
 );
 
 console.log('✔ dataset.json created');
+
