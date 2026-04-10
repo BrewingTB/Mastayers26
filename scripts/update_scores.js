@@ -80,7 +80,9 @@ async function updateData() {
 
                         const strokes = hole.Par + delta;
 
-                        scores[playerId].holes[hole.Number] = {
+                        scores[playerId].holes[`${r.Number}-${hole.Number}`] = {
+                            round: r.Number,
+                            hole: hole.Number,
                             strokes,
                             par: hole.Par
                         };
