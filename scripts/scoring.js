@@ -21,18 +21,14 @@ function scoreHole(strokes, par) {
     return stableford(delta);
 }
 
-// Detect the CURRENT round from scores.json
-function detectRound(player) {
-    return player.round || 1;
-}
-
-// Build leaderboard
+// Build leaderboard with full multi-round structure
 let leaderboard = {};
 
 for (const teamName of Object.keys(teamPlayers)) {
     leaderboard[teamName] = {
-        total: 0,
-        holes: {}
+        rounds: { "1": {}, "2": {}, "3": {}, "4": {} },
+        roundTotals: { "1": 0, "2": 0, "3": 0, "4": 0 },
+        total: 0
     };
 
     let players = teamPlayers[teamName];
@@ -46,47 +42,52 @@ for (const teamName of Object.keys(teamPlayers)) {
     }
     if (!Array.isArray(players)) continue;
 
-    // Loop through holes 1–18
-    for (let hole = 1; hole <= 18; hole++) {
-        let holeScores = [];
+    // Loop through rounds 1–4
+    for (let round = 1; round <= 4; round++) {
 
-        for (const playerId of players) {
-            const player = scores[playerId];
-            if (!player) continue;
+        // Loop through holes 1–18
+        for (let hole = 1; hole <= 18; hole++) {
+            let holeScores = [];
 
-            const currentRound = detectRound(player);
+            for (const playerId of players) {
+                const player = scores[playerId];
+                if (!player) continue;
 
-            // Look for key like "2-7"
-            const key = `${currentRound}-${hole}`;
-            const holeData = player.holes[key];
+                // Look for key like "2-7"
+                const key = `${round}-${hole}`;
+                const holeData = player.holes[key];
+                if (!holeData) continue;
 
-            if (!holeData) continue;
+                const { strokes, par } = holeData;
+                const sf = scoreHole(strokes, par);
 
-            const { strokes, par } = holeData;
-            const sf = scoreHole(strokes, par);
-
-            if (sf !== null) holeScores.push(sf);
-        }
-
-        let holeTotal = 0;
-
-        if (holeScores.length > 0) {
-            // Determine round from first player
-            let round = detectRound(scores[players[0]]);
-
-            // R1–R2: sum all 4 players
-            // R3–R4: best 2 players
-            if (round <= 2) {
-                holeTotal = holeScores.reduce((a, b) => a + b, 0);
-            } else {
-                holeScores.sort((a, b) => b - a);
-                holeTotal = holeScores.slice(0, 2).reduce((a, b) => a + b, 0);
+                if (sf !== null) holeScores.push(sf);
             }
-        }
 
-        leaderboard[teamName].holes[hole] = holeTotal;
-        leaderboard[teamName].total += holeTotal;
+            let holeTotal = 0;
+
+            if (holeScores.length > 0) {
+                // R1–R2: sum all 4 players
+                // R3–R4: best 2 players
+                if (round <= 2) {
+                    holeTotal = holeScores.reduce((a, b) => a + b, 0);
+                } else {
+                    holeScores.sort((a, b) => b - a);
+                    holeTotal = holeScores.slice(0, 2).reduce((a, b) => a + b, 0);
+                }
+            }
+
+            leaderboard[teamName].rounds[round][hole] = holeTotal;
+            leaderboard[teamName].roundTotals[round] += holeTotal;
+        }
     }
+
+    // Total across all rounds
+    leaderboard[teamName].total =
+        leaderboard[teamName].roundTotals[1] +
+        leaderboard[teamName].roundTotals[2] +
+        leaderboard[teamName].roundTotals[3] +
+        leaderboard[teamName].roundTotals[4];
 }
 
 // Save leaderboard
@@ -95,4 +96,4 @@ fs.writeFileSync(
     JSON.stringify(leaderboard, null, 2)
 );
 
-console.log('✔ fantasy.json updated');
+console.log('✔ fantasy.json updated with full multi-round scoring');
