@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mastayers Fantasy Leaderboard</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { padding: 10px; border-bottom: 1px solid #ddd; }
+    tr.player-row { background: #f9f9f9; }
+    tr.player-row td { padding-left: 40px; cursor: pointer; }
+    tr.team-row { cursor: pointer; }
+
+    /* Modal styling */
+    #playerModal {
+      display:none;
+      position:fixed;
+      top:0; left:0;
+      width:100%; height:100%;
+      background:rgba(0,0,0,0.6);
+      justify-content:center;
+      align-items:center;
+    }
+    #playerModalContent {
+      background:white;
+      padding:20px;
+      border-radius:8px;
+      width:90%;
+      max-width:900px;
+      max-height:90%;
+      overflow:auto;
+    }
+    #closePlayerModal {
+      float:right;
+      cursor:pointer;
+      font-size:22px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Mastayers 2026 Leaderboard</h1>
+<p></p>
+<p id="lastUpdated" style="font-style: italic; color: #555;"></p>
+
+<table id="leaderboard">
+  <thead>
+    <tr>
+      <th>Team<br>(click team name to see all players)</th>
+      <th>Score</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<!-- PLAYER SCORE MODAL -->
+<div id="playerModal">
+  <div id="playerModalContent">
+    <span id="closePlayerModal">&times;</span>
+    <h2 id="modalPlayerName"></h2>
+    <div id="modalScoreTable"></div>
+  </div>
+</div>
+
+<script>
+async function loadLeaderboard() {
+  const fantasyRes = await fetch('data/fantasy.json');
+  const fantasy = await fantasyRes.json();
+
+  const datasetRes = await fetch('data/dataset.json');
+  const dataset = await datasetRes.json();
+
+  let teams = Object.entries(fantasy).map(([team, info]) => ({
+    team,
+    total: info.total
+  }));
+
+  teams.sort((a, b) => b.total - a.total);
+
+  const tbody = document.querySelector('#leaderboard tbody');
+  tbody.innerHTML = '';
+
+  teams.forEach(t => {
+    const tr = document.createElement('tr');
+    tr.classList.add('team-row');
+    tr.dataset.team = t.team;
+
+    tr.innerHTML = `
+      <td>${t.team}</td>
+      <td>${t.total}</td>
+    `;
+
+    tbody.appendChild(tr);
+
+    tr.addEventListener('click', () => toggleTeam(t.team, tr, dataset));
+  });
+}
+
+function toggleTeam(team, row, dataset) {
+  const tbody = row.parentNode;
+
+  if (row.classList.contains('expanded')) {
+    let next = row.nextSibling;
+    while (next && next.classList.contains('player-row')) {
+      next.remove();
+      next = row.nextSibling;
+    }
+    row.classList.remove('expanded');
+    return;
+  }
+
+  row.classList.add('expanded');
+
+  const rows = dataset.filter(r => r.team === team);
+
+  const players = {};
+  rows.forEach(r => {
+    if (!players[r.playerName]) players[r.playerName] = 0;
+    players[r.playerName] += r.stableford;
+  });
+
+  const playerRows = Object.entries(players)
+    .map(([name, total]) => ({ name, total }))
+    .sort((a, b) => b.total - a.total);
+
+  playerRows.forEach(p => {
+    const pr = document.createElement('tr');
+    pr.classList.add('player-row');
+
+    pr.innerHTML = `
+      <td class="player-click" data-player="${p.name}">${p.name}</td>
+      <td>${p.total}</td>
+    `;
+
+    row.insertAdjacentElement('afterend', pr);
+    row = pr;
+
+    pr.querySelector(".player-click").addEventListener("click", (e) => {
+      e.stopPropagation();
+      showPlayerScores(p.name, dataset);
+    });
+  });
+}
+
+function showPlayerScores(playerName, dataset) {
+  const modal = document.getElementById("playerModal");
+  const modalName = document.getElementById("modalPlayerName");
+  const modalTable = document.getElementById("modalScoreTable");
+
+  modalName.textContent = playerName;
+
+  const rounds = {};
+
+  dataset.forEach(r => {
+    if (r.playerName === playerName) {
+      if (!rounds[r.round]) rounds[r.round] = Array(18).fill(0);
+      rounds[r.round][r.hole - 1] = r.stableford;
+    }
+  });
+
+  let html = `<table border="1" cellpadding="6" style="border-collapse:collapse; width:100%;">`;
+
+  html += `<tr><th>Round</th>`;
+  for (let i = 1; i <= 18; i++) html += `<th>${i}</th>`;
+  html += `<th>Total</th></tr>`;
+
+  Object.keys(rounds).sort((a,b) => a - b).forEach(round => {
+    const scores = rounds[round];
+    const total = scores.reduce((a,b) => a + b, 0);
+
+    html += `<tr><td>Round ${round}</td>`;
+    scores.forEach(s => html += `<td>${s}</td>`);
+    html += `<td><b>${total}</b></td></tr>`;
+  });
+
+  html += `</table>`;
+
+  modalTable.innerHTML = html;
+
+  modal.style.display = "flex";
+}
+
+document.getElementById("closePlayerModal").onclick = () => {
+  document.getElementById("playerModal").style.display = "none";
+};
+
+window.onclick = (e) => {
+  if (e.target.id === "playerModal") {
+    document.getElementById("playerModal").style.display = "none";
+  }
+};
+
+loadLeaderboard();
+</script>
+
+<script>
+async function loadLastUpdated() {
+  const res = await fetch('https://api.github.com/repos/brewingtb/Mastayers26/commits?path=data/fantasy.json');
+  const commits = await res.json();
+
+  if (commits.length > 0) {
+    const timestamp = commits[0].commit.committer.date;
+    const date = new Date(timestamp);
+
+    document.getElementById('lastUpdated').textContent =
+      "Last updated: " + date.toLocaleString("en-US", {
+        weekday: "short",
+        hour: "numeric",
+        minute: "2-digit",
+        hour12: true,
+        month: "short",
+        day: "numeric"
+      });
+  }
+}
+
+loadLastUpdated();
+setInterval(loadLastUpdated, 60000);
+</script>
+
+</body>
+</html>
