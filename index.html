@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Mastayers 2026 Leaderboard</title>
+
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -22,6 +23,7 @@
         margin-bottom: 20px;
     }
 
+    /* TEAM ROW */
     .team {
         background: white;
         padding: 12px;
@@ -47,51 +49,39 @@
         font-weight: bold;
     }
 
-    .players {
-        margin-top: 10px;
-        padding-left: 20px;
-        display: none;
-    }
-
-    .player {
-        background: #fff;
-        padding: 10px;
+    /* ROUND ROW */
+    .round {
+        background: #ffffff;
+        border-left: 8px solid #0b6623; /* Masters green */
+        border-right: 2px solid #0b6623;
+        border-bottom: 2px solid #0b6623;
+        padding: 10px 14px;
         margin: 6px 0;
-        border-radius: 6px;
         cursor: pointer;
-        border: 1px solid #ccc;
         font-size: 18px;
         font-weight: 600;
-        transition: color 0.2s ease, transform 0.15s ease;
-    }
-
-    .player:hover,
-    .team-name:hover {
-        color: #0b6623;
-        transform: translateX(4px);
-        text-decoration: underline;
-    }
-
-    .player-row {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    .player-total {
-        font-weight: 700;
-        color: #0b6623;
-    }
-
-    .rounds {
-        margin-top: 10px;
-        padding-left: 20px;
+    /* COLLAPSIBLE (NO SLIDE) */
+    .collapsible {
         display: none;
+        padding-left: 20px;
     }
 
+    /* TABLE WRAPPER */
+    .table-wrapper {
+        overflow-x: auto;
+        margin-top: 10px;
+    }
+
+    /* SCORE TABLE */
     table {
         width: 100%;
         border-collapse: collapse;
+        min-width: 900px;
         margin-bottom: 12px;
     }
 
@@ -103,8 +93,20 @@
 
     th {
         background: #eee;
+        font-weight: 700;
     }
 
+    .player-name {
+        background: #f0f0f0;
+        font-weight: 700;
+    }
+
+    .team-total-row {
+        background: #e8f5e9;
+        font-weight: 700;
+    }
+
+    /* ARROWS */
     .arrow {
         display: inline-block;
         transition: transform 0.2s ease;
@@ -117,6 +119,7 @@
     }
 </style>
 </head>
+
 <body>
 
 <h1>Mastayers 2026 Leaderboard</h1>
@@ -125,6 +128,7 @@
 <div id="leaderboard"></div>
 
 <script>
+/* ---------------- LAST UPDATED ---------------- */
 async function loadLastUpdated() {
     const res = await fetch(
         "https://api.github.com/repos/brewingtb/Mastayers26/commits?path=data/fantasy.json"
@@ -148,19 +152,21 @@ async function loadLastUpdated() {
     }
 }
 
+/* ---------------- LOAD DATA ---------------- */
 async function loadData() {
-    const fantasyRes = await fetch("https://brewingtb.github.io/Mastayers26/data/fantasy.json");
+    const fantasyRes = await fetch("data/fantasy.json");
     const fantasy = await fantasyRes.json();
 
-    const scoresRes = await fetch("https://brewingtb.github.io/Mastayers26/data/scores.json");
+    const scoresRes = await fetch("data/scores.json");
     const scores = await scoresRes.json();
 
-    const teamPlayersRes = await fetch("https://brewingtb.github.io/Mastayers26/data/team_players_fixed.json");
+    const teamPlayersRes = await fetch("data/team_players_fixed.json");
     const teamPlayers = await teamPlayersRes.json();
 
     renderLeaderboard(fantasy, scores, teamPlayers);
 }
 
+/* ---------------- RENDER LEADERBOARD ---------------- */
 function renderLeaderboard(fantasy, scores, teamPlayers) {
     const container = document.getElementById("leaderboard");
     container.innerHTML = "";
@@ -168,13 +174,14 @@ function renderLeaderboard(fantasy, scores, teamPlayers) {
     const teams = Object.entries(fantasy)
         .map(([teamName, data]) => ({
             teamName,
-            total: data.total,
-            rounds: data.rounds,
-            roundTotals: data.roundTotals
+            total: data.total
         }))
         .sort((a, b) => b.total - a.total);
 
     teams.forEach(team => {
+        const playerIds = teamPlayers[team.teamName] || [];
+
+        /* TEAM ROW */
         const teamDiv = document.createElement("div");
         teamDiv.className = "team";
         teamDiv.innerHTML = `
@@ -184,126 +191,134 @@ function renderLeaderboard(fantasy, scores, teamPlayers) {
             <span class="team-total">${team.total}</span>
         `;
 
-        const playersDiv = document.createElement("div");
-        playersDiv.className = "players";
+        /* TEAM COLLAPSIBLE */
+        const roundsContainer = document.createElement("div");
+        roundsContainer.className = "collapsible";
 
-        const playerIds = teamPlayers[team.teamName] || [];
+        /* BUILD 4 ROUNDS */
+        for (let r = 1; r <= 4; r++) {
+            const roundTotal = computeTeamRoundTotal(playerIds, scores, r);
 
-        playerIds.forEach(pid => {
-            const player = scores[String(pid)];
-            if (!player) return;
-
-            // Calculate player's total Stableford score
-            let playerTotal = 0;
-            for (let r = 1; r <= 4; r++) {
-                for (let h = 1; h <= 18; h++) {
-                    const key = `${r}-${h}`;
-                    const hole = player.holes[key];
-                    if (hole) {
-                        const delta = hole.strokes - hole.par;
-                        playerTotal += stableford(delta);
-                    }
-                }
-            }
-
-            const playerDiv = document.createElement("div");
-            playerDiv.className = "player";
-            playerDiv.innerHTML = `
-                <div class="player-row">
-                    <span class="arrow">▶</span>
-                    <span class="player-name-text">${player.name}</span>
-                    <span class="player-total">${playerTotal} pts</span>
-                </div>
+            const roundDiv = document.createElement("div");
+            roundDiv.className = "round";
+            roundDiv.innerHTML = `
+                <span><span class="arrow">▶</span> Round ${r}</span>
+                <span>${roundTotal}</span>
             `;
 
-            const roundsDiv = document.createElement("div");
-            roundsDiv.className = "rounds";
+            const roundContent = document.createElement("div");
+            roundContent.className = "collapsible";
 
-            // One unified scorecard table per player
-            const table = document.createElement("table");
-
-            // Holes header row
-            let headerRow = "<tr><th>Hole</th>";
-            for (let h = 1; h <= 18; h++) {
-                headerRow += `<th>${h}</th>`;
-            }
-            headerRow += "<th>Total</th></tr>";
-
-            let tableHTML = headerRow;
-
-            // 4 round rows
-            let columnTotals = Array(18).fill(0);
-            let grandTotal = 0;
-
-            for (let r = 1; r <= 4; r++) {
-                let row = `<tr><td>Round ${r}</td>`;
-                let roundTotal = 0;
-
-                for (let h = 1; h <= 18; h++) {
-                    const key = `${r}-${h}`;
-                    const hole = player.holes[key];
-
-                    if (hole) {
-                        const delta = hole.strokes - hole.par;
-                        const sf = stableford(delta);
-                        roundTotal += sf;
-                        columnTotals[h - 1] += sf;
-                        row += `<td>${sf}</td>`;
-                    } else {
-                        row += "<td>-</td>";
-                    }
-                }
-
-                grandTotal += roundTotal;
-                row += `<td><strong>${roundTotal}</strong></td></tr>`;
-                tableHTML += row;
-            }
-
-            // Totals row
-            let totalsRow = "<tr><td><strong>Totals</strong></td>";
-            for (let i = 0; i < 18; i++) {
-                totalsRow += `<td><strong>${columnTotals[i]}</strong></td>`;
-            }
-            totalsRow += `<td><strong>${grandTotal}</strong></td></tr>`;
-
-            tableHTML += totalsRow;
-
-            table.innerHTML = tableHTML;
-            roundsDiv.appendChild(table);
-
-            playerDiv.addEventListener("click", (e) => {
+            roundDiv.addEventListener("click", (e) => {
                 e.stopPropagation();
-                const isOpen = roundsDiv.style.display === "block";
-                roundsDiv.style.display = isOpen ? "none" : "block";
 
-                const arrow = playerDiv.querySelector(".arrow");
-                if (arrow) {
-                    if (isOpen) arrow.classList.remove("expanded");
-                    else arrow.classList.add("expanded");
+                if (roundContent.innerHTML.trim() === "") {
+                    roundContent.appendChild(
+                        buildRoundTable(playerIds, scores, r)
+                    );
                 }
+
+                roundContent.style.display =
+                    roundContent.style.display === "block" ? "none" : "block";
+
+                const arrow = roundDiv.querySelector(".arrow");
+                arrow.classList.toggle("expanded");
             });
 
-            playersDiv.appendChild(playerDiv);
-            playersDiv.appendChild(roundsDiv);
-        });
+            roundsContainer.appendChild(roundDiv);
+            roundsContainer.appendChild(roundContent);
+        }
 
-        teamDiv.appendChild(playersDiv);
-
+        /* TEAM CLICK */
         teamDiv.addEventListener("click", () => {
-            const isOpen = playersDiv.style.display === "block";
-            playersDiv.style.display = isOpen ? "none" : "block";
+            roundsContainer.style.display =
+                roundsContainer.style.display === "block" ? "none" : "block";
 
             const arrow = teamDiv.querySelector(".team-name .arrow");
-            if (arrow) {
-                if (isOpen) arrow.classList.remove("expanded");
-                else arrow.classList.add("expanded");
-            }
+            arrow.classList.toggle("expanded");
         });
 
         container.appendChild(teamDiv);
+        container.appendChild(roundsContainer);
     });
 }
 
+/* ---------------- COMPUTE TEAM ROUND TOTAL ---------------- */
+function computeTeamRoundTotal(playerIds, scores, roundNumber) {
+    let total = 0;
+
+    playerIds.forEach(pid => {
+        const player = scores[String(pid)];
+        if (!player) return;
+
+        for (let h = 1; h <= 18; h++) {
+            const key = `${roundNumber}-${h}`;
+            const hole = player.holes[key];
+            if (hole) {
+                const delta = hole.strokes - hole.par;
+                total += stableford(delta);
+            }
+        }
+    });
+
+    return total;
+}
+
+/* ---------------- BUILD ROUND TABLE ---------------- */
+function buildRoundTable(playerIds, scores, roundNumber) {
+    const wrapper = document.createElement("div");
+    wrapper.className = "table-wrapper";
+
+    const table = document.createElement("table");
+
+    let html = "<tr><th>Player / Hole</th>";
+    for (let h = 1; h <= 18; h++) html += `<th>${h}</th>`;
+    html += "<th>Total</th></tr>";
+
+    let teamTotals = Array(18).fill(0);
+    let teamRoundTotal = 0;
+
+    playerIds.forEach(pid => {
+        const player = scores[String(pid)];
+        if (!player) return;
+
+        let row = `<tr><td class="player-name">${player.name}</td>`;
+        let playerTotal = 0;
+
+        for (let h = 1; h <= 18; h++) {
+            const key = `${roundNumber}-${h}`;
+            const hole = player.holes[key];
+
+            if (hole) {
+                const delta = hole.strokes - hole.par;
+                const sf = stableford(delta);
+                row += `<td>${sf}</td>`;
+                playerTotal += sf;
+                teamTotals[h - 1] += sf;
+            } else {
+                row += "<td>-</td>";
+            }
+        }
+
+        row += `<td><strong>${playerTotal}</strong></td></tr>`;
+        html += row;
+
+        teamRoundTotal += playerTotal;
+    });
+
+    /* TEAM TOTAL ROW */
+    let totalsRow = "<tr class='team-total-row'><td><strong>TEAM TOTAL</strong></td>";
+    teamTotals.forEach(v => totalsRow += `<td>${v}</td>`);
+    totalsRow += `<td><strong>${teamRoundTotal}</strong></td></tr>`;
+
+    html += totalsRow;
+
+    table.innerHTML = html;
+    wrapper.appendChild(table);
+    return wrapper;
+}
+
+/* ---------------- STABLEFORD ---------------- */
 function stableford(delta) {
     if (delta <= -3) return 8;
     if (delta === -2) return 5;
@@ -313,10 +328,17 @@ function stableford(delta) {
     return -3;
 }
 
+/* ---------------- INIT ---------------- */
 loadLastUpdated();
 setInterval(loadLastUpdated, 60000);
-
 loadData();
+</script>
+
+</body>
+</html>
+
+
+
 </script>
 
 </body>
