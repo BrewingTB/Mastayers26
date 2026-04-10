@@ -1988,6 +1988,12 @@
         "hole": 17,
         "strokes": 4,
         "par": 4
+      },
+      "2-18": {
+        "round": 2,
+        "hole": 18,
+        "strokes": 5,
+        "par": 4
       }
     }
   },
@@ -3242,6 +3248,18 @@
         "hole": 15,
         "strokes": 4,
         "par": 5
+      },
+      "2-16": {
+        "round": 2,
+        "hole": 16,
+        "strokes": 2,
+        "par": 3
+      },
+      "2-17": {
+        "round": 2,
+        "hole": 17,
+        "strokes": 4,
+        "par": 4
       },
       "2-1": {
         "round": 2,
@@ -5960,6 +5978,12 @@
         "hole": 17,
         "strokes": 5,
         "par": 4
+      },
+      "2-18": {
+        "round": 2,
+        "hole": 18,
+        "strokes": 5,
+        "par": 4
       }
     }
   },
@@ -7407,6 +7431,12 @@
         "strokes": 4,
         "par": 4
       },
+      "2-18": {
+        "round": 2,
+        "hole": 18,
+        "strokes": 3,
+        "par": 4
+      },
       "2-17": {
         "round": 2,
         "hole": 17,
@@ -7939,6 +7969,18 @@
         "hole": 15,
         "strokes": 5,
         "par": 5
+      },
+      "2-16": {
+        "round": 2,
+        "hole": 16,
+        "strokes": 2,
+        "par": 3
+      },
+      "2-17": {
+        "round": 2,
+        "hole": 17,
+        "strokes": 5,
+        "par": 4
       }
     }
   },
@@ -11828,6 +11870,12 @@
         "strokes": 4,
         "par": 4
       },
+      "2-18": {
+        "round": 2,
+        "hole": 18,
+        "strokes": 4,
+        "par": 4
+      },
       "2-17": {
         "round": 2,
         "hole": 17,
@@ -14486,6 +14534,18 @@
         "strokes": 4,
         "par": 4
       },
+      "2-17": {
+        "round": 2,
+        "hole": 17,
+        "strokes": 5,
+        "par": 4
+      },
+      "2-16": {
+        "round": 2,
+        "hole": 16,
+        "strokes": 2,
+        "par": 3
+      },
       "2-15": {
         "round": 2,
         "hole": 15,
@@ -15797,6 +15857,18 @@
       "1-18": {
         "round": 1,
         "hole": 18,
+        "strokes": 4,
+        "par": 4
+      },
+      "2-18": {
+        "round": 2,
+        "hole": 18,
+        "strokes": 4,
+        "par": 4
+      },
+      "2-17": {
+        "round": 2,
+        "hole": 17,
         "strokes": 4,
         "par": 4
       },
@@ -18893,6 +18965,12 @@
       "1-18": {
         "round": 1,
         "hole": 18,
+        "strokes": 4,
+        "par": 4
+      },
+      "2-17": {
+        "round": 2,
+        "hole": 17,
         "strokes": 4,
         "par": 4
       },
