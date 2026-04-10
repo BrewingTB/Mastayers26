@@ -88,13 +88,13 @@
 
 <script>
 async function loadData() {
-    const fantasyRes = await fetch("data/fantasy.json");
+    const fantasyRes = await fetch("https://brewingtb.github.io/Mastayers26/data/fantasy.json");
     const fantasy = await fantasyRes.json();
 
-    const scoresRes = await fetch("data/scores.json");
+    const scoresRes = await fetch("https://brewingtb.github.io/Mastayers26/data/scores.json");
     const scores = await scoresRes.json();
 
-    const teamPlayersRes = await fetch("data/team_players_fixed.json");
+    const teamPlayersRes = await fetch("https://brewingtb.github.io/Mastayers26/data/team_players_fixed.json");
     const teamPlayers = await teamPlayersRes.json();
 
     renderLeaderboard(fantasy, scores, teamPlayers);
@@ -127,7 +127,7 @@ function renderLeaderboard(fantasy, scores, teamPlayers) {
         const playerIds = teamPlayers[team.teamName] || [];
 
         playerIds.forEach(pid => {
-            const player = scores[pid];
+            const player = scores[String(pid)];
             if (!player) return;
 
             const playerDiv = document.createElement("div");
@@ -201,3 +201,4 @@ loadData();
 
 </body>
 </html>
+
