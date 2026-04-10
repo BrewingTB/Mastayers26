@@ -2,10 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Load team + player mappings
-const teams = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/teams.json')));
 const teamPlayers = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/team_players_fixed.json')));
-
-// Load hole-by-hole scoring (already cleaned by update_scores.js)
 const scores = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/scores.json')));
 
 // Stableford scoring rules
@@ -24,17 +21,9 @@ function scoreHole(strokes, par) {
     return stableford(delta);
 }
 
-// Detect round from Rounds array
+// Detect the CURRENT round from scores.json
 function detectRound(player) {
-    if (!player || !player.Rounds) return 1;
-
-    for (const r of player.Rounds) {
-        if (r.Holes && r.Holes.some(h => h.Score !== null)) {
-            return r.Number;
-        }
-    }
-
-    return 1;
+    return player.round || 1;
 }
 
 // Build leaderboard
@@ -48,6 +37,7 @@ for (const teamName of Object.keys(teamPlayers)) {
 
     let players = teamPlayers[teamName];
 
+    // Normalize players list
     if (players && typeof players === 'object' && !Array.isArray(players)) {
         players = Object.values(players);
     }
@@ -56,6 +46,7 @@ for (const teamName of Object.keys(teamPlayers)) {
     }
     if (!Array.isArray(players)) continue;
 
+    // Loop through holes 1–18
     for (let hole = 1; hole <= 18; hole++) {
         let holeScores = [];
 
@@ -63,7 +54,12 @@ for (const teamName of Object.keys(teamPlayers)) {
             const player = scores[playerId];
             if (!player) continue;
 
-            const holeData = player.holes[hole];
+            const currentRound = detectRound(player);
+
+            // Look for key like "2-7"
+            const key = `${currentRound}-${hole}`;
+            const holeData = player.holes[key];
+
             if (!holeData) continue;
 
             const { strokes, par } = holeData;
@@ -75,16 +71,11 @@ for (const teamName of Object.keys(teamPlayers)) {
         let holeTotal = 0;
 
         if (holeScores.length > 0) {
-            let round = 1;
+            // Determine round from first player
+            let round = detectRound(scores[players[0]]);
 
-            for (const pid of players) {
-                const p = scores[pid];
-                if (!p) continue;
-
-                round = detectRound(p);
-                break;
-            }
-
+            // R1–R2: sum all 4 players
+            // R3–R4: best 2 players
             if (round <= 2) {
                 holeTotal = holeScores.reduce((a, b) => a + b, 0);
             } else {
@@ -98,6 +89,7 @@ for (const teamName of Object.keys(teamPlayers)) {
     }
 }
 
+// Save leaderboard
 fs.writeFileSync(
     path.join(__dirname, '../data/fantasy.json'),
     JSON.stringify(leaderboard, null, 2)
