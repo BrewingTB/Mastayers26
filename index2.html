@@ -2,323 +2,218 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Mastayers 2026 Leaderboard</title>
+<title>Masters Fantasy Leaderboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        background: #f5f5f5;
-        padding: 20px;
-    }
+/* TEAM ROW */
+.team {
+  background: #f5f5f5;
+  border: 2px solid #1a4d2e;
+  padding: 12px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    h1 {
-        text-align: center;
-        margin-bottom: 5px;
-    }
+/* ROUND ROW */
+.round {
+  background: #ffffff;
+  border-left: 8px solid #1a4d2e; /* Masters green */
+  border-right: 2px solid #1a4d2e;
+  border-bottom: 2px solid #1a4d2e;
+  padding: 10px 14px;
+  margin: 6px 0;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    #lastUpdated {
-        text-align: center;
-        font-style: italic;
-        color: #555;
-        margin-bottom: 20px;
-    }
+/* COLLAPSIBLE CONTENT */
+.collapsible {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease-out;
+}
 
-    .team {
-        background: white;
-        padding: 12px;
-        margin-bottom: 10px;
-        border-radius: 6px;
-        cursor: pointer;
-        border: 1px solid #ddd;
-    }
+/* TABLE WRAPPER (responsive hybrid) */
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 10px;
+}
 
-    .team:hover {
-        background: #f0f0f0;
-    }
+/* SCORE TABLE */
+.score-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px; /* forces scroll on mobile */
+}
 
-    .team-name {
-        font-size: 22px;
-        font-weight: 700;
-        cursor: pointer;
-    }
+.score-table th,
+.score-table td {
+  border: 1px solid #ccc;
+  padding: 6px 8px;
+  text-align: center;
+  font-size: 14px;
+}
 
-    .team-total {
-        float: right;
-        font-size: 20px;
-        font-weight: bold;
-    }
+.score-table th {
+  background: #1a4d2e;
+  color: white;
+  font-weight: 700;
+}
 
-    .players {
-        margin-top: 10px;
-        padding-left: 20px;
-        display: none;
-    }
+.player-name {
+  font-weight: 700;
+  background: #f0f0f0;
+}
 
-    .player {
-        background: #fff;
-        padding: 10px;
-        margin: 6px 0;
-        border-radius: 6px;
-        cursor: pointer;
-        border: 1px solid #ccc;
-        font-size: 18px;
-        font-weight: 600;
-        transition: color 0.2s ease, transform 0.15s ease;
-    }
-
-    .player:hover,
-    .team-name:hover {
-        color: #0b6623;
-        transform: translateX(4px);
-        text-decoration: underline;
-    }
-
-    .player-row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .player-total {
-        font-weight: 700;
-        color: #0b6623;
-    }
-
-    .rounds {
-        margin-top: 10px;
-        padding-left: 20px;
-        display: none;
-    }
-
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-bottom: 12px;
-    }
-
-    th, td {
-        border: 1px solid #ccc;
-        padding: 6px;
-        text-align: center;
-    }
-
-    th {
-        background: #eee;
-    }
-
-    .arrow {
-        display: inline-block;
-        transition: transform 0.2s ease;
-        margin-right: 6px;
-        font-size: 14px;
-    }
-
-    .expanded {
-        transform: rotate(90deg);
-    }
+.team-total-row {
+  background: #e8f5e9;
+  font-weight: 700;
+}
 </style>
 </head>
+
 <body>
 
-<h1>Mastayers 2026 Leaderboard</h1>
-<p id="lastUpdated"></p>
+<h1 style="text-align:center; font-family:Arial; margin-bottom:20px;">
+  Masters Fantasy Leaderboard
+</h1>
 
 <div id="leaderboard"></div>
 
 <script>
-async function loadLastUpdated() {
-    const res = await fetch(
-        "https://api.github.com/repos/brewingtb/Mastayers26/commits?path=data/fantasy.json"
-    );
-    const commits = await res.json();
+async function loadLeaderboard() {
+  const response = await fetch("data/fantasy.json");
+  const data = await response.json();
 
-    if (commits.length > 0) {
-        const timestamp = commits[0].commit.committer.date;
-        const date = new Date(timestamp);
+  const leaderboard = document.getElementById("leaderboard");
+  leaderboard.innerHTML = "";
 
-        document.getElementById("lastUpdated").textContent =
-            "Last updated: " +
-            date.toLocaleString("en-US", {
-                weekday: "short",
-                month: "short",
-                day: "numeric",
-                hour: "numeric",
-                minute: "2-digit",
-                hour12: true
-            });
+  // Sort teams by total points
+  const teams = Object.entries(data).sort((a, b) => b[1].total - a[1].total);
+
+  teams.forEach(([teamName, teamData]) => {
+    // TEAM ROW
+    const teamDiv = document.createElement("div");
+    teamDiv.className = "team";
+    teamDiv.innerHTML = `
+      <span>${teamName}</span>
+      <span>${teamData.total}</span>
+    `;
+
+    // TEAM COLLAPSIBLE
+    const teamContent = document.createElement("div");
+    teamContent.className = "collapsible";
+
+    // Build 4 round rows
+    for (let r = 1; r <= 4; r++) {
+      const roundTotal = teamData.rounds?.["R" + r]?.total ?? 0;
+
+      const roundDiv = document.createElement("div");
+      roundDiv.className = "round";
+      roundDiv.innerHTML = `
+        <span>Round ${r}</span>
+        <span>${roundTotal}</span>
+      `;
+
+      const roundContent = document.createElement("div");
+      roundContent.className = "collapsible";
+
+      // Build table when round is clicked
+      roundDiv.addEventListener("click", () => {
+        if (roundContent.innerHTML.trim() === "") {
+          roundContent.appendChild(
+            buildRoundTable(teamData.players, teamData.rounds["R" + r])
+          );
+        }
+        toggleSection(roundContent);
+      });
+
+      teamContent.appendChild(roundDiv);
+      teamContent.appendChild(roundContent);
     }
+
+    teamDiv.addEventListener("click", () => toggleSection(teamContent));
+
+    leaderboard.appendChild(teamDiv);
+    leaderboard.appendChild(teamContent);
+  });
 }
 
-async function loadData() {
-    const fantasyRes = await fetch("https://brewingtb.github.io/Mastayers26/data/fantasy.json");
-    const fantasy = await fantasyRes.json();
-
-    const scoresRes = await fetch("https://brewingtb.github.io/Mastayers26/data/scores.json");
-    const scores = await scoresRes.json();
-
-    const teamPlayersRes = await fetch("https://brewingtb.github.io/Mastayers26/data/team_players_fixed.json");
-    const teamPlayers = await teamPlayersRes.json();
-
-    renderLeaderboard(fantasy, scores, teamPlayers);
+function toggleSection(section) {
+  if (section.style.maxHeight) {
+    section.style.maxHeight = null;
+  } else {
+    section.style.maxHeight = section.scrollHeight + "px";
+  }
 }
 
-function renderLeaderboard(fantasy, scores, teamPlayers) {
-    const container = document.getElementById("leaderboard");
-    container.innerHTML = "";
+function buildRoundTable(players, roundData) {
+  const wrapper = document.createElement("div");
+  wrapper.className = "table-wrapper";
 
-    const teams = Object.entries(fantasy)
-        .map(([teamName, data]) => ({
-            teamName,
-            total: data.total,
-            rounds: data.rounds,
-            roundTotals: data.roundTotals
-        }))
-        .sort((a, b) => b.total - a.total);
+  const table = document.createElement("table");
+  table.className = "score-table";
 
-    teams.forEach(team => {
-        const teamDiv = document.createElement("div");
-        teamDiv.className = "team";
-        teamDiv.innerHTML = `
-            <span class="team-name">
-                <span class="arrow">▶</span> ${team.teamName}
-            </span>
-            <span class="team-total">${team.total}</span>
-        `;
+  const header = document.createElement("tr");
+  header.innerHTML = `<th>Player / Hole</th>`;
+  for (let h = 1; h <= 18; h++) header.innerHTML += `<th>${h}</th>`;
+  header.innerHTML += `<th>Total</th>`;
+  table.appendChild(header);
 
-        const playersDiv = document.createElement("div");
-        playersDiv.className = "players";
+  // Player rows
+  players.forEach(player => {
+    const row = document.createElement("tr");
+    row.innerHTML = `<td class="player-name">${player.name}</td>`;
 
-        const playerIds = teamPlayers[team.teamName] || [];
+    let total = 0;
 
-        playerIds.forEach(pid => {
-            const player = scores[String(pid)];
-            if (!player) return;
+    for (let h = 1; h <= 18; h++) {
+      const score = roundData?.players?.[player.name]?.holes?.[h] ?? "";
+      row.innerHTML += `<td>${score}</td>`;
+      total += Number(score || 0);
+    }
 
-            // Calculate player's total Stableford score
-            let playerTotal = 0;
-            for (let r = 1; r <= 4; r++) {
-                for (let h = 1; h <= 18; h++) {
-                    const key = `${r}-${h}`;
-                    const hole = player.holes[key];
-                    if (hole) {
-                        const delta = hole.strokes - hole.par;
-                        playerTotal += stableford(delta);
-                    }
-                }
-            }
+    row.innerHTML += `<td>${total}</td>`;
+    table.appendChild(row);
+  });
 
-            const playerDiv = document.createElement("div");
-            playerDiv.className = "player";
-            playerDiv.innerHTML = `
-                <div class="player-row">
-                    <span class="arrow">▶</span>
-                    <span class="player-name-text">${player.name}</span>
-                    <span class="player-total">${playerTotal} pts</span>
-                </div>
-            `;
+  // TEAM TOTAL ROW
+  const teamRow = document.createElement("tr");
+  teamRow.className = "team-total-row";
+  teamRow.innerHTML = `<td>TEAM TOTAL</td>`;
 
-            const roundsDiv = document.createElement("div");
-            roundsDiv.className = "rounds";
+  let teamTotal = 0;
 
-            // One unified scorecard table per player
-            const table = document.createElement("table");
-
-            // Holes header row
-            let headerRow = "<tr><th>Hole</th>";
-            for (let h = 1; h <= 18; h++) {
-                headerRow += `<th>${h}</th>`;
-            }
-            headerRow += "<th>Total</th></tr>";
-
-            let tableHTML = headerRow;
-
-            // 4 round rows
-            let columnTotals = Array(18).fill(0);
-            let grandTotal = 0;
-
-            for (let r = 1; r <= 4; r++) {
-                let row = `<tr><td>Round ${r}</td>`;
-                let roundTotal = 0;
-
-                for (let h = 1; h <= 18; h++) {
-                    const key = `${r}-${h}`;
-                    const hole = player.holes[key];
-
-                    if (hole) {
-                        const delta = hole.strokes - hole.par;
-                        const sf = stableford(delta);
-                        roundTotal += sf;
-                        columnTotals[h - 1] += sf;
-                        row += `<td>${sf}</td>`;
-                    } else {
-                        row += "<td>-</td>";
-                    }
-                }
-
-                grandTotal += roundTotal;
-                row += `<td><strong>${roundTotal}</strong></td></tr>`;
-                tableHTML += row;
-            }
-
-            // Totals row
-            let totalsRow = "<tr><td><strong>Totals</strong></td>";
-            for (let i = 0; i < 18; i++) {
-                totalsRow += `<td><strong>${columnTotals[i]}</strong></td>`;
-            }
-            totalsRow += `<td><strong>${grandTotal}</strong></td></tr>`;
-
-            tableHTML += totalsRow;
-
-            table.innerHTML = tableHTML;
-            roundsDiv.appendChild(table);
-
-            playerDiv.addEventListener("click", (e) => {
-                e.stopPropagation();
-                const isOpen = roundsDiv.style.display === "block";
-                roundsDiv.style.display = isOpen ? "none" : "block";
-
-                const arrow = playerDiv.querySelector(".arrow");
-                if (arrow) {
-                    if (isOpen) arrow.classList.remove("expanded");
-                    else arrow.classList.add("expanded");
-                }
-            });
-
-            playersDiv.appendChild(playerDiv);
-            playersDiv.appendChild(roundsDiv);
-        });
-
-        teamDiv.appendChild(playersDiv);
-
-        teamDiv.addEventListener("click", () => {
-            const isOpen = playersDiv.style.display === "block";
-            playersDiv.style.display = isOpen ? "none" : "block";
-
-            const arrow = teamDiv.querySelector(".team-name .arrow");
-            if (arrow) {
-                if (isOpen) arrow.classList.remove("expanded");
-                else arrow.classList.add("expanded");
-            }
-        });
-
-        container.appendChild(teamDiv);
+  for (let h = 1; h <= 18; h++) {
+    let holeTotal = 0;
+    players.forEach(player => {
+      holeTotal += Number(roundData?.players?.[player.name]?.holes?.[h] || 0);
     });
+    teamRow.innerHTML += `<td>${holeTotal}</td>`;
+    teamTotal += holeTotal;
+  }
+
+  teamRow.innerHTML += `<td>${teamTotal}</td>`;
+  table.appendChild(teamRow);
+
+  wrapper.appendChild(table);
+  return wrapper;
 }
 
-function stableford(delta) {
-    if (delta <= -3) return 8;
-    if (delta === -2) return 5;
-    if (delta === -1) return 2;
-    if (delta === 0) return 0;
-    if (delta === 1) return -1;
-    return -3;
-}
-
-loadLastUpdated();
-setInterval(loadLastUpdated, 60000);
-
-loadData();
+loadLeaderboard();
 </script>
 
 </body>
 </html>
+
 
