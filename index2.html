@@ -94,10 +94,13 @@ async function loadData() {
     const scoresRes = await fetch("data/scores.json");
     const scores = await scoresRes.json();
 
-    renderLeaderboard(fantasy, scores);
+    const teamPlayersRes = await fetch("data/team_players_fixed.json");
+    const teamPlayers = await teamPlayersRes.json();
+
+    renderLeaderboard(fantasy, scores, teamPlayers);
 }
 
-function renderLeaderboard(fantasy, scores) {
+function renderLeaderboard(fantasy, scores, teamPlayers) {
     const container = document.getElementById("leaderboard");
     container.innerHTML = "";
 
@@ -122,13 +125,12 @@ function renderLeaderboard(fantasy, scores) {
         const playersDiv = document.createElement("div");
         playersDiv.className = "players";
 
-        // Load players from team_players_fixed.json (already in fantasy.json structure)
-        const playerIds = Object.keys(scores).filter(pid =>
-            scores[pid].team === team.teamName
-        );
+        // Load players from team_players_fixed.json
+        const playerIds = teamPlayers[team.teamName] || [];
 
         playerIds.forEach(pid => {
             const player = scores[pid];
+            if (!player) return;
 
             const playerDiv = document.createElement("div");
             playerDiv.className = "player";
@@ -198,9 +200,6 @@ function stableford(delta) {
 
 loadData();
 </script>
-
-</body>
-</html>
 
 </body>
 </html>
