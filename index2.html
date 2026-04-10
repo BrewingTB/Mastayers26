@@ -1,221 +1,206 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Mastayers Fantasy Leaderboard</title>
-  <style>
-    body { font-family: Arial; padding: 20px; }
-    table { border-collapse: collapse; width: 100%; }
-    th, td { padding: 10px; border-bottom: 1px solid #ddd; }
-    tr.player-row { background: #f9f9f9; }
-    tr.player-row td { padding-left: 40px; cursor: pointer; }
-    tr.team-row { cursor: pointer; }
+<meta charset="UTF-8">
+<title>Masters Fantasy Leaderboard</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        padding: 20px;
+    }
 
-    /* Modal styling */
-    #playerModal {
-      display:none;
-      position:fixed;
-      top:0; left:0;
-      width:100%; height:100%;
-      background:rgba(0,0,0,0.6);
-      justify-content:center;
-      align-items:center;
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
     }
-    #playerModalContent {
-      background:white;
-      padding:20px;
-      border-radius:8px;
-      width:90%;
-      max-width:900px;
-      max-height:90%;
-      overflow:auto;
+
+    .team {
+        background: white;
+        padding: 12px;
+        margin-bottom: 10px;
+        border-radius: 6px;
+        cursor: pointer;
+        border: 1px solid #ddd;
     }
-    #closePlayerModal {
-      float:right;
-      cursor:pointer;
-      font-size:22px;
+
+    .team:hover {
+        background: #f0f0f0;
     }
-  </style>
+
+    .team-name {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .team-total {
+        float: right;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .players {
+        margin-top: 10px;
+        padding-left: 20px;
+        display: none;
+    }
+
+    .player {
+        background: #fff;
+        padding: 10px;
+        margin: 6px 0;
+        border-radius: 6px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+    }
+
+    .player:hover {
+        background: #f7f7f7;
+    }
+
+    .rounds {
+        margin-top: 10px;
+        padding-left: 20px;
+        display: none;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 12px;
+    }
+
+    th, td {
+        border: 1px solid #ccc;
+        padding: 6px;
+        text-align: center;
+    }
+
+    th {
+        background: #eee;
+    }
+</style>
 </head>
 <body>
 
-<h1>Mastayers 2026 Leaderboard</h1>
-<p></p>
-<p id="lastUpdated" style="font-style: italic; color: #555;"></p>
-
-<table id="leaderboard">
-  <thead>
-    <tr>
-      <th>Team<br>(click team name to see all players)</th>
-      <th>Score</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-
-<!-- PLAYER SCORE MODAL -->
-<div id="playerModal">
-  <div id="playerModalContent">
-    <span id="closePlayerModal">&times;</span>
-    <h2 id="modalPlayerName"></h2>
-    <div id="modalScoreTable"></div>
-  </div>
-</div>
+<h1>Masters Fantasy Leaderboard</h1>
+<div id="leaderboard"></div>
 
 <script>
-async function loadLeaderboard() {
-  const fantasyRes = await fetch('data/fantasy.json');
-  const fantasy = await fantasyRes.json();
+async function loadData() {
+    const fantasyRes = await fetch("data/fantasy.json");
+    const fantasy = await fantasyRes.json();
 
-  const datasetRes = await fetch('data/dataset.json');
-  const dataset = await datasetRes.json();
+    const scoresRes = await fetch("data/scores.json");
+    const scores = await scoresRes.json();
 
-  let teams = Object.entries(fantasy).map(([team, info]) => ({
-    team,
-    total: info.total
-  }));
-
-  teams.sort((a, b) => b.total - a.total);
-
-  const tbody = document.querySelector('#leaderboard tbody');
-  tbody.innerHTML = '';
-
-  teams.forEach(t => {
-    const tr = document.createElement('tr');
-    tr.classList.add('team-row');
-    tr.dataset.team = t.team;
-
-    tr.innerHTML = `
-      <td>${t.team}</td>
-      <td>${t.total}</td>
-    `;
-
-    tbody.appendChild(tr);
-
-    tr.addEventListener('click', () => toggleTeam(t.team, tr, dataset));
-  });
+    renderLeaderboard(fantasy, scores);
 }
 
-function toggleTeam(team, row, dataset) {
-  const tbody = row.parentNode;
+function renderLeaderboard(fantasy, scores) {
+    const container = document.getElementById("leaderboard");
+    container.innerHTML = "";
 
-  if (row.classList.contains('expanded')) {
-    let next = row.nextSibling;
-    while (next && next.classList.contains('player-row')) {
-      next.remove();
-      next = row.nextSibling;
-    }
-    row.classList.remove('expanded');
-    return;
-  }
+    // Convert to sortable array
+    const teams = Object.entries(fantasy)
+        .map(([teamName, data]) => ({
+            teamName,
+            total: data.total,
+            rounds: data.rounds,
+            roundTotals: data.roundTotals
+        }))
+        .sort((a, b) => b.total - a.total);
 
-  row.classList.add('expanded');
+    teams.forEach(team => {
+        const teamDiv = document.createElement("div");
+        teamDiv.className = "team";
+        teamDiv.innerHTML = `
+            <span class="team-name">${team.teamName}</span>
+            <span class="team-total">${team.total}</span>
+        `;
 
-  const rows = dataset.filter(r => r.team === team);
+        const playersDiv = document.createElement("div");
+        playersDiv.className = "players";
 
-  const players = {};
-  rows.forEach(r => {
-    if (!players[r.playerName]) players[r.playerName] = 0;
-    players[r.playerName] += r.stableford;
-  });
+        // Load players from team_players_fixed.json (already in fantasy.json structure)
+        const playerIds = Object.keys(scores).filter(pid =>
+            scores[pid].team === team.teamName
+        );
 
-  const playerRows = Object.entries(players)
-    .map(([name, total]) => ({ name, total }))
-    .sort((a, b) => b.total - a.total);
+        playerIds.forEach(pid => {
+            const player = scores[pid];
 
-  playerRows.forEach(p => {
-    const pr = document.createElement('tr');
-    pr.classList.add('player-row');
+            const playerDiv = document.createElement("div");
+            playerDiv.className = "player";
+            playerDiv.textContent = player.name;
 
-    pr.innerHTML = `
-      <td class="player-click" data-player="${p.name}">${p.name}</td>
-      <td>${p.total}</td>
-    `;
+            const roundsDiv = document.createElement("div");
+            roundsDiv.className = "rounds";
 
-    row.insertAdjacentElement('afterend', pr);
-    row = pr;
+            // Build round tables
+            for (let r = 1; r <= 4; r++) {
+                const roundTable = document.createElement("table");
 
-    pr.querySelector(".player-click").addEventListener("click", (e) => {
-      e.stopPropagation();
-      showPlayerScores(p.name, dataset);
+                let header = "<tr><th colspan='20'>Round " + r + "</th></tr>";
+                let holeHeader = "<tr><th>Hole</th>";
+                let scoreRow = "<tr><td>Score</td>";
+
+                for (let h = 1; h <= 18; h++) {
+                    holeHeader += `<th>${h}</th>`;
+
+                    const key = `${r}-${h}`;
+                    const hole = player.holes[key];
+
+                    if (hole) {
+                        const delta = hole.strokes - hole.par;
+                        const sf = stableford(delta);
+                        scoreRow += `<td>${sf}</td>`;
+                    } else {
+                        scoreRow += "<td>-</td>";
+                    }
+                }
+
+                holeHeader += "</tr>";
+                scoreRow += "</tr>";
+
+                roundTable.innerHTML = header + holeHeader + scoreRow;
+                roundsDiv.appendChild(roundTable);
+            }
+
+            playerDiv.addEventListener("click", () => {
+                roundsDiv.style.display =
+                    roundsDiv.style.display === "none" ? "block" : "none";
+            });
+
+            playersDiv.appendChild(playerDiv);
+            playersDiv.appendChild(roundsDiv);
+        });
+
+        teamDiv.addEventListener("click", () => {
+            playersDiv.style.display =
+                playersDiv.style.display === "none" ? "block" : "none";
+        });
+
+        container.appendChild(teamDiv);
+        container.appendChild(playersDiv);
     });
-  });
 }
 
-function showPlayerScores(playerName, dataset) {
-  const modal = document.getElementById("playerModal");
-  const modalName = document.getElementById("modalPlayerName");
-  const modalTable = document.getElementById("modalScoreTable");
-
-  modalName.textContent = playerName;
-
-  const rounds = {};
-
-  dataset.forEach(r => {
-    if (r.playerName === playerName) {
-      if (!rounds[r.round]) rounds[r.round] = Array(18).fill(0);
-      rounds[r.round][r.hole - 1] = r.stableford;
-    }
-  });
-
-  let html = `<table border="1" cellpadding="6" style="border-collapse:collapse; width:100%;">`;
-
-  html += `<tr><th>Round</th>`;
-  for (let i = 1; i <= 18; i++) html += `<th>${i}</th>`;
-  html += `<th>Total</th></tr>`;
-
-  Object.keys(rounds).sort((a,b) => a - b).forEach(round => {
-    const scores = rounds[round];
-    const total = scores.reduce((a,b) => a + b, 0);
-
-    html += `<tr><td>Round ${round}</td>`;
-    scores.forEach(s => html += `<td>${s}</td>`);
-    html += `<td><b>${total}</b></td></tr>`;
-  });
-
-  html += `</table>`;
-
-  modalTable.innerHTML = html;
-
-  modal.style.display = "flex";
+// Stableford scoring for UI
+function stableford(delta) {
+    if (delta <= -3) return 8;
+    if (delta === -2) return 5;
+    if (delta === -1) return 2;
+    if (delta === 0) return 0;
+    if (delta === 1) return -1;
+    return -3;
 }
 
-document.getElementById("closePlayerModal").onclick = () => {
-  document.getElementById("playerModal").style.display = "none";
-};
-
-window.onclick = (e) => {
-  if (e.target.id === "playerModal") {
-    document.getElementById("playerModal").style.display = "none";
-  }
-};
-
-loadLeaderboard();
+loadData();
 </script>
 
-<script>
-async function loadLastUpdated() {
-  const res = await fetch('https://api.github.com/repos/brewingtb/Mastayers26/commits?path=data/fantasy.json');
-  const commits = await res.json();
-
-  if (commits.length > 0) {
-    const timestamp = commits[0].commit.committer.date;
-    const date = new Date(timestamp);
-
-    document.getElementById('lastUpdated').textContent =
-      "Last updated: " + date.toLocaleString("en-US", {
-        weekday: "short",
-        hour: "numeric",
-        minute: "2-digit",
-        hour12: true,
-        month: "short",
-        day: "numeric"
-      });
-  }
-}
-
-loadLastUpdated();
-setInterval(loadLastUpdated, 60000);
-</script>
+</body>
+</html>
 
 </body>
 </html>
