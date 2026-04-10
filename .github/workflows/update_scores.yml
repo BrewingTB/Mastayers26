@@ -3,7 +3,7 @@ name: Update Scores and Leaderboard
 
 on:
   schedule:
-     - cron: "*/5 * * * *"
+     - cron: "3/5 * * * *"
   workflow_dispatch:
 
 permissions:
