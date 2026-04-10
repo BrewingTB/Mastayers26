@@ -137,32 +137,38 @@ function renderLeaderboard(fantasy, scores, teamPlayers) {
             const roundsDiv = document.createElement("div");
             roundsDiv.className = "rounds";
 
+            // Build clean scorecard-style tables
             for (let r = 1; r <= 4; r++) {
                 const roundTable = document.createElement("table");
 
-                let header = "<tr><th colspan='20'>Round " + r + "</th></tr>";
-                let holeHeader = "<tr><th>Hole</th>";
-                let scoreRow = "<tr><td>Score</td>";
+                // Header row: Round X + holes 1–18 + Total
+                let headerRow = "<tr><th>Round " + r + "</th>";
+                for (let h = 1; h <= 18; h++) {
+                    headerRow += `<th>${h}</th>`;
+                }
+                headerRow += "<th>Total</th></tr>";
+
+                // Score row
+                let scoreRow = "<tr><td></td>";
+                let roundTotal = 0;
 
                 for (let h = 1; h <= 18; h++) {
-                    holeHeader += `<th>${h}</th>`;
-
                     const key = `${r}-${h}`;
                     const hole = player.holes[key];
 
                     if (hole) {
                         const delta = hole.strokes - hole.par;
                         const sf = stableford(delta);
+                        roundTotal += sf;
                         scoreRow += `<td>${sf}</td>`;
                     } else {
                         scoreRow += "<td>-</td>";
                     }
                 }
 
-                holeHeader += "</tr>";
-                scoreRow += "</tr>";
+                scoreRow += `<td><strong>${roundTotal}</strong></td></tr>`;
 
-                roundTable.innerHTML = header + holeHeader + scoreRow;
+                roundTable.innerHTML = headerRow + scoreRow;
                 roundsDiv.appendChild(roundTable);
             }
 
@@ -201,4 +207,5 @@ loadData();
 
 </body>
 </html>
+
 
