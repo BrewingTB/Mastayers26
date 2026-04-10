@@ -65,11 +65,9 @@
         align-items: center;
     }
 
-    /* COLLAPSIBLE SECTIONS (slide animation) */
+    /* COLLAPSIBLE (NO SLIDE) */
     .collapsible {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.25s ease-out;
+        display: none;
         padding-left: 20px;
     }
 
@@ -220,7 +218,8 @@ function renderLeaderboard(fantasy, scores, teamPlayers) {
                     );
                 }
 
-                toggleSection(roundContent);
+                roundContent.style.display =
+                    roundContent.style.display === "block" ? "none" : "block";
 
                 const arrow = roundDiv.querySelector(".arrow");
                 arrow.classList.toggle("expanded");
@@ -232,7 +231,8 @@ function renderLeaderboard(fantasy, scores, teamPlayers) {
 
         /* TEAM CLICK */
         teamDiv.addEventListener("click", () => {
-            toggleSection(roundsContainer);
+            roundsContainer.style.display =
+                roundsContainer.style.display === "block" ? "none" : "block";
 
             const arrow = teamDiv.querySelector(".team-name .arrow");
             arrow.classList.toggle("expanded");
@@ -316,22 +316,6 @@ function buildRoundTable(playerIds, scores, roundNumber) {
     table.innerHTML = html;
     wrapper.appendChild(table);
     return wrapper;
-}
-
-/* ---------------- SLIDE TOGGLE (with parent recalculation) ---------------- */
-function toggleSection(section) {
-    if (section.style.maxHeight) {
-        section.style.maxHeight = null;
-    } else {
-        section.style.maxHeight = section.scrollHeight + "px";
-
-        /* ⭐ FIX: Expand all parent collapsibles so nothing gets clipped */
-        let parent = section.parentElement;
-        while (parent && parent.classList.contains("collapsible")) {
-            parent.style.maxHeight = parent.scrollHeight + "px";
-            parent = parent.parentElement;
-        }
-    }
 }
 
 /* ---------------- STABLEFORD ---------------- */
