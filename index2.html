@@ -318,12 +318,19 @@ function buildRoundTable(playerIds, scores, roundNumber) {
     return wrapper;
 }
 
-/* ---------------- SLIDE TOGGLE ---------------- */
+/* ---------------- SLIDE TOGGLE (with parent recalculation) ---------------- */
 function toggleSection(section) {
     if (section.style.maxHeight) {
         section.style.maxHeight = null;
     } else {
         section.style.maxHeight = section.scrollHeight + "px";
+
+        /* ⭐ FIX: Expand all parent collapsibles so nothing gets clipped */
+        let parent = section.parentElement;
+        while (parent && parent.classList.contains("collapsible")) {
+            parent.style.maxHeight = parent.scrollHeight + "px";
+            parent = parent.parentElement;
+        }
     }
 }
 
