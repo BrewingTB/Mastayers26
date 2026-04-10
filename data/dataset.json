@@ -4685,9 +4685,9 @@
     "playerName": "Andrew Novak",
     "hole": 1,
     "round": 1,
-    "strokes": 4,
+    "strokes": 5,
     "par": 4,
-    "stableford": 0
+    "stableford": -1
   },
   {
     "team": "Huszczo",
@@ -12245,9 +12245,9 @@
     "playerName": "Brian Campbell",
     "hole": 1,
     "round": 1,
-    "strokes": 3,
+    "strokes": 4,
     "par": 4,
-    "stableford": 2
+    "stableford": 0
   },
   {
     "team": "Baucher",
