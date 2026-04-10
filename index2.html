@@ -104,7 +104,6 @@ function renderLeaderboard(fantasy, scores, teamPlayers) {
     const container = document.getElementById("leaderboard");
     container.innerHTML = "";
 
-    // Convert to sortable array
     const teams = Object.entries(fantasy)
         .map(([teamName, data]) => ({
             teamName,
@@ -125,7 +124,6 @@ function renderLeaderboard(fantasy, scores, teamPlayers) {
         const playersDiv = document.createElement("div");
         playersDiv.className = "players";
 
-        // Load players from team_players_fixed.json
         const playerIds = teamPlayers[team.teamName] || [];
 
         playerIds.forEach(pid => {
@@ -139,7 +137,6 @@ function renderLeaderboard(fantasy, scores, teamPlayers) {
             const roundsDiv = document.createElement("div");
             roundsDiv.className = "rounds";
 
-            // Build round tables
             for (let r = 1; r <= 4; r++) {
                 const roundTable = document.createElement("table");
 
@@ -169,7 +166,8 @@ function renderLeaderboard(fantasy, scores, teamPlayers) {
                 roundsDiv.appendChild(roundTable);
             }
 
-            playerDiv.addEventListener("click", () => {
+            playerDiv.addEventListener("click", (e) => {
+                e.stopPropagation();
                 roundsDiv.style.display =
                     roundsDiv.style.display === "none" ? "block" : "none";
             });
@@ -178,17 +176,17 @@ function renderLeaderboard(fantasy, scores, teamPlayers) {
             playersDiv.appendChild(roundsDiv);
         });
 
+        teamDiv.appendChild(playersDiv);
+
         teamDiv.addEventListener("click", () => {
             playersDiv.style.display =
                 playersDiv.style.display === "none" ? "block" : "none";
         });
 
         container.appendChild(teamDiv);
-        container.appendChild(playersDiv);
     });
 }
 
-// Stableford scoring for UI
 function stableford(delta) {
     if (delta <= -3) return 8;
     if (delta === -2) return 5;
