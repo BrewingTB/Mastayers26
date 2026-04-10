@@ -10,19 +10,31 @@ const scores = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/scores.j
 
 // Stableford scoring rules
 function stableford(delta) {
-    if (delta <= -3) return 8;   // Double eagle or better
-    if (delta === -2) return 5;  // Eagle
-    if (delta === -1) return 2;  // Birdie
-    if (delta === 0) return 0;   // Par
-    if (delta === 1) return -1;  // Bogey
-    return -3;                   // Double bogey or worse
+    if (delta <= -3) return 8;
+    if (delta === -2) return 5;
+    if (delta === -1) return 2;
+    if (delta === 0) return 0;
+    if (delta === 1) return -1;
+    return -3;
 }
 
-// Calculate Stableford for a single hole
 function scoreHole(strokes, par) {
-    if (!strokes || strokes === 0) return null; // No score yet
+    if (!strokes || strokes === 0) return null;
     const delta = strokes - par;
     return stableford(delta);
+}
+
+// Detect round from Rounds array
+function detectRound(player) {
+    if (!player || !player.Rounds) return 1;
+
+    for (const r of player.Rounds) {
+        if (r.Holes && r.Holes.some(h => h.Score !== null)) {
+            return r.Number;
+        }
+    }
+
+    return 1;
 }
 
 // Build leaderboard
@@ -36,23 +48,17 @@ for (const teamName of Object.keys(teamPlayers)) {
 
     let players = teamPlayers[teamName];
 
-    // Normalize players list
     if (players && typeof players === 'object' && !Array.isArray(players)) {
         players = Object.values(players);
     }
     if (typeof players === 'string') {
         players = players.split(',').map(x => x.trim());
     }
-    if (!Array.isArray(players)) {
-        console.log(`Skipping team ${teamName} — invalid player list`);
-        continue;
-    }
+    if (!Array.isArray(players)) continue;
 
-    // Loop through all 18 holes
     for (let hole = 1; hole <= 18; hole++) {
         let holeScores = [];
 
-        // Loop through all players on the team
         for (const playerId of players) {
             const player = scores[playerId];
             if (!player) continue;
@@ -63,25 +69,22 @@ for (const teamName of Object.keys(teamPlayers)) {
             const { strokes, par } = holeData;
             const sf = scoreHole(strokes, par);
 
-            if (sf !== null) {
-                holeScores.push(sf);
-            }
+            if (sf !== null) holeScores.push(sf);
         }
 
         let holeTotal = 0;
 
         if (holeScores.length > 0) {
-            // Determine round from first player with data
             let round = 1;
+
             for (const pid of players) {
-                if (scores[pid]?.round) {
-                    round = scores[pid].round;
-                    break;
-                }
+                const p = scores[pid];
+                if (!p) continue;
+
+                round = detectRound(p);
+                break;
             }
 
-            // Rounds 1–2: sum all 4 players
-            // Rounds 3–4: best 2 scores
             if (round <= 2) {
                 holeTotal = holeScores.reduce((a, b) => a + b, 0);
             } else {
@@ -95,7 +98,6 @@ for (const teamName of Object.keys(teamPlayers)) {
     }
 }
 
-// Save leaderboard
 fs.writeFileSync(
     path.join(__dirname, '../data/fantasy.json'),
     JSON.stringify(leaderboard, null, 2)
