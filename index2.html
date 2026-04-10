@@ -142,14 +142,14 @@ function renderLeaderboard(fantasy, scores, teamPlayers) {
                 const roundTable = document.createElement("table");
 
                 // Header row: Round X + holes 1–18 + Total
-                let headerRow = "<tr><th>Round " + r + "</th>";
+                let headerRow = "<tr><th>Round</th>";
                 for (let h = 1; h <= 18; h++) {
                     headerRow += `<th>${h}</th>`;
                 }
                 headerRow += "<th>Total</th></tr>";
 
-                // Score row
-                let scoreRow = "<tr><td></td>";
+                // Score row — FIXED: first column now says "Round X"
+                let scoreRow = `<tr><td>Round ${r}</td>`;
                 let roundTotal = 0;
 
                 for (let h = 1; h <= 18; h++) {
@@ -207,5 +207,6 @@ loadData();
 
 </body>
 </html>
+
 
 
