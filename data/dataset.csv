@@ -612,6 +612,10 @@ Gibb,40003220,Rasmus Hojgaard,16,2,4,3,-1
 Gibb,40003220,Rasmus Hojgaard,17,2,4,4,0
 Gibb,40003220,Rasmus Hojgaard,18,2,3,4,2
 Gibb,40003220,Rasmus Hojgaard,1,3,5,4,-1
+Gibb,40003220,Rasmus Hojgaard,2,3,5,5,0
+Gibb,40003220,Rasmus Hojgaard,3,3,3,4,2
+Gibb,40003220,Rasmus Hojgaard,4,3,4,3,-1
+Gibb,40003220,Rasmus Hojgaard,5,3,3,4,2
 Gibb,40005060,Chris Gotterup,6,1,3,3,0
 Gibb,40005060,Chris Gotterup,7,1,5,4,-1
 Gibb,40005060,Chris Gotterup,8,1,5,5,0
@@ -720,6 +724,8 @@ Gibb,40000977,Maverick McNealy,15,2,5,5,0
 Gibb,40000977,Maverick McNealy,16,2,3,3,0
 Gibb,40000977,Maverick McNealy,17,2,4,4,0
 Gibb,40000977,Maverick McNealy,18,2,4,4,0
+Gibb,40000977,Maverick McNealy,2,3,4,5,2
+Gibb,40000977,Maverick McNealy,1,3,5,4,-1
 Penton,40003812,Casey Jarvis,18,1,4,4,0
 Penton,40003812,Casey Jarvis,17,1,4,4,0
 Penton,40003812,Casey Jarvis,16,1,3,3,0
@@ -900,6 +906,11 @@ Huszczo,40002249,Kurt Kitayama,4,2,4,3,-1
 Huszczo,40002249,Kurt Kitayama,3,2,4,4,0
 Huszczo,40002249,Kurt Kitayama,2,2,5,5,0
 Huszczo,40002249,Kurt Kitayama,1,2,4,4,0
+Huszczo,40002249,Kurt Kitayama,7,3,4,4,0
+Huszczo,40002249,Kurt Kitayama,6,3,3,3,0
+Huszczo,40002249,Kurt Kitayama,5,3,4,4,0
+Huszczo,40002249,Kurt Kitayama,4,3,3,3,0
+Huszczo,40002249,Kurt Kitayama,3,3,5,4,-1
 Huszczo,40002249,Kurt Kitayama,2,3,6,5,-1
 Huszczo,40002249,Kurt Kitayama,1,3,4,4,0
 Huszczo,40001317,Vijay Singh,7,1,5,4,-1
@@ -1226,6 +1237,8 @@ Hivnor,40000479,Sergio Garcia,15,2,5,5,0
 Hivnor,40000479,Sergio Garcia,16,2,3,3,0
 Hivnor,40000479,Sergio Garcia,17,2,6,4,-3
 Hivnor,40000479,Sergio Garcia,18,2,4,4,0
+Hivnor,40000479,Sergio Garcia,2,3,5,5,0
+Hivnor,40000479,Sergio Garcia,1,3,4,4,0
 Hivnor,40005232,Ryan Gerard,18,1,3,4,2
 Hivnor,40005232,Ryan Gerard,17,1,5,4,-1
 Hivnor,40005232,Ryan Gerard,16,1,3,3,0
@@ -1406,6 +1419,7 @@ Plato,40003218,Viktor Hovland,15,2,6,5,-1
 Plato,40003218,Viktor Hovland,16,2,2,3,2
 Plato,40003218,Viktor Hovland,17,2,5,4,-1
 Plato,40003218,Viktor Hovland,18,2,4,4,0
+Plato,40003218,Viktor Hovland,1,3,4,4,0
 Plato,40003147,Tom McKibbin,1,1,5,4,-1
 Plato,40003147,Tom McKibbin,2,1,4,5,2
 Plato,40003147,Tom McKibbin,3,1,4,4,0
@@ -1478,6 +1492,10 @@ Mignogna,40001290,Charl Schwartzel,15,2,5,5,0
 Mignogna,40001290,Charl Schwartzel,16,2,3,3,0
 Mignogna,40001290,Charl Schwartzel,17,2,5,4,-1
 Mignogna,40001290,Charl Schwartzel,18,2,4,4,0
+Mignogna,40001290,Charl Schwartzel,5,3,4,4,0
+Mignogna,40001290,Charl Schwartzel,4,3,4,3,-1
+Mignogna,40001290,Charl Schwartzel,3,3,5,4,-1
+Mignogna,40001290,Charl Schwartzel,2,3,4,5,2
 Mignogna,40001290,Charl Schwartzel,1,3,5,4,-1
 Mignogna,40003252,Ludvig Aberg,6,1,2,3,2
 Mignogna,40003252,Ludvig Aberg,5,1,4,4,0
@@ -1587,6 +1605,7 @@ Mignogna,40001594,Gary Woodland,4,2,3,3,0
 Mignogna,40001594,Gary Woodland,3,2,3,4,2
 Mignogna,40001594,Gary Woodland,2,2,7,5,-3
 Mignogna,40001594,Gary Woodland,1,2,4,4,0
+Mignogna,40001594,Gary Woodland,1,3,4,4,0
 Ferritto,40000448,Ryan Fox,17,1,3,4,2
 Ferritto,40000448,Ryan Fox,16,1,3,3,0
 Ferritto,40000448,Ryan Fox,15,1,5,5,0
@@ -1695,6 +1714,10 @@ Ferritto,40000764,Si Woo Kim,4,2,3,3,0
 Ferritto,40000764,Si Woo Kim,3,2,4,4,0
 Ferritto,40000764,Si Woo Kim,2,2,5,5,0
 Ferritto,40000764,Si Woo Kim,1,2,4,4,0
+Ferritto,40000764,Si Woo Kim,1,3,4,4,0
+Ferritto,40000764,Si Woo Kim,2,3,4,5,2
+Ferritto,40000764,Si Woo Kim,3,3,4,4,0
+Ferritto,40000764,Si Woo Kim,4,3,3,3,0
 Ferritto,40001199,Jon Rahm,18,1,4,4,0
 Ferritto,40001199,Jon Rahm,17,1,4,4,0
 Ferritto,40001199,Jon Rahm,16,1,3,3,0
@@ -1731,6 +1754,10 @@ Ferritto,40001199,Jon Rahm,15,2,5,5,0
 Ferritto,40001199,Jon Rahm,16,2,2,3,2
 Ferritto,40001199,Jon Rahm,17,2,4,4,0
 Ferritto,40001199,Jon Rahm,18,2,4,4,0
+Ferritto,40001199,Jon Rahm,1,3,3,4,2
+Ferritto,40001199,Jon Rahm,2,3,5,5,0
+Ferritto,40001199,Jon Rahm,3,3,3,4,2
+Ferritto,40001199,Jon Rahm,4,3,3,3,0
 Kaprosy,40004702,Naoyuki Kataoka,14,1,4,4,0
 Kaprosy,40004702,Naoyuki Kataoka,13,1,7,5,-3
 Kaprosy,40004702,Naoyuki Kataoka,1,1,4,4,0
@@ -1803,6 +1830,10 @@ Kaprosy,40000585,Brian Harman,15,2,4,5,2
 Kaprosy,40000585,Brian Harman,16,2,3,3,0
 Kaprosy,40000585,Brian Harman,17,2,4,4,0
 Kaprosy,40000585,Brian Harman,18,2,4,4,0
+Kaprosy,40000585,Brian Harman,4,3,2,3,2
+Kaprosy,40000585,Brian Harman,3,3,4,4,0
+Kaprosy,40000585,Brian Harman,2,3,4,5,2
+Kaprosy,40000585,Brian Harman,1,3,4,4,0
 Kaprosy,40000596,Tyrrell Hatton,1,1,4,4,0
 Kaprosy,40000596,Tyrrell Hatton,2,1,5,5,0
 Kaprosy,40000596,Tyrrell Hatton,3,1,5,4,-1
@@ -2165,6 +2196,11 @@ Randazzo,40001064,Alexander Noren,7,2,4,4,0
 Randazzo,40001064,Alexander Noren,6,2,3,3,0
 Randazzo,40001064,Alexander Noren,1,3,5,4,-1
 Randazzo,40001064,Alexander Noren,2,3,4,5,2
+Randazzo,40001064,Alexander Noren,3,3,4,4,0
+Randazzo,40001064,Alexander Noren,4,3,2,3,2
+Randazzo,40001064,Alexander Noren,5,3,4,4,0
+Randazzo,40001064,Alexander Noren,6,3,3,3,0
+Randazzo,40001064,Alexander Noren,7,3,4,4,0
 Hoban,40001097,Carlos Ortiz,13,1,4,5,2
 Hoban,40001097,Carlos Ortiz,14,1,4,4,0
 Hoban,40001097,Carlos Ortiz,15,1,4,5,2
@@ -2237,6 +2273,7 @@ Hoban,40000152,Keegan Bradley,15,2,5,5,0
 Hoban,40000152,Keegan Bradley,16,2,2,3,2
 Hoban,40000152,Keegan Bradley,17,2,4,4,0
 Hoban,40000152,Keegan Bradley,18,2,4,4,0
+Hoban,40000152,Keegan Bradley,1,3,5,4,-1
 Hoban,40003725,Harry Hall,1,1,4,4,0
 Hoban,40003725,Harry Hall,2,1,5,5,0
 Hoban,40003725,Harry Hall,3,1,4,4,0
@@ -2597,6 +2634,7 @@ Baucher,40001434,Justin Thomas,1,2,4,4,0
 Baucher,40001434,Justin Thomas,2,2,4,5,2
 Baucher,40001434,Justin Thomas,3,2,5,4,-1
 Baucher,40001434,Justin Thomas,4,2,4,3,-1
+Baucher,40001434,Justin Thomas,1,3,4,4,0
 J. Ayers,40002651,Wyndham Clark,1,1,4,4,0
 J. Ayers,40002651,Wyndham Clark,2,1,5,5,0
 J. Ayers,40002651,Wyndham Clark,3,1,4,4,0
@@ -2777,6 +2815,10 @@ Brunetti,40000270,Corey Conners,11,2,4,4,0
 Brunetti,40000270,Corey Conners,12,2,3,3,0
 Brunetti,40000270,Corey Conners,13,2,5,5,0
 Brunetti,40000270,Corey Conners,14,2,4,4,0
+Brunetti,40000270,Corey Conners,4,3,3,3,0
+Brunetti,40000270,Corey Conners,3,3,3,4,2
+Brunetti,40000270,Corey Conners,2,3,6,5,-1
+Brunetti,40000270,Corey Conners,1,3,4,4,0
 Brunetti,40006294,Ethan Fang,1,1,4,4,0
 Brunetti,40006294,Ethan Fang,2,1,5,5,0
 Brunetti,40006294,Ethan Fang,3,1,3,4,2
