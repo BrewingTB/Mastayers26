@@ -121,10 +121,12 @@
 </head>
 
 <body>
+
+<!-- LOGO -->
 <div style="text-align:center; margin-bottom:10px;">
-    <img src="Mastayers.png" alt="Mastayers Logo" 
-         style="max-width:180px; height:auto;">
+    <img src="mastayers.png" alt="Mastayers Logo" style="max-width:180px; height:auto;">
 </div>
+
 <h1>Mastayers 2026 Leaderboard</h1>
 <p id="lastUpdated"></p>
 
@@ -250,19 +252,28 @@ function renderLeaderboard(fantasy, scores, teamPlayers) {
 function computeTeamRoundTotal(playerIds, scores, roundNumber) {
     let total = 0;
 
-    playerIds.forEach(pid => {
-        const player = scores[String(pid)];
-        if (!player) return;
+    for (let h = 1; h <= 18; h++) {
+        let holeScores = [];
 
-        for (let h = 1; h <= 18; h++) {
+        playerIds.forEach(pid => {
+            const player = scores[String(pid)];
+            if (!player) return;
+
             const key = `${roundNumber}-${h}`;
             const hole = player.holes[key];
             if (hole) {
                 const delta = hole.strokes - hole.par;
-                total += stableford(delta);
+                holeScores.push(stableford(delta));
             }
+        });
+
+        if (roundNumber <= 2) {
+            total += holeScores.reduce((a, b) => a + b, 0);
+        } else {
+            holeScores.sort((a, b) => b - a);
+            total += (holeScores[0] || 0) + (holeScores[1] || 0);
         }
-    });
+    }
 
     return total;
 }
@@ -278,7 +289,7 @@ function buildRoundTable(playerIds, scores, roundNumber) {
     for (let h = 1; h <= 18; h++) html += `<th>${h}</th>`;
     html += "<th>Total</th></tr>";
 
-    let teamTotals = Array(18).fill(0);
+    let perHoleScores = Array.from({ length: 18 }, () => []);
     let teamRoundTotal = 0;
 
     playerIds.forEach(pid => {
@@ -295,9 +306,11 @@ function buildRoundTable(playerIds, scores, roundNumber) {
             if (hole) {
                 const delta = hole.strokes - hole.par;
                 const sf = stableford(delta);
+
                 row += `<td>${sf}</td>`;
                 playerTotal += sf;
-                teamTotals[h - 1] += sf;
+
+                perHoleScores[h - 1].push(sf);
             } else {
                 row += "<td>-</td>";
             }
@@ -305,15 +318,28 @@ function buildRoundTable(playerIds, scores, roundNumber) {
 
         row += `<td><strong>${playerTotal}</strong></td></tr>`;
         html += row;
-
-        teamRoundTotal += playerTotal;
     });
 
     /* TEAM TOTAL ROW */
     let totalsRow = "<tr class='team-total-row'><td><strong>TEAM TOTAL</strong></td>";
-    teamTotals.forEach(v => totalsRow += `<td>${v}</td>`);
-    totalsRow += `<td><strong>${teamRoundTotal}</strong></td></tr>`;
 
+    for (let h = 1; h <= 18; h++) {
+        const scoresForHole = perHoleScores[h - 1];
+
+        let holeTotal = 0;
+
+        if (roundNumber <= 2) {
+            holeTotal = scoresForHole.reduce((a, b) => a + b, 0);
+        } else {
+            scoresForHole.sort((a, b) => b - a);
+            holeTotal = (scoresForHole[0] || 0) + (scoresForHole[1] || 0);
+        }
+
+        totalsRow += `<td>${holeTotal}</td>`;
+        teamRoundTotal += holeTotal;
+    }
+
+    totalsRow += `<td><strong>${teamRoundTotal}</strong></td></tr>`;
     html += totalsRow;
 
     table.innerHTML = html;
@@ -339,6 +365,7 @@ loadData();
 
 </body>
 </html>
+
 
 
 
