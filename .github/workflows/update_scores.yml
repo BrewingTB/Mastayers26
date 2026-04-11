@@ -2,6 +2,8 @@
 name: Update Scores and Leaderboard
 
 on:
+  repository_dispatch:
+    types: [webhook_trigger]
   schedule:
      - cron: "3/5 * * * *"
   workflow_dispatch:
