@@ -3,9 +3,8 @@ name: Update Scores and Leaderboard
 
 on:
   repository_dispatch:
-    types: [webhook_trigger]
-  schedule:
-     - cron: "3/5 * * * *"
+    types: [update_scores_trigger]
+  
   workflow_dispatch:
 
 permissions:
@@ -16,8 +15,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
+      - name: Checkout 
+        uses: actions/checkout@v4
 
       - name: Set up Node
         uses: actions/setup-node@v3
