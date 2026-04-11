@@ -75,6 +75,8 @@ Fee,40003142,Kristoffer Reitan,1,3,4,4,0
 Fee,40003142,Kristoffer Reitan,2,3,5,5,0
 Fee,40003142,Kristoffer Reitan,3,3,4,4,0
 Fee,40003142,Kristoffer Reitan,4,3,4,3,-1
+Fee,40003142,Kristoffer Reitan,5,3,4,4,0
+Fee,40003142,Kristoffer Reitan,6,3,4,3,-1
 Fee,40003193,Nicolai Hojgaard,18,1,5,4,-1
 Fee,40003193,Nicolai Hojgaard,17,1,4,4,0
 Fee,40003193,Nicolai Hojgaard,16,1,5,3,-3
@@ -227,6 +229,8 @@ Mottola,40005053,Michael Brennan,5,3,5,4,-1
 Mottola,40005053,Michael Brennan,6,3,3,3,0
 Mottola,40005053,Michael Brennan,7,3,4,4,0
 Mottola,40005053,Michael Brennan,8,3,4,5,2
+Mottola,40005053,Michael Brennan,9,3,4,4,0
+Mottola,40005053,Michael Brennan,10,3,3,4,2
 Mottola,40000216,Patrick Cantlay,18,1,5,4,-1
 Mottola,40000216,Patrick Cantlay,17,1,4,4,0
 Mottola,40000216,Patrick Cantlay,16,1,3,3,0
@@ -263,6 +267,9 @@ Mottola,40000216,Patrick Cantlay,4,2,3,3,0
 Mottola,40000216,Patrick Cantlay,3,2,4,4,0
 Mottola,40000216,Patrick Cantlay,2,2,4,5,2
 Mottola,40000216,Patrick Cantlay,1,2,4,4,0
+Mottola,40000216,Patrick Cantlay,17,3,4,4,0
+Mottola,40000216,Patrick Cantlay,16,3,2,3,2
+Mottola,40000216,Patrick Cantlay,15,3,5,5,0
 Mottola,40000216,Patrick Cantlay,14,3,4,4,0
 Mottola,40000216,Patrick Cantlay,13,3,4,5,2
 Mottola,40000216,Patrick Cantlay,12,3,2,3,2
@@ -313,6 +320,8 @@ Mottola,40000430,Matt Fitzpatrick,3,2,4,4,0
 Mottola,40000430,Matt Fitzpatrick,2,2,5,5,0
 Mottola,40000430,Matt Fitzpatrick,1,2,4,4,0
 Mottola,40000430,Matt Fitzpatrick,18,2,4,4,0
+Mottola,40000430,Matt Fitzpatrick,11,3,6,4,-3
+Mottola,40000430,Matt Fitzpatrick,10,3,3,4,2
 Mottola,40000430,Matt Fitzpatrick,9,3,4,4,0
 Mottola,40000430,Matt Fitzpatrick,8,3,4,5,2
 Mottola,40000430,Matt Fitzpatrick,7,3,5,4,-1
@@ -398,8 +407,10 @@ Bagnowski,40000638,Max Homa,4,3,3,3,0
 Bagnowski,40000638,Max Homa,5,3,4,4,0
 Bagnowski,40000638,Max Homa,6,3,3,3,0
 Bagnowski,40000638,Max Homa,7,3,4,4,0
+Bagnowski,40000638,Max Homa,8,3,4,5,2
 Bagnowski,40000638,Max Homa,1,3,3,4,2
 Bagnowski,40000638,Max Homa,2,3,4,5,2
+Bagnowski,40000638,Max Homa,9,3,4,4,0
 Bagnowski,40000638,Max Homa,3,3,4,4,0
 Bagnowski,40000007,Brooks Koepka,1,1,5,4,-1
 Bagnowski,40000007,Brooks Koepka,2,1,4,5,2
@@ -437,6 +448,8 @@ Bagnowski,40000007,Brooks Koepka,15,2,5,5,0
 Bagnowski,40000007,Brooks Koepka,16,2,3,3,0
 Bagnowski,40000007,Brooks Koepka,17,2,4,4,0
 Bagnowski,40000007,Brooks Koepka,18,2,4,4,0
+Bagnowski,40000007,Brooks Koepka,8,3,5,5,0
+Bagnowski,40000007,Brooks Koepka,7,3,4,4,0
 Bagnowski,40000007,Brooks Koepka,6,3,3,3,0
 Bagnowski,40000007,Brooks Koepka,5,3,4,4,0
 Bagnowski,40000007,Brooks Koepka,4,3,4,3,-1
@@ -495,6 +508,8 @@ Bagnowski,40000004,Jordan Spieth,13,3,6,5,-1
 Bagnowski,40000004,Jordan Spieth,14,3,4,4,0
 Bagnowski,40000004,Jordan Spieth,15,3,4,5,2
 Bagnowski,40000004,Jordan Spieth,16,3,3,3,0
+Bagnowski,40000004,Jordan Spieth,17,3,3,4,2
+Bagnowski,40000004,Jordan Spieth,18,3,5,4,-1
 Gilson,40006412,Jackson Herrington,18,1,4,4,0
 Gilson,40006412,Jackson Herrington,17,1,5,4,-1
 Gilson,40006412,Jackson Herrington,16,1,3,3,0
@@ -603,6 +618,8 @@ Gilson,40002578,Aaron Rai,4,2,3,3,0
 Gilson,40002578,Aaron Rai,3,2,4,4,0
 Gilson,40002578,Aaron Rai,2,2,4,5,2
 Gilson,40002578,Aaron Rai,1,2,4,4,0
+Gilson,40002578,Aaron Rai,17,3,4,4,0
+Gilson,40002578,Aaron Rai,16,3,2,3,2
 Gilson,40002578,Aaron Rai,15,3,5,5,0
 Gilson,40002578,Aaron Rai,14,3,4,4,0
 Gilson,40002578,Aaron Rai,13,3,5,5,0
@@ -654,6 +671,8 @@ Gilson,40001274,Scottie Scheffler,5,2,5,4,-1
 Gilson,40001274,Scottie Scheffler,4,2,4,3,-1
 Gilson,40001274,Scottie Scheffler,3,2,4,4,0
 Gilson,40001274,Scottie Scheffler,2,2,5,5,0
+Gilson,40001274,Scottie Scheffler,14,3,4,4,0
+Gilson,40001274,Scottie Scheffler,13,3,5,5,0
 Gilson,40001274,Scottie Scheffler,12,3,3,3,0
 Gilson,40001274,Scottie Scheffler,11,3,3,4,2
 Gilson,40001274,Scottie Scheffler,10,3,4,4,0
@@ -756,6 +775,7 @@ Gibb,40005060,Chris Gotterup,4,2,3,3,0
 Gibb,40005060,Chris Gotterup,3,2,3,4,2
 Gibb,40005060,Chris Gotterup,2,2,4,5,2
 Gibb,40005060,Chris Gotterup,1,2,5,4,-1
+Gibb,40005060,Chris Gotterup,8,3,5,5,0
 Gibb,40005060,Chris Gotterup,7,3,4,4,0
 Gibb,40005060,Chris Gotterup,6,3,3,3,0
 Gibb,40005060,Chris Gotterup,5,3,5,4,-1
@@ -925,6 +945,8 @@ Penton,40000859,Hao-Tong Li,4,2,4,3,-1
 Penton,40000859,Hao-Tong Li,3,2,4,4,0
 Penton,40000859,Hao-Tong Li,2,2,4,5,2
 Penton,40000859,Hao-Tong Li,1,2,4,4,0
+Penton,40000859,Hao-Tong Li,6,3,3,3,0
+Penton,40000859,Hao-Tong Li,5,3,3,4,2
 Penton,40000859,Hao-Tong Li,4,3,3,3,0
 Penton,40000859,Hao-Tong Li,3,3,3,4,2
 Penton,40000859,Hao-Tong Li,2,3,4,5,2
@@ -1002,6 +1024,8 @@ Penton,40005133,Jacob Bridgeman,17,2,4,4,0
 Penton,40005133,Jacob Bridgeman,16,2,3,3,0
 Penton,40005133,Jacob Bridgeman,15,2,4,5,2
 Penton,40005133,Jacob Bridgeman,1,3,4,4,0
+Penton,40005133,Jacob Bridgeman,17,3,4,4,0
+Penton,40005133,Jacob Bridgeman,16,3,3,3,0
 Penton,40005133,Jacob Bridgeman,2,3,4,5,2
 Penton,40005133,Jacob Bridgeman,15,3,4,5,2
 Penton,40005133,Jacob Bridgeman,3,3,4,4,0
@@ -1186,6 +1210,8 @@ Huszczo,40001638,Xander Schauffele,5,3,5,4,-1
 Huszczo,40001638,Xander Schauffele,6,3,3,3,0
 Huszczo,40001638,Xander Schauffele,7,3,3,4,2
 Huszczo,40001638,Xander Schauffele,8,3,3,5,5
+Huszczo,40001638,Xander Schauffele,9,3,4,4,0
+Huszczo,40001638,Xander Schauffele,10,3,5,4,-1
 M. Ayers,40005036,Matt McCarty,1,1,4,4,0
 M. Ayers,40005036,Matt McCarty,2,1,5,5,0
 M. Ayers,40005036,Matt McCarty,3,1,4,4,0
@@ -1225,6 +1251,7 @@ M. Ayers,40005036,Matt McCarty,1,2,4,4,0
 M. Ayers,40005036,Matt McCarty,15,3,4,5,2
 M. Ayers,40005036,Matt McCarty,16,3,5,3,-3
 M. Ayers,40005036,Matt McCarty,17,3,4,4,0
+M. Ayers,40005036,Matt McCarty,18,3,4,4,0
 M. Ayers,40005036,Matt McCarty,14,3,5,4,-1
 M. Ayers,40005036,Matt McCarty,13,3,4,5,2
 M. Ayers,40005036,Matt McCarty,12,3,3,3,0
@@ -1276,6 +1303,8 @@ M. Ayers,40000194,Sam Burns,3,2,4,4,0
 M. Ayers,40000194,Sam Burns,2,2,5,5,0
 M. Ayers,40000194,Sam Burns,1,2,4,4,0
 M. Ayers,40000194,Sam Burns,1,3,3,4,2
+M. Ayers,40000194,Sam Burns,2,3,4,5,2
+M. Ayers,40000194,Sam Burns,3,3,4,4,0
 M. Ayers,40002471,Collin Morikawa,3,1,4,4,0
 M. Ayers,40002471,Collin Morikawa,4,1,3,3,0
 M. Ayers,40002471,Collin Morikawa,5,1,4,4,0
@@ -1317,6 +1346,8 @@ M. Ayers,40002471,Collin Morikawa,5,3,3,4,2
 M. Ayers,40002471,Collin Morikawa,6,3,3,3,0
 M. Ayers,40002471,Collin Morikawa,7,3,4,4,0
 M. Ayers,40002471,Collin Morikawa,8,3,5,5,0
+M. Ayers,40002471,Collin Morikawa,12,3,3,3,0
+M. Ayers,40002471,Collin Morikawa,13,3,5,5,0
 M. Ayers,40002471,Collin Morikawa,10,3,4,4,0
 M. Ayers,40002471,Collin Morikawa,1,3,4,4,0
 M. Ayers,40002471,Collin Morikawa,2,3,5,5,0
@@ -1485,6 +1516,8 @@ Hivnor,40005232,Ryan Gerard,4,2,3,3,0
 Hivnor,40005232,Ryan Gerard,3,2,4,4,0
 Hivnor,40005232,Ryan Gerard,2,2,5,5,0
 Hivnor,40005232,Ryan Gerard,1,2,4,4,0
+Hivnor,40005232,Ryan Gerard,15,3,4,5,2
+Hivnor,40005232,Ryan Gerard,14,3,3,4,2
 Hivnor,40005232,Ryan Gerard,13,3,4,5,2
 Hivnor,40005232,Ryan Gerard,12,3,3,3,0
 Hivnor,40005232,Ryan Gerard,11,3,4,4,0
@@ -1535,6 +1568,9 @@ Hivnor,40000013,Justin Rose,3,2,4,4,0
 Hivnor,40000013,Justin Rose,2,2,5,5,0
 Hivnor,40000013,Justin Rose,1,2,5,4,-1
 Hivnor,40000013,Justin Rose,1,3,4,4,0
+Hivnor,40000013,Justin Rose,2,3,5,5,0
+Hivnor,40000013,Justin Rose,3,3,3,4,2
+Hivnor,40000013,Justin Rose,4,3,3,3,0
 Plato,40004738,Rasmus Neergaard-Petersen,1,1,4,4,0
 Plato,40004738,Rasmus Neergaard-Petersen,2,1,6,5,-1
 Plato,40004738,Rasmus Neergaard-Petersen,3,1,4,4,0
@@ -1607,6 +1643,8 @@ Plato,40002343,Ben Griffin,15,2,5,5,0
 Plato,40002343,Ben Griffin,16,2,3,3,0
 Plato,40002343,Ben Griffin,17,2,4,4,0
 Plato,40002343,Ben Griffin,18,2,4,4,0
+Plato,40002343,Ben Griffin,9,3,3,4,2
+Plato,40002343,Ben Griffin,8,3,4,5,2
 Plato,40002343,Ben Griffin,7,3,4,4,0
 Plato,40002343,Ben Griffin,6,3,3,3,0
 Plato,40002343,Ben Griffin,5,3,4,4,0
@@ -1794,6 +1832,8 @@ Mignogna,40003252,Ludvig Aberg,4,2,3,3,0
 Mignogna,40003252,Ludvig Aberg,3,2,4,4,0
 Mignogna,40003252,Ludvig Aberg,2,2,4,5,2
 Mignogna,40003252,Ludvig Aberg,1,2,4,4,0
+Mignogna,40003252,Ludvig Aberg,14,3,3,4,2
+Mignogna,40003252,Ludvig Aberg,13,3,6,5,-1
 Mignogna,40003252,Ludvig Aberg,12,3,2,3,2
 Mignogna,40003252,Ludvig Aberg,11,3,3,4,2
 Mignogna,40003252,Ludvig Aberg,10,3,3,4,2
@@ -1850,6 +1890,8 @@ Mignogna,40000775,Jake Knapp,5,3,5,4,-1
 Mignogna,40000775,Jake Knapp,6,3,4,3,-1
 Mignogna,40000775,Jake Knapp,7,3,4,4,0
 Mignogna,40000775,Jake Knapp,8,3,3,5,5
+Mignogna,40000775,Jake Knapp,9,3,4,4,0
+Mignogna,40000775,Jake Knapp,10,3,3,4,2
 Mignogna,40001594,Gary Woodland,18,1,4,4,0
 Mignogna,40001594,Gary Woodland,17,1,4,4,0
 Mignogna,40001594,Gary Woodland,16,1,3,3,0
@@ -1976,6 +2018,7 @@ Ferritto,40000015,Dustin Johnson,18,2,4,4,0
 Ferritto,40000015,Dustin Johnson,1,2,4,4,0
 Ferritto,40000015,Dustin Johnson,2,2,4,5,2
 Ferritto,40000015,Dustin Johnson,3,2,4,4,0
+Ferritto,40000015,Dustin Johnson,14,3,4,4,0
 Ferritto,40000015,Dustin Johnson,13,3,4,5,2
 Ferritto,40000015,Dustin Johnson,12,3,4,3,-1
 Ferritto,40000015,Dustin Johnson,11,3,5,4,-1
@@ -1989,6 +2032,8 @@ Ferritto,40000015,Dustin Johnson,4,3,3,3,0
 Ferritto,40000015,Dustin Johnson,3,3,4,4,0
 Ferritto,40000015,Dustin Johnson,2,3,5,5,0
 Ferritto,40000015,Dustin Johnson,1,3,5,4,-1
+Ferritto,40000015,Dustin Johnson,15,3,5,5,0
+Ferritto,40000015,Dustin Johnson,16,3,3,3,0
 Ferritto,40000764,Si Woo Kim,18,1,4,4,0
 Ferritto,40000764,Si Woo Kim,17,1,5,4,-1
 Ferritto,40000764,Si Woo Kim,1,1,6,4,-3
@@ -2226,6 +2271,8 @@ Kaprosy,40000596,Tyrrell Hatton,1,2,4,4,0
 Kaprosy,40000596,Tyrrell Hatton,1,3,4,4,0
 Kaprosy,40000596,Tyrrell Hatton,2,3,5,5,0
 Kaprosy,40000596,Tyrrell Hatton,3,3,4,4,0
+Kaprosy,40000596,Tyrrell Hatton,4,3,3,3,0
+Kaprosy,40000596,Tyrrell Hatton,5,3,4,4,0
 Kaprosy,40002950,Robert MacIntyre,18,1,4,4,0
 Kaprosy,40002950,Robert MacIntyre,17,1,5,4,-1
 Kaprosy,40002950,Robert MacIntyre,1,1,4,4,0
@@ -2422,6 +2469,8 @@ Kaminsky,40002785,Sepp Straka,13,3,4,5,2
 Kaminsky,40002785,Sepp Straka,14,3,4,4,0
 Kaminsky,40002785,Sepp Straka,15,3,5,5,0
 Kaminsky,40002785,Sepp Straka,16,3,3,3,0
+Kaminsky,40002785,Sepp Straka,17,3,5,4,-1
+Kaminsky,40002785,Sepp Straka,18,3,3,4,2
 Randazzo,40005299,Aldrich Potgieter,11,1,5,4,-1
 Randazzo,40005299,Aldrich Potgieter,10,1,4,4,0
 Randazzo,40005299,Aldrich Potgieter,9,1,4,4,0
@@ -2494,6 +2543,7 @@ Randazzo,40000387,Harris English,4,2,3,3,0
 Randazzo,40000387,Harris English,3,2,3,4,2
 Randazzo,40000387,Harris English,2,2,4,5,2
 Randazzo,40000387,Harris English,1,2,4,4,0
+Randazzo,40000387,Harris English,14,3,4,4,0
 Randazzo,40000387,Harris English,13,3,5,5,0
 Randazzo,40000387,Harris English,12,3,3,3,0
 Randazzo,40000387,Harris English,11,3,4,4,0
@@ -2507,6 +2557,7 @@ Randazzo,40000387,Harris English,4,3,3,3,0
 Randazzo,40000387,Harris English,3,3,4,4,0
 Randazzo,40000387,Harris English,2,3,4,5,2
 Randazzo,40000387,Harris English,1,3,4,4,0
+Randazzo,40000387,Harris English,15,3,5,5,0
 Randazzo,40002605,Sung-Jae Im,18,1,4,4,0
 Randazzo,40002605,Sung-Jae Im,17,1,4,4,0
 Randazzo,40002605,Sung-Jae Im,16,1,3,3,0
@@ -2552,6 +2603,8 @@ Randazzo,40002605,Sung-Jae Im,6,3,3,3,0
 Randazzo,40002605,Sung-Jae Im,7,3,4,4,0
 Randazzo,40002605,Sung-Jae Im,8,3,5,5,0
 Randazzo,40002605,Sung-Jae Im,9,3,4,4,0
+Randazzo,40002605,Sung-Jae Im,16,3,3,3,0
+Randazzo,40002605,Sung-Jae Im,15,3,4,5,2
 Randazzo,40002605,Sung-Jae Im,10,3,5,4,-1
 Randazzo,40002605,Sung-Jae Im,11,3,5,4,-1
 Randazzo,40002605,Sung-Jae Im,12,3,3,3,0
@@ -2787,6 +2840,8 @@ Hoban,40000615,Russell Henley,11,3,3,4,2
 Hoban,40000615,Russell Henley,12,3,3,3,0
 Hoban,40000615,Russell Henley,13,3,5,5,0
 Hoban,40000615,Russell Henley,14,3,4,4,0
+Hoban,40000615,Russell Henley,15,3,4,5,2
+Hoban,40000615,Russell Henley,16,3,2,3,2
 Mucci,40000115,Daniel Berger,18,1,5,4,-1
 Mucci,40000115,Daniel Berger,17,1,4,4,0
 Mucci,40000115,Daniel Berger,16,1,3,3,0
@@ -2932,6 +2987,8 @@ Mucci,40003609,Cameron Young,3,2,4,4,0
 Mucci,40003609,Cameron Young,2,2,4,5,2
 Mucci,40003609,Cameron Young,1,2,4,4,0
 Mucci,40003609,Cameron Young,1,3,4,4,0
+Mucci,40003609,Cameron Young,7,3,3,4,2
+Mucci,40003609,Cameron Young,6,3,3,3,0
 Mucci,40003609,Cameron Young,5,3,4,4,0
 Mucci,40003609,Cameron Young,4,3,2,3,2
 Mucci,40003609,Cameron Young,3,3,3,4,2
@@ -2972,6 +3029,8 @@ Baucher,40000205,Brian Campbell,4,2,4,3,-1
 Baucher,40000205,Brian Campbell,3,2,4,4,0
 Baucher,40000205,Brian Campbell,2,2,6,5,-1
 Baucher,40000205,Brian Campbell,1,2,4,4,0
+Baucher,40000205,Brian Campbell,13,3,5,5,0
+Baucher,40000205,Brian Campbell,12,3,3,3,0
 Baucher,40000205,Brian Campbell,11,3,5,4,-1
 Baucher,40000205,Brian Campbell,10,3,3,4,2
 Baucher,40000205,Brian Campbell,9,3,4,4,0
@@ -3019,6 +3078,9 @@ Baucher,40000002,Patrick Reed,15,2,5,5,0
 Baucher,40000002,Patrick Reed,16,2,3,3,0
 Baucher,40000002,Patrick Reed,17,2,3,4,2
 Baucher,40000002,Patrick Reed,18,2,5,4,-1
+Baucher,40000002,Patrick Reed,3,3,3,4,2
+Baucher,40000002,Patrick Reed,4,3,4,3,-1
+Baucher,40000002,Patrick Reed,2,3,4,5,2
 Baucher,40000002,Patrick Reed,1,3,3,4,2
 Baucher,40001424,Nick Taylor,18,1,4,4,0
 Baucher,40001424,Nick Taylor,17,1,5,4,-1
@@ -3064,6 +3126,8 @@ Baucher,40001424,Nick Taylor,5,3,4,4,0
 Baucher,40001424,Nick Taylor,6,3,3,3,0
 Baucher,40001424,Nick Taylor,7,3,4,4,0
 Baucher,40001424,Nick Taylor,8,3,5,5,0
+Baucher,40001424,Nick Taylor,11,3,4,4,0
+Baucher,40001424,Nick Taylor,10,3,4,4,0
 Baucher,40001424,Nick Taylor,9,3,3,4,2
 Baucher,40001434,Justin Thomas,1,1,4,4,0
 Baucher,40001434,Justin Thomas,2,1,4,5,2
@@ -3155,6 +3219,8 @@ J. Ayers,40002651,Wyndham Clark,4,2,2,3,2
 J. Ayers,40002651,Wyndham Clark,3,2,3,4,2
 J. Ayers,40002651,Wyndham Clark,2,2,4,5,2
 J. Ayers,40002651,Wyndham Clark,1,2,4,4,0
+J. Ayers,40002651,Wyndham Clark,5,3,4,4,0
+J. Ayers,40002651,Wyndham Clark,4,3,3,3,0
 J. Ayers,40002651,Wyndham Clark,3,3,2,4,5
 J. Ayers,40002651,Wyndham Clark,2,3,4,5,2
 J. Ayers,40002651,Wyndham Clark,1,3,5,4,-1
@@ -3196,6 +3262,8 @@ J. Ayers,40000890,Shane Lowry,2,2,5,5,0
 J. Ayers,40000890,Shane Lowry,1,2,3,4,2
 J. Ayers,40000890,Shane Lowry,1,3,4,4,0
 J. Ayers,40000890,Shane Lowry,2,3,4,5,2
+J. Ayers,40000890,Shane Lowry,3,3,4,4,0
+J. Ayers,40000890,Shane Lowry,4,3,3,3,0
 J. Ayers,40000017,Hideki Matsuyama,18,1,4,4,0
 J. Ayers,40000017,Hideki Matsuyama,17,1,4,4,0
 J. Ayers,40000017,Hideki Matsuyama,16,1,3,3,0
@@ -3240,6 +3308,8 @@ J. Ayers,40000017,Hideki Matsuyama,5,3,3,4,2
 J. Ayers,40000017,Hideki Matsuyama,6,3,4,3,-1
 J. Ayers,40000017,Hideki Matsuyama,7,3,4,4,0
 J. Ayers,40000017,Hideki Matsuyama,8,3,4,5,2
+J. Ayers,40000017,Hideki Matsuyama,9,3,5,4,-1
+J. Ayers,40000017,Hideki Matsuyama,10,3,4,4,0
 J. Ayers,40000001,Bubba Watson,1,1,5,4,-1
 J. Ayers,40000001,Bubba Watson,2,1,5,5,0
 J. Ayers,40000001,Bubba Watson,3,1,4,4,0
@@ -3403,6 +3473,8 @@ Brunetti,40000965,Rory McIlroy,4,2,2,3,2
 Brunetti,40000965,Rory McIlroy,3,2,3,4,2
 Brunetti,40000965,Rory McIlroy,2,2,4,5,2
 Brunetti,40000965,Rory McIlroy,1,3,5,4,-1
+Brunetti,40000965,Rory McIlroy,2,3,5,5,0
+Brunetti,40000965,Rory McIlroy,3,3,3,4,2
 Brunetti,40000010,Adam Scott,13,1,3,5,5
 Brunetti,40000010,Adam Scott,17,1,4,4,0
 Brunetti,40000010,Adam Scott,18,1,5,4,-1
@@ -3606,6 +3678,8 @@ Campbell,40000314,Jason Day,2,3,4,5,2
 Campbell,40000314,Jason Day,3,3,4,4,0
 Campbell,40000314,Jason Day,4,3,3,3,0
 Campbell,40000314,Jason Day,5,3,4,4,0
+Campbell,40000314,Jason Day,6,3,3,3,0
+Campbell,40000314,Jason Day,7,3,4,4,0
 Campbell,40000322,Bryson DeChambeau,1,1,4,4,0
 Campbell,40000322,Bryson DeChambeau,2,1,6,5,-1
 Campbell,40000322,Bryson DeChambeau,3,1,3,4,2
@@ -3752,6 +3826,8 @@ Stull,40000432,Tommy Fleetwood,2,2,4,5,2
 Stull,40000432,Tommy Fleetwood,1,2,5,4,-1
 Stull,40000432,Tommy Fleetwood,1,3,4,4,0
 Stull,40000432,Tommy Fleetwood,2,3,4,5,2
+Stull,40000432,Tommy Fleetwood,3,3,4,4,0
+Stull,40000432,Tommy Fleetwood,4,3,4,3,-1
 Stull,40006414,Pongsapak Laopakdee,1,1,4,4,0
 Stull,40006414,Pongsapak Laopakdee,2,1,4,5,2
 Stull,40006414,Pongsapak Laopakdee,3,1,5,4,-1
@@ -3841,6 +3917,7 @@ Stull,40003697,Marco Penge,14,3,4,4,0
 Stull,40003697,Marco Penge,15,3,4,5,2
 Stull,40003697,Marco Penge,16,3,2,3,2
 Stull,40003697,Marco Penge,17,3,4,4,0
+Stull,40003697,Marco Penge,18,3,4,4,0
 Stull,40004729,Sam Stevens,1,1,4,4,0
 Stull,40004729,Sam Stevens,2,1,4,5,2
 Stull,40004729,Sam Stevens,3,1,4,4,0
