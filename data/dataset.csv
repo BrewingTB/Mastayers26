@@ -946,6 +946,7 @@ Gibb,40000977,Maverick McNealy,4,3,3,3,0
 Gibb,40000977,Maverick McNealy,3,3,4,4,0
 Gibb,40000977,Maverick McNealy,2,3,4,5,2
 Gibb,40000977,Maverick McNealy,1,3,5,4,-1
+Gibb,40000977,Maverick McNealy,1,4,3,4,2
 Penton,40003812,Casey Jarvis,1,1,4,4,0
 Penton,40003812,Casey Jarvis,2,1,5,5,0
 Penton,40003812,Casey Jarvis,3,1,3,4,2
@@ -1180,6 +1181,7 @@ Huszczo,40002249,Kurt Kitayama,4,3,3,3,0
 Huszczo,40002249,Kurt Kitayama,3,3,5,4,-1
 Huszczo,40002249,Kurt Kitayama,2,3,6,5,-1
 Huszczo,40002249,Kurt Kitayama,1,3,4,4,0
+Huszczo,40002249,Kurt Kitayama,6,4,3,3,0
 Huszczo,40002249,Kurt Kitayama,5,4,4,4,0
 Huszczo,40002249,Kurt Kitayama,4,4,4,3,-1
 Huszczo,40002249,Kurt Kitayama,3,4,4,4,0
@@ -1366,6 +1368,7 @@ M. Ayers,40005036,Matt McCarty,13,3,4,5,2
 M. Ayers,40005036,Matt McCarty,2,3,4,5,2
 M. Ayers,40005036,Matt McCarty,1,3,4,4,0
 M. Ayers,40005036,Matt McCarty,1,4,3,4,2
+M. Ayers,40005036,Matt McCarty,2,4,4,5,2
 M. Ayers,40000194,Sam Burns,1,1,4,4,0
 M. Ayers,40000194,Sam Burns,18,1,4,4,0
 M. Ayers,40000194,Sam Burns,17,1,4,4,0
@@ -1604,6 +1607,7 @@ Hivnor,40000479,Sergio Garcia,1,4,5,4,-1
 Hivnor,40000479,Sergio Garcia,2,4,5,5,0
 Hivnor,40000479,Sergio Garcia,3,4,5,4,-1
 Hivnor,40000479,Sergio Garcia,4,4,4,3,-1
+Hivnor,40000479,Sergio Garcia,5,4,4,4,0
 Hivnor,40005232,Ryan Gerard,1,1,5,4,-1
 Hivnor,40005232,Ryan Gerard,2,1,4,5,2
 Hivnor,40005232,Ryan Gerard,3,1,3,4,2
@@ -2121,6 +2125,7 @@ Mignogna,40001594,Gary Woodland,2,4,4,5,2
 Mignogna,40001594,Gary Woodland,3,4,4,4,0
 Mignogna,40001594,Gary Woodland,4,4,3,3,0
 Mignogna,40001594,Gary Woodland,5,4,4,4,0
+Mignogna,40001594,Gary Woodland,6,4,2,3,2
 Ferritto,40000448,Ryan Fox,13,1,5,5,0
 Ferritto,40000448,Ryan Fox,12,1,3,3,0
 Ferritto,40000448,Ryan Fox,11,1,4,4,0
@@ -2330,6 +2335,7 @@ Ferritto,40001199,Jon Rahm,1,4,4,4,0
 Ferritto,40001199,Jon Rahm,2,4,4,5,2
 Ferritto,40001199,Jon Rahm,3,4,3,4,2
 Ferritto,40001199,Jon Rahm,4,4,3,3,0
+Ferritto,40001199,Jon Rahm,5,4,5,4,-1
 Kaprosy,40004702,Naoyuki Kataoka,1,1,4,4,0
 Kaprosy,40004702,Naoyuki Kataoka,2,1,4,5,2
 Kaprosy,40004702,Naoyuki Kataoka,3,1,6,4,-3
@@ -2870,6 +2876,7 @@ Randazzo,40001064,Alexander Noren,4,3,2,3,2
 Randazzo,40001064,Alexander Noren,3,3,4,4,0
 Randazzo,40001064,Alexander Noren,2,3,4,5,2
 Randazzo,40001064,Alexander Noren,1,3,5,4,-1
+Randazzo,40001064,Alexander Noren,1,4,4,4,0
 Hoban,40001097,Carlos Ortiz,1,1,5,4,-1
 Hoban,40001097,Carlos Ortiz,2,1,7,5,-3
 Hoban,40001097,Carlos Ortiz,3,1,5,4,-1
@@ -2962,6 +2969,7 @@ Hoban,40000152,Keegan Bradley,2,3,5,5,0
 Hoban,40000152,Keegan Bradley,1,3,5,4,-1
 Hoban,40000152,Keegan Bradley,1,4,4,4,0
 Hoban,40000152,Keegan Bradley,2,4,5,5,0
+Hoban,40000152,Keegan Bradley,3,4,3,4,2
 Hoban,40003725,Harry Hall,16,1,3,3,0
 Hoban,40003725,Harry Hall,15,1,5,5,0
 Hoban,40003725,Harry Hall,14,1,4,4,0
@@ -3684,6 +3692,7 @@ Brunetti,40000270,Corey Conners,3,3,3,4,2
 Brunetti,40000270,Corey Conners,2,3,6,5,-1
 Brunetti,40000270,Corey Conners,1,3,4,4,0
 Brunetti,40000270,Corey Conners,1,4,5,4,-1
+Brunetti,40000270,Corey Conners,2,4,4,5,2
 Brunetti,40006294,Ethan Fang,1,1,4,4,0
 Brunetti,40006294,Ethan Fang,2,1,5,5,0
 Brunetti,40006294,Ethan Fang,3,1,3,4,2
