@@ -6851,6 +6851,16 @@
   },
   {
     "team": "Gilson",
+    "playerId": 40002578,
+    "playerName": "Aaron Rai",
+    "round": 4,
+    "hole": 2,
+    "strokes": 5,
+    "par": 5,
+    "stableford": 0
+  },
+  {
+    "team": "Gilson",
     "playerId": 40001274,
     "playerName": "Scottie Scheffler",
     "round": 1,
@@ -19284,6 +19294,16 @@
     "playerId": 40001290,
     "playerName": "Charl Schwartzel",
     "round": 4,
+    "hole": 2,
+    "strokes": 6,
+    "par": 5,
+    "stableford": -1
+  },
+  {
+    "team": "Mignogna",
+    "playerId": 40001290,
+    "playerName": "Charl Schwartzel",
+    "round": 4,
     "hole": 1,
     "strokes": 4,
     "par": 4,
@@ -22898,6 +22918,16 @@
     "strokes": 5,
     "par": 4,
     "stableford": -1
+  },
+  {
+    "team": "Ferritto",
+    "playerId": 40001199,
+    "playerName": "Jon Rahm",
+    "round": 4,
+    "hole": 1,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
   },
   {
     "team": "Kaprosy",
