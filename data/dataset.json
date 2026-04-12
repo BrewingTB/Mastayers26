@@ -3561,6 +3561,16 @@
   },
   {
     "team": "Mottola",
+    "playerId": 40000216,
+    "playerName": "Patrick Cantlay",
+    "round": 4,
+    "hole": 15,
+    "strokes": 4,
+    "par": 5,
+    "stableford": 2
+  },
+  {
+    "team": "Mottola",
     "playerId": 40000430,
     "playerName": "Matt Fitzpatrick",
     "round": 1,
@@ -8777,6 +8787,16 @@
     "hole": 1,
     "strokes": 4,
     "par": 4,
+    "stableford": 0
+  },
+  {
+    "team": "Gilson",
+    "playerId": 40001274,
+    "playerName": "Scottie Scheffler",
+    "round": 4,
+    "hole": 13,
+    "strokes": 5,
+    "par": 5,
     "stableford": 0
   },
   {
@@ -12324,6 +12344,16 @@
     "playerId": 40000859,
     "playerName": "Hao-Tong Li",
     "round": 4,
+    "hole": 13,
+    "strokes": 8,
+    "par": 5,
+    "stableford": -3
+  },
+  {
+    "team": "Penton",
+    "playerId": 40000859,
+    "playerName": "Hao-Tong Li",
+    "round": 4,
     "hole": 12,
     "strokes": 6,
     "par": 3,
@@ -36720,6 +36750,16 @@
     "stableford": 0
   },
   {
+    "team": "Hoban",
+    "playerId": 40000615,
+    "playerName": "Russell Henley",
+    "round": 4,
+    "hole": 15,
+    "strokes": 5,
+    "par": 5,
+    "stableford": 0
+  },
+  {
     "team": "Mucci",
     "playerId": 40000115,
     "playerName": "Daniel Berger",
@@ -38347,6 +38387,16 @@
     "hole": 1,
     "strokes": 4,
     "par": 4,
+    "stableford": 0
+  },
+  {
+    "team": "Mucci",
+    "playerId": 40003609,
+    "playerName": "Cameron Young",
+    "round": 4,
+    "hole": 12,
+    "strokes": 3,
+    "par": 3,
     "stableford": 0
   },
   {
@@ -45498,6 +45548,16 @@
     "strokes": 4,
     "par": 4,
     "stableford": 0
+  },
+  {
+    "team": "Brunetti",
+    "playerId": 40000965,
+    "playerName": "Rory McIlroy",
+    "round": 4,
+    "hole": 12,
+    "strokes": 2,
+    "par": 3,
+    "stableford": 2
   },
   {
     "team": "Brunetti",
