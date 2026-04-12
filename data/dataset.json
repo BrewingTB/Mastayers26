@@ -6841,6 +6841,16 @@
   },
   {
     "team": "Gilson",
+    "playerId": 40002578,
+    "playerName": "Aaron Rai",
+    "round": 4,
+    "hole": 1,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
+  },
+  {
+    "team": "Gilson",
     "playerId": 40001274,
     "playerName": "Scottie Scheffler",
     "round": 1,
@@ -19255,6 +19265,16 @@
     "playerName": "Charl Schwartzel",
     "round": 3,
     "hole": 18,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
+  },
+  {
+    "team": "Mignogna",
+    "playerId": 40001290,
+    "playerName": "Charl Schwartzel",
+    "round": 4,
+    "hole": 1,
     "strokes": 4,
     "par": 4,
     "stableford": 0

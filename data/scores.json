@@ -12673,6 +12673,12 @@
         "hole": 18,
         "strokes": 4,
         "par": 4
+      },
+      "4-1": {
+        "round": 4,
+        "hole": 1,
+        "strokes": 4,
+        "par": 4
       }
     }
   },
@@ -16421,6 +16427,12 @@
       "3-18": {
         "round": 3,
         "hole": 18,
+        "strokes": 4,
+        "par": 4
+      },
+      "4-1": {
+        "round": 4,
+        "hole": 1,
         "strokes": 4,
         "par": 4
       }
