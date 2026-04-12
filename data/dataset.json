@@ -17261,6 +17261,16 @@
   },
   {
     "team": "M. Ayers",
+    "playerId": 40000194,
+    "playerName": "Sam Burns",
+    "round": 4,
+    "hole": 17,
+    "strokes": 5,
+    "par": 4,
+    "stableford": -1
+  },
+  {
+    "team": "M. Ayers",
     "playerId": 40002471,
     "playerName": "Collin Morikawa",
     "round": 1,
@@ -38677,6 +38687,16 @@
     "hole": 1,
     "strokes": 4,
     "par": 4,
+    "stableford": 0
+  },
+  {
+    "team": "Mucci",
+    "playerId": 40003609,
+    "playerName": "Cameron Young",
+    "round": 4,
+    "hole": 16,
+    "strokes": 3,
+    "par": 3,
     "stableford": 0
   },
   {
@@ -43118,6 +43138,16 @@
     "strokes": 5,
     "par": 3,
     "stableford": -3
+  },
+  {
+    "team": "J. Ayers",
+    "playerId": 40000890,
+    "playerName": "Shane Lowry",
+    "round": 4,
+    "hole": 17,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
   },
   {
     "team": "J. Ayers",

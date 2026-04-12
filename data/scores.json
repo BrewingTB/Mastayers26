@@ -4586,6 +4586,12 @@
         "hole": 16,
         "strokes": 2,
         "par": 3
+      },
+      "4-17": {
+        "round": 4,
+        "hole": 17,
+        "strokes": 5,
+        "par": 4
       }
     }
   },
@@ -12686,6 +12692,12 @@
         "hole": 16,
         "strokes": 5,
         "par": 3
+      },
+      "4-17": {
+        "round": 4,
+        "hole": 17,
+        "strokes": 4,
+        "par": 4
       }
     }
   },
@@ -25987,6 +25999,12 @@
         "hole": 1,
         "strokes": 4,
         "par": 4
+      },
+      "4-16": {
+        "round": 4,
+        "hole": 16,
+        "strokes": 3,
+        "par": 3
       },
       "4-15": {
         "round": 4,
