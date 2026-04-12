@@ -2814,6 +2814,16 @@
     "playerId": 40005053,
     "playerName": "Michael Brennan",
     "round": 4,
+    "hole": 18,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
+  },
+  {
+    "team": "Mottola",
+    "playerId": 40005053,
+    "playerName": "Michael Brennan",
+    "round": 4,
     "hole": 6,
     "strokes": 4,
     "par": 3,
@@ -4207,6 +4217,16 @@
     "hole": 16,
     "strokes": 3,
     "par": 3,
+    "stableford": 0
+  },
+  {
+    "team": "Mottola",
+    "playerId": 40000430,
+    "playerName": "Matt Fitzpatrick",
+    "round": 4,
+    "hole": 17,
+    "strokes": 4,
+    "par": 4,
     "stableford": 0
   },
   {
@@ -5108,6 +5128,16 @@
     "strokes": 5,
     "par": 4,
     "stableford": -1
+  },
+  {
+    "team": "Bagnowski",
+    "playerId": 40000638,
+    "playerName": "Max Homa",
+    "round": 4,
+    "hole": 18,
+    "strokes": 3,
+    "par": 4,
+    "stableford": 2
   },
   {
     "team": "Bagnowski",
@@ -8655,6 +8685,16 @@
     "playerName": "Scottie Scheffler",
     "round": 3,
     "hole": 1,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
+  },
+  {
+    "team": "Gilson",
+    "playerId": 40001274,
+    "playerName": "Scottie Scheffler",
+    "round": 4,
+    "hole": 10,
     "strokes": 4,
     "par": 4,
     "stableford": 0
@@ -12174,6 +12214,16 @@
     "playerId": 40000859,
     "playerName": "Hao-Tong Li",
     "round": 4,
+    "hole": 10,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
+  },
+  {
+    "team": "Penton",
+    "playerId": 40000859,
+    "playerName": "Hao-Tong Li",
+    "round": 4,
     "hole": 9,
     "strokes": 3,
     "par": 4,
@@ -16791,6 +16841,16 @@
   },
   {
     "team": "M. Ayers",
+    "playerId": 40000194,
+    "playerName": "Sam Burns",
+    "round": 4,
+    "hole": 8,
+    "strokes": 5,
+    "par": 5,
+    "stableford": 0
+  },
+  {
+    "team": "M. Ayers",
     "playerId": 40002471,
     "playerName": "Collin Morikawa",
     "round": 1,
@@ -17438,6 +17498,16 @@
     "strokes": 4,
     "par": 4,
     "stableford": 0
+  },
+  {
+    "team": "M. Ayers",
+    "playerId": 40002471,
+    "playerName": "Collin Morikawa",
+    "round": 4,
+    "hole": 12,
+    "strokes": 2,
+    "par": 3,
+    "stableford": 2
   },
   {
     "team": "M. Ayers",
@@ -20180,6 +20250,16 @@
     "stableford": 2
   },
   {
+    "team": "Hivnor",
+    "playerId": 40000013,
+    "playerName": "Justin Rose",
+    "round": 4,
+    "hole": 9,
+    "strokes": 3,
+    "par": 4,
+    "stableford": 2
+  },
+  {
     "team": "Plato",
     "playerId": 40004738,
     "playerName": "Rasmus Neergaard-Petersen",
@@ -21117,6 +21197,16 @@
     "hole": 12,
     "strokes": 3,
     "par": 3,
+    "stableford": 0
+  },
+  {
+    "team": "Plato",
+    "playerId": 40002343,
+    "playerName": "Ben Griffin",
+    "round": 4,
+    "hole": 13,
+    "strokes": 5,
+    "par": 5,
     "stableford": 0
   },
   {
@@ -23608,6 +23698,16 @@
     "strokes": 4,
     "par": 5,
     "stableford": 2
+  },
+  {
+    "team": "Mignogna",
+    "playerId": 40003252,
+    "playerName": "Ludvig Aberg",
+    "round": 4,
+    "hole": 16,
+    "strokes": 4,
+    "par": 3,
+    "stableford": -1
   },
   {
     "team": "Mignogna",
@@ -24314,6 +24414,16 @@
     "playerId": 40000775,
     "playerName": "Jake Knapp",
     "round": 4,
+    "hole": 13,
+    "strokes": 4,
+    "par": 5,
+    "stableford": 2
+  },
+  {
+    "team": "Mignogna",
+    "playerId": 40000775,
+    "playerName": "Jake Knapp",
+    "round": 4,
     "hole": 12,
     "strokes": 3,
     "par": 3,
@@ -29347,6 +29457,26 @@
     "hole": 14,
     "strokes": 3,
     "par": 4,
+    "stableford": 2
+  },
+  {
+    "team": "Kaprosy",
+    "playerId": 40000596,
+    "playerName": "Tyrrell Hatton",
+    "round": 4,
+    "hole": 15,
+    "strokes": 4,
+    "par": 5,
+    "stableford": 2
+  },
+  {
+    "team": "Kaprosy",
+    "playerId": 40000596,
+    "playerName": "Tyrrell Hatton",
+    "round": 4,
+    "hole": 16,
+    "strokes": 2,
+    "par": 3,
     "stableford": 2
   },
   {
@@ -36110,6 +36240,16 @@
     "stableford": 0
   },
   {
+    "team": "Hoban",
+    "playerId": 40000615,
+    "playerName": "Russell Henley",
+    "round": 4,
+    "hole": 11,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
+  },
+  {
     "team": "Mucci",
     "playerId": 40000115,
     "playerName": "Daniel Berger",
@@ -38487,6 +38627,16 @@
     "hole": 15,
     "strokes": 5,
     "par": 5,
+    "stableford": 0
+  },
+  {
+    "team": "Baucher",
+    "playerId": 40000205,
+    "playerName": "Brian Campbell",
+    "round": 4,
+    "hole": 16,
+    "strokes": 3,
+    "par": 3,
     "stableford": 0
   },
   {
@@ -39034,6 +39184,16 @@
     "playerId": 40000002,
     "playerName": "Patrick Reed",
     "round": 4,
+    "hole": 12,
+    "strokes": 3,
+    "par": 3,
+    "stableford": 0
+  },
+  {
+    "team": "Baucher",
+    "playerId": 40000002,
+    "playerName": "Patrick Reed",
+    "round": 4,
     "hole": 11,
     "strokes": 4,
     "par": 4,
@@ -39838,6 +39998,16 @@
     "strokes": 3,
     "par": 3,
     "stableford": 0
+  },
+  {
+    "team": "Baucher",
+    "playerId": 40001424,
+    "playerName": "Nick Taylor",
+    "round": 4,
+    "hole": 17,
+    "strokes": 5,
+    "par": 4,
+    "stableford": -1
   },
   {
     "team": "Baucher",
@@ -41851,6 +42021,16 @@
   },
   {
     "team": "J. Ayers",
+    "playerId": 40000890,
+    "playerName": "Shane Lowry",
+    "round": 4,
+    "hole": 8,
+    "strokes": 5,
+    "par": 5,
+    "stableford": 0
+  },
+  {
+    "team": "J. Ayers",
     "playerId": 40000017,
     "playerName": "Hideki Matsuyama",
     "round": 1,
@@ -47041,6 +47221,16 @@
   },
   {
     "team": "Campbell",
+    "playerId": 40000314,
+    "playerName": "Jason Day",
+    "round": 4,
+    "hole": 9,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
+  },
+  {
+    "team": "Campbell",
     "playerId": 40000322,
     "playerName": "Bryson DeChambeau",
     "round": 1,
@@ -48657,6 +48847,16 @@
     "hole": 16,
     "strokes": 3,
     "par": 3,
+    "stableford": 0
+  },
+  {
+    "team": "Stull",
+    "playerId": 40000432,
+    "playerName": "Tommy Fleetwood",
+    "round": 4,
+    "hole": 15,
+    "strokes": 5,
+    "par": 5,
     "stableford": 0
   },
   {
