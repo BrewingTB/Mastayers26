@@ -11711,6 +11711,16 @@
   },
   {
     "team": "Huszczo",
+    "playerId": 40002249,
+    "playerName": "Kurt Kitayama",
+    "round": 4,
+    "hole": 1,
+    "strokes": 3,
+    "par": 4,
+    "stableford": 2
+  },
+  {
+    "team": "Huszczo",
     "playerId": 40001317,
     "playerName": "Vijay Singh",
     "round": 1,
@@ -20898,6 +20908,16 @@
     "strokes": 6,
     "par": 4,
     "stableford": -3
+  },
+  {
+    "team": "Mignogna",
+    "playerId": 40001594,
+    "playerName": "Gary Woodland",
+    "round": 4,
+    "hole": 1,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
   },
   {
     "team": "Ferritto",
