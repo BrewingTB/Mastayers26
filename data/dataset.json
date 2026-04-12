@@ -8980,6 +8980,16 @@
     "stableford": 2
   },
   {
+    "team": "Gilson",
+    "playerId": 40001274,
+    "playerName": "Scottie Scheffler",
+    "round": 4,
+    "hole": 17,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
+  },
+  {
     "team": "Gibb",
     "playerId": 40003220,
     "playerName": "Rasmus Hojgaard",
@@ -12404,6 +12414,16 @@
     "playerId": 40000859,
     "playerName": "Hao-Tong Li",
     "round": 4,
+    "hole": 17,
+    "strokes": 5,
+    "par": 4,
+    "stableford": -1
+  },
+  {
+    "team": "Penton",
+    "playerId": 40000859,
+    "playerName": "Hao-Tong Li",
+    "round": 4,
     "hole": 16,
     "strokes": 3,
     "par": 3,
@@ -17201,6 +17221,16 @@
   },
   {
     "team": "M. Ayers",
+    "playerId": 40000194,
+    "playerName": "Sam Burns",
+    "round": 4,
+    "hole": 15,
+    "strokes": 5,
+    "par": 5,
+    "stableford": 0
+  },
+  {
+    "team": "M. Ayers",
     "playerId": 40002471,
     "playerName": "Collin Morikawa",
     "round": 1,
@@ -20768,6 +20798,16 @@
     "strokes": 4,
     "par": 5,
     "stableford": 2
+  },
+  {
+    "team": "Hivnor",
+    "playerId": 40000013,
+    "playerName": "Justin Rose",
+    "round": 4,
+    "hole": 16,
+    "strokes": 3,
+    "par": 3,
+    "stableford": 0
   },
   {
     "team": "Plato",
@@ -43011,6 +43051,16 @@
   },
   {
     "team": "J. Ayers",
+    "playerId": 40000890,
+    "playerName": "Shane Lowry",
+    "round": 4,
+    "hole": 15,
+    "strokes": 4,
+    "par": 5,
+    "stableford": 2
+  },
+  {
+    "team": "J. Ayers",
     "playerId": 40000017,
     "playerName": "Hideki Matsuyama",
     "round": 1,
@@ -45851,6 +45901,16 @@
   },
   {
     "team": "Brunetti",
+    "playerId": 40000965,
+    "playerName": "Rory McIlroy",
+    "round": 4,
+    "hole": 15,
+    "strokes": 5,
+    "par": 5,
+    "stableford": 0
+  },
+  {
+    "team": "Brunetti",
     "playerId": 40000010,
     "playerName": "Adam Scott",
     "round": 1,
@@ -48337,6 +48397,16 @@
     "hole": 15,
     "strokes": 5,
     "par": 5,
+    "stableford": 0
+  },
+  {
+    "team": "Campbell",
+    "playerId": 40000314,
+    "playerName": "Jason Day",
+    "round": 4,
+    "hole": 16,
+    "strokes": 3,
+    "par": 3,
     "stableford": 0
   },
   {
