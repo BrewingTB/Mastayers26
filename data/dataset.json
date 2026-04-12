@@ -3591,6 +3591,16 @@
   },
   {
     "team": "Mottola",
+    "playerId": 40000216,
+    "playerName": "Patrick Cantlay",
+    "round": 4,
+    "hole": 18,
+    "strokes": 5,
+    "par": 4,
+    "stableford": -1
+  },
+  {
+    "team": "Mottola",
     "playerId": 40000430,
     "playerName": "Matt Fitzpatrick",
     "round": 1,
@@ -20750,6 +20760,16 @@
     "stableford": 0
   },
   {
+    "team": "Hivnor",
+    "playerId": 40000013,
+    "playerName": "Justin Rose",
+    "round": 4,
+    "hole": 15,
+    "strokes": 4,
+    "par": 5,
+    "stableford": 2
+  },
+  {
     "team": "Plato",
     "playerId": 40004738,
     "playerName": "Rasmus Neergaard-Petersen",
@@ -36940,6 +36960,16 @@
     "stableford": 0
   },
   {
+    "team": "Hoban",
+    "playerId": 40000615,
+    "playerName": "Russell Henley",
+    "round": 4,
+    "hole": 18,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
+  },
+  {
     "team": "Mucci",
     "playerId": 40000115,
     "playerName": "Daniel Berger",
@@ -38565,6 +38595,16 @@
     "playerName": "Cameron Young",
     "round": 4,
     "hole": 1,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
+  },
+  {
+    "team": "Mucci",
+    "playerId": 40003609,
+    "playerName": "Cameron Young",
+    "round": 4,
+    "hole": 14,
     "strokes": 4,
     "par": 4,
     "stableford": 0
@@ -45801,6 +45841,16 @@
   },
   {
     "team": "Brunetti",
+    "playerId": 40000965,
+    "playerName": "Rory McIlroy",
+    "round": 4,
+    "hole": 14,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
+  },
+  {
+    "team": "Brunetti",
     "playerId": 40000010,
     "playerName": "Adam Scott",
     "round": 1,
@@ -48277,6 +48327,16 @@
     "hole": 14,
     "strokes": 4,
     "par": 4,
+    "stableford": 0
+  },
+  {
+    "team": "Campbell",
+    "playerId": 40000314,
+    "playerName": "Jason Day",
+    "round": 4,
+    "hole": 15,
+    "strokes": 5,
+    "par": 5,
     "stableford": 0
   },
   {
