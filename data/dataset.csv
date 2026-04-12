@@ -689,6 +689,7 @@ Gilson,40002578,Aaron Rai,3,4,4,4,0
 Gilson,40002578,Aaron Rai,4,4,4,3,-1
 Gilson,40002578,Aaron Rai,5,4,4,4,0
 Gilson,40002578,Aaron Rai,6,4,3,3,0
+Gilson,40002578,Aaron Rai,7,4,2,4,5
 Gilson,40001274,Scottie Scheffler,1,1,4,4,0
 Gilson,40001274,Scottie Scheffler,2,1,3,5,5
 Gilson,40001274,Scottie Scheffler,3,1,3,4,2
@@ -797,6 +798,7 @@ Gibb,40003220,Rasmus Hojgaard,15,3,4,5,2
 Gibb,40003220,Rasmus Hojgaard,16,3,2,3,2
 Gibb,40003220,Rasmus Hojgaard,17,3,5,4,-1
 Gibb,40003220,Rasmus Hojgaard,18,3,5,4,-1
+Gibb,40003220,Rasmus Hojgaard,4,4,3,3,0
 Gibb,40003220,Rasmus Hojgaard,3,4,4,4,0
 Gibb,40003220,Rasmus Hojgaard,2,4,7,5,-3
 Gibb,40003220,Rasmus Hojgaard,1,4,5,4,-1
@@ -1178,6 +1180,7 @@ Huszczo,40002249,Kurt Kitayama,4,3,3,3,0
 Huszczo,40002249,Kurt Kitayama,3,3,5,4,-1
 Huszczo,40002249,Kurt Kitayama,2,3,6,5,-1
 Huszczo,40002249,Kurt Kitayama,1,3,4,4,0
+Huszczo,40002249,Kurt Kitayama,5,4,4,4,0
 Huszczo,40002249,Kurt Kitayama,4,4,4,3,-1
 Huszczo,40002249,Kurt Kitayama,3,4,4,4,0
 Huszczo,40002249,Kurt Kitayama,2,4,5,5,0
@@ -1853,6 +1856,7 @@ Plato,40003218,Viktor Hovland,13,3,5,5,0
 Plato,40003218,Viktor Hovland,12,3,2,3,2
 Plato,40003218,Viktor Hovland,11,3,4,4,0
 Plato,40003218,Viktor Hovland,10,3,4,4,0
+Plato,40003218,Viktor Hovland,1,4,4,4,0
 Plato,40003147,Tom McKibbin,18,1,4,4,0
 Plato,40003147,Tom McKibbin,17,1,5,4,-1
 Plato,40003147,Tom McKibbin,16,1,4,3,-1
@@ -1943,6 +1947,7 @@ Mignogna,40001290,Charl Schwartzel,15,3,5,5,0
 Mignogna,40001290,Charl Schwartzel,16,3,3,3,0
 Mignogna,40001290,Charl Schwartzel,17,3,4,4,0
 Mignogna,40001290,Charl Schwartzel,18,3,4,4,0
+Mignogna,40001290,Charl Schwartzel,7,4,4,4,0
 Mignogna,40001290,Charl Schwartzel,6,4,2,3,2
 Mignogna,40001290,Charl Schwartzel,5,4,4,4,0
 Mignogna,40001290,Charl Schwartzel,4,4,4,3,-1
@@ -2115,6 +2120,7 @@ Mignogna,40001594,Gary Woodland,1,4,4,4,0
 Mignogna,40001594,Gary Woodland,2,4,4,5,2
 Mignogna,40001594,Gary Woodland,3,4,4,4,0
 Mignogna,40001594,Gary Woodland,4,4,3,3,0
+Mignogna,40001594,Gary Woodland,5,4,4,4,0
 Ferritto,40000448,Ryan Fox,13,1,5,5,0
 Ferritto,40000448,Ryan Fox,12,1,3,3,0
 Ferritto,40000448,Ryan Fox,11,1,4,4,0
@@ -2206,6 +2212,8 @@ Ferritto,40000015,Dustin Johnson,16,3,3,3,0
 Ferritto,40000015,Dustin Johnson,17,3,5,4,-1
 Ferritto,40000015,Dustin Johnson,18,3,4,4,0
 Ferritto,40000015,Dustin Johnson,1,4,4,4,0
+Ferritto,40000015,Dustin Johnson,2,4,4,5,2
+Ferritto,40000015,Dustin Johnson,3,4,4,4,0
 Ferritto,40000764,Si Woo Kim,18,1,4,4,0
 Ferritto,40000764,Si Woo Kim,17,1,5,4,-1
 Ferritto,40000764,Si Woo Kim,16,1,3,3,0
@@ -2262,6 +2270,8 @@ Ferritto,40000764,Si Woo Kim,17,3,4,4,0
 Ferritto,40000764,Si Woo Kim,18,3,5,4,-1
 Ferritto,40000764,Si Woo Kim,1,4,3,4,2
 Ferritto,40000764,Si Woo Kim,2,4,4,5,2
+Ferritto,40000764,Si Woo Kim,3,4,4,4,0
+Ferritto,40000764,Si Woo Kim,4,4,3,3,0
 Ferritto,40001199,Jon Rahm,1,1,5,4,-1
 Ferritto,40001199,Jon Rahm,2,1,5,5,0
 Ferritto,40001199,Jon Rahm,3,1,5,4,-1
@@ -3420,6 +3430,7 @@ Baucher,40001434,Justin Thomas,15,3,4,5,2
 Baucher,40001434,Justin Thomas,16,3,4,3,-1
 Baucher,40001434,Justin Thomas,17,3,5,4,-1
 Baucher,40001434,Justin Thomas,18,3,4,4,0
+Baucher,40001434,Justin Thomas,1,4,3,4,2
 J. Ayers,40002651,Wyndham Clark,1,1,4,4,0
 J. Ayers,40002651,Wyndham Clark,2,1,5,5,0
 J. Ayers,40002651,Wyndham Clark,3,1,4,4,0
