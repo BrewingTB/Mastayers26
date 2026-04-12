@@ -3581,6 +3581,16 @@
   },
   {
     "team": "Mottola",
+    "playerId": 40000216,
+    "playerName": "Patrick Cantlay",
+    "round": 4,
+    "hole": 17,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
+  },
+  {
+    "team": "Mottola",
     "playerId": 40000430,
     "playerName": "Matt Fitzpatrick",
     "round": 1,
@@ -8937,6 +8947,16 @@
     "hole": 1,
     "strokes": 3,
     "par": 4,
+    "stableford": 2
+  },
+  {
+    "team": "Gilson",
+    "playerId": 40001274,
+    "playerName": "Scottie Scheffler",
+    "round": 4,
+    "hole": 15,
+    "strokes": 4,
+    "par": 5,
     "stableford": 2
   },
   {
@@ -17131,6 +17151,16 @@
   },
   {
     "team": "M. Ayers",
+    "playerId": 40000194,
+    "playerName": "Sam Burns",
+    "round": 4,
+    "hole": 14,
+    "strokes": 3,
+    "par": 4,
+    "stableford": 2
+  },
+  {
+    "team": "M. Ayers",
     "playerId": 40002471,
     "playerName": "Collin Morikawa",
     "round": 1,
@@ -17664,6 +17694,16 @@
     "playerId": 40002471,
     "playerName": "Collin Morikawa",
     "round": 3,
+    "hole": 18,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
+  },
+  {
+    "team": "M. Ayers",
+    "playerId": 40002471,
+    "playerName": "Collin Morikawa",
+    "round": 4,
     "hole": 18,
     "strokes": 4,
     "par": 4,
@@ -20670,6 +20710,16 @@
     "stableford": 0
   },
   {
+    "team": "Hivnor",
+    "playerId": 40000013,
+    "playerName": "Justin Rose",
+    "round": 4,
+    "hole": 14,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
+  },
+  {
     "team": "Plato",
     "playerId": 40004738,
     "playerName": "Rasmus Neergaard-Petersen",
@@ -36850,6 +36900,16 @@
     "stableford": 0
   },
   {
+    "team": "Hoban",
+    "playerId": 40000615,
+    "playerName": "Russell Henley",
+    "round": 4,
+    "hole": 17,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
+  },
+  {
     "team": "Mucci",
     "playerId": 40000115,
     "playerName": "Daniel Berger",
@@ -39848,6 +39908,16 @@
     "strokes": 3,
     "par": 3,
     "stableford": 0
+  },
+  {
+    "team": "Baucher",
+    "playerId": 40000002,
+    "playerName": "Patrick Reed",
+    "round": 4,
+    "hole": 18,
+    "strokes": 3,
+    "par": 4,
+    "stableford": 2
   },
   {
     "team": "Baucher",
@@ -48137,6 +48207,16 @@
     "hole": 13,
     "strokes": 5,
     "par": 5,
+    "stableford": 0
+  },
+  {
+    "team": "Campbell",
+    "playerId": 40000314,
+    "playerName": "Jason Day",
+    "round": 4,
+    "hole": 14,
+    "strokes": 4,
+    "par": 4,
     "stableford": 0
   },
   {
