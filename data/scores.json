@@ -7166,6 +7166,12 @@
         "hole": 1,
         "strokes": 5,
         "par": 4
+      },
+      "4-2": {
+        "round": 4,
+        "hole": 2,
+        "strokes": 5,
+        "par": 5
       }
     }
   },
@@ -9037,6 +9043,12 @@
         "round": 3,
         "hole": 18,
         "strokes": 5,
+        "par": 4
+      },
+      "4-1": {
+        "round": 4,
+        "hole": 1,
+        "strokes": 3,
         "par": 4
       }
     }
@@ -11803,6 +11815,12 @@
         "hole": 1,
         "strokes": 4,
         "par": 4
+      },
+      "4-2": {
+        "round": 4,
+        "hole": 2,
+        "strokes": 4,
+        "par": 5
       }
     }
   },
@@ -12685,6 +12703,12 @@
         "hole": 18,
         "strokes": 4,
         "par": 4
+      },
+      "4-4": {
+        "round": 4,
+        "hole": 4,
+        "strokes": 4,
+        "par": 3
       },
       "4-3": {
         "round": 4,
@@ -14815,6 +14839,12 @@
         "hole": 2,
         "strokes": 4,
         "par": 5
+      },
+      "4-3": {
+        "round": 4,
+        "hole": 3,
+        "strokes": 4,
+        "par": 4
       }
     }
   },
@@ -15473,6 +15503,12 @@
       "3-1": {
         "round": 3,
         "hole": 1,
+        "strokes": 4,
+        "par": 4
+      },
+      "4-3": {
+        "round": 4,
+        "hole": 3,
         "strokes": 4,
         "par": 4
       },
@@ -16495,6 +16531,12 @@
         "hole": 3,
         "strokes": 4,
         "par": 4
+      },
+      "4-4": {
+        "round": 4,
+        "hole": 4,
+        "strokes": 4,
+        "par": 3
       }
     }
   },
@@ -19805,6 +19847,12 @@
       "3-18": {
         "round": 3,
         "hole": 18,
+        "strokes": 5,
+        "par": 4
+      },
+      "4-1": {
+        "round": 4,
+        "hole": 1,
         "strokes": 5,
         "par": 4
       }

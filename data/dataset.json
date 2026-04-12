@@ -6871,6 +6871,16 @@
   },
   {
     "team": "Gilson",
+    "playerId": 40002578,
+    "playerName": "Aaron Rai",
+    "round": 4,
+    "hole": 4,
+    "strokes": 4,
+    "par": 3,
+    "stableford": -1
+  },
+  {
+    "team": "Gilson",
     "playerId": 40001274,
     "playerName": "Scottie Scheffler",
     "round": 1,
@@ -7951,6 +7961,16 @@
   },
   {
     "team": "Gibb",
+    "playerId": 40003220,
+    "playerName": "Rasmus Hojgaard",
+    "round": 4,
+    "hole": 1,
+    "strokes": 5,
+    "par": 4,
+    "stableford": -1
+  },
+  {
+    "team": "Gibb",
     "playerId": 40005060,
     "playerName": "Chris Gotterup",
     "round": 1,
@@ -11734,6 +11754,16 @@
     "playerId": 40002249,
     "playerName": "Kurt Kitayama",
     "round": 4,
+    "hole": 3,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
+  },
+  {
+    "team": "Huszczo",
+    "playerId": 40002249,
+    "playerName": "Kurt Kitayama",
+    "round": 4,
     "hole": 2,
     "strokes": 5,
     "par": 5,
@@ -15901,6 +15931,16 @@
   },
   {
     "team": "Hivnor",
+    "playerId": 40000479,
+    "playerName": "Sergio Garcia",
+    "round": 4,
+    "hole": 2,
+    "strokes": 5,
+    "par": 5,
+    "stableford": 0
+  },
+  {
+    "team": "Hivnor",
     "playerId": 40005232,
     "playerName": "Ryan Gerard",
     "round": 1,
@@ -19318,6 +19358,16 @@
     "strokes": 4,
     "par": 4,
     "stableford": 0
+  },
+  {
+    "team": "Mignogna",
+    "playerId": 40001290,
+    "playerName": "Charl Schwartzel",
+    "round": 4,
+    "hole": 4,
+    "strokes": 4,
+    "par": 3,
+    "stableford": -1
   },
   {
     "team": "Mignogna",
@@ -20990,6 +21040,16 @@
     "stableford": 2
   },
   {
+    "team": "Mignogna",
+    "playerId": 40001594,
+    "playerName": "Gary Woodland",
+    "round": 4,
+    "hole": 3,
+    "strokes": 4,
+    "par": 4,
+    "stableford": 0
+  },
+  {
     "team": "Ferritto",
     "playerId": 40000448,
     "playerName": "Ryan Fox",
@@ -22428,6 +22488,16 @@
     "strokes": 5,
     "par": 4,
     "stableford": -1
+  },
+  {
+    "team": "Ferritto",
+    "playerId": 40000764,
+    "playerName": "Si Woo Kim",
+    "round": 4,
+    "hole": 1,
+    "strokes": 3,
+    "par": 4,
+    "stableford": 2
   },
   {
     "team": "Ferritto",
@@ -22978,6 +23048,16 @@
     "strokes": 4,
     "par": 4,
     "stableford": 0
+  },
+  {
+    "team": "Ferritto",
+    "playerId": 40001199,
+    "playerName": "Jon Rahm",
+    "round": 4,
+    "hole": 2,
+    "strokes": 4,
+    "par": 5,
+    "stableford": 2
   },
   {
     "team": "Kaprosy",
